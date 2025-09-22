@@ -1,18 +1,35 @@
-name: ✈️ Gate / Feature
-description: Request a new gate, page, or function
-labels: [feature]
+name: "✈️ Gate / Feature"
+description: "Request a new gate, page, or function"
+labels:
+  - feature
 body:
-- type: input
-  id: title
-  attributes: {label: Name, placeholder: "Esports Arena Slot"}
-  validations: {required: true}
-- type: textarea
-  id: value
-  attributes: {label: Value, description: Why this matters for FlightLine?}
-- type: textarea
-  id: scope
-  attributes: {label: Scope, placeholder: "Pages, data files, nav, metrics"}
-- type: textarea
-  id: done
-  attributes: {label: Definition of Done, placeholder: "✅ Renders in nav\n✅ Data in _data/*.yml\n✅ Page published"}
-  validations: {required: true}
+  - type: input
+    id: title
+    attributes:
+      label: "Name"
+      placeholder: "Esports Arena Slot"
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: "Value"
+      description: "Why this matters for FlightLine?"
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope"
+      placeholder: "Pages, data files, nav, metrics"
+
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of Done"
+      placeholder: |
+        ✅ Renders in nav
+        ✅ Data in _data/*.yml
+        ✅ Page published
+    validations:
+      required: true
