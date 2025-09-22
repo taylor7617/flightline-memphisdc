@@ -1,0 +1,7 @@
+main:
+  - title: "Gates"
+    url: "/gates/"
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
