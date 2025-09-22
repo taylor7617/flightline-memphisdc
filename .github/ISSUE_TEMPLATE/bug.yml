@@ -1,17 +1,33 @@
-name: 🐞 Bug
-description: Report an issue
-labels: [bug, needs-triage]
+name: "🐞 Bug"
+description: "Report an issue"
+labels:
+  - bug
+  - needs-triage
 body:
-- type: textarea
-  id: what
-  attributes: {label: What happened?, description: Clear, reproducible steps}
-  validations: {required: true}
-- type: textarea
-  id: expect
-  attributes: {label: Expected, description: What should have happened?}
-- type: textarea
-  id: repro
-  attributes: {label: Repro steps, placeholder: "1) …\n2) …\n3) …"}
-- type: input
-  id: url
-  attributes: {label: Page URL (if any)}
+  - type: textarea
+    id: what
+    attributes:
+      label: "What happened?"
+      description: "Clear, reproducible steps"
+      placeholder: |
+        1) …
+        2) …
+        3) …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What did you expect to happen?"
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Browser/OS and page path or URL (if relevant)"
+
+  - type: input
+    id: url
+    attributes:
+      label: "Page URL (if any)"
