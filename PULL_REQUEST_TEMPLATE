@@ -1,0 +1,11 @@
+## What changed
+- 
+
+## Why (mission link)
+- 
+
+## Checklist
+- [ ] Builds locally (`bundle exec jekyll serve`)
+- [ ] Pages workflow green
+- [ ] Updated `_data` and navigation if needed
+- [ ] No hard-coded URLs; use `relative_url`
