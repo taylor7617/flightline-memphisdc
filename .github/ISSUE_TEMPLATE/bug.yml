@@ -9,9 +9,67 @@ body:
     id: repro
     attributes:
       label: "Steps to reproduce"
+      description: "Use generic devices/browsers; only name specific models if relevant."
       placeholder: |
-        1) Action
-        2) Action
-        3) Result
+        1) Open the affected page (e.g., /gates/) on a small screen (<= 768px)
+        2) Scroll to the top
+        3) Observe the CTA bar area
     validations:
       required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected result"
+      placeholder: "CTA bar visible under the nav on all viewports"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual result"
+      placeholder: "Blank space where CTA bar should be."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      options:
+        - "S1 - Critical (no workaround)"
+        - "S2 - High (major impact)"
+        - "S3 - Medium (minor impact)"
+        - "S4 - Low (cosmetic)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: "Platforms affected"
+      options:
+        - label: "iOS"
+        - label: "Android"
+        - label: "Desktop"
+        - label: "Tablet"
+
+  - type: input
+    id: pages
+    attributes:
+      label: "Page path(s)"
+      placeholder: "/gates/, /about/"
+
+  - type: textarea
+    id: env
+    attributes:
+      label: "Environment details"
+      description: "Browser and OS versions"
+      placeholder: "iOS 17.x / Safari; Android 14 / Chrome 128; macOS 14.x / Chrome 128"
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Notes / Screenshots"
+      description: "Drag images here to attach."
