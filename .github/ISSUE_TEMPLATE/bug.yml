@@ -69,6 +69,11 @@ body:
       placeholder: "iOS 17.5 / Safari 17; Android 14 / Chrome 128; macOS 14.5 / Chrome 128"
 
   - type: textarea
+    id: attachments
+    attributes:
+      label: "Notes / Screenshots"
+      description: "Drag images here to attach."
+
     id: notes
     attributes:
       label: "Notes / Screenshots"
