@@ -1,0 +1,3 @@
+/covenant/   → 40 Docs (ZIPs, protocols, presence rules)
+/engine/     → CUDA sims, QR builder, streaming rules
+/network/    → Maps, QR sets, Ledgers (proof + coordinates)
