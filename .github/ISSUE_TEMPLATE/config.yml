@@ -1,5 +1,12 @@
-blank_issues_enabled: false
-contact_links:
-  - name: "Support / Contact (Linktree)"
-    url: "https://linktr.ee/QRF_Code_Veterans"
-    about: "Use this for general questions or growth tools."
+title: "FlightLine — Memphis DC"
+description: "Capital of NetTopia — public runway"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+exclude:
+  - node_modules
+  - vendor
+  - .github
+  - README.md
+  - Repo Structure
