@@ -1,1 +1,10 @@
-
+<div class="gate-card">
+  <h3>{{ gate.name }}</h3>
+  <p>{{ gate.summary }}</p>
+  <ul>
+    <li><strong>Tier:</strong> {{ gate.tier }}</li>
+    <li><strong>Lease:</strong> {{ gate.lease }}</li>
+    <li><strong>QR:</strong> <a href="{{ gate.qr_url }}" target="_blank" rel="noopener">{{ gate.qr_label }}</a></li>
+    {% if gate.map_url %}<li><strong>Map:</strong> <a href="{{ gate.map_url }}" target="_blank" rel="noopener">Open</a></li>{% endif %}
+  </ul>
+</div>
