@@ -17,11 +17,11 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
         with:
-          source: .            # <<< build from repo root (NOT ./docs)
-          destination: ./_site
+          source: '.'           # ⬅️ FORCE BUILD FROM REPO ROOT (not ./docs)
+          destination: './_site'
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: './_site'
 
   deploy:
     needs: build
