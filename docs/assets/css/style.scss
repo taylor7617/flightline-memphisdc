@@ -1,0 +1,23 @@
+---
+---
+/* base */
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+/* support button */
+.btn-support { display:inline-block; padding:6px 12px; border:1px solid #d0d7de; border-radius:6px; text-decoration:none; }
+.btn-support:hover { background:#f6f8fa; }
+
+/* CTA bar */
+.cta-bar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding:8px 0 12px; border-bottom:1px solid #d0d7de; margin:0 16px 16px; }
+.cta-bar a { display:inline-block; padding:6px 10px; border:1px solid #d0d7de; border-radius:8px; text-decoration:none; }
+.cta-bar a:hover { background:#f6f8fa; }
+
+/* gates */
+.gate-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; }
+.gate-card { border:1px solid #d0d7de; border-radius:12px; padding:12px; }
+
+/* mobile safety */
+@media (max-width: 768px) {
+  .cta-bar { position: sticky; top: 0; z-index: 1000; background: #fff; padding: 8px; }
+  .cta-bar a { flex: 1 1 auto; text-align:center; }
+}
