@@ -1,7 +1,13 @@
 main:
-  - title: "Gates"
-    url: "/gates/"
-  - title: "About"
-    url: "/about/"
-  - title: "Contact"
-    url: "/contact/"
+  - title: Gates
+    url: /gates/
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+  - title: Memphis DC Capital
+    url: https://linktr.ee/justinjpearson?utm_source=linktree_profile_share&ltsid=7387df1c-ef31-40a2-ab86-87c4eba91307
+    external: true
+  - title: Division HQ — Hopkinsville, KY
+    url: https://linktr.ee/FlightLineofHopkinsvilleKY?utm_source=linktree_profile_share&ltsid=09c75ef7-79d3-436c-bdcc-18c9b704b38a
+    external: true
