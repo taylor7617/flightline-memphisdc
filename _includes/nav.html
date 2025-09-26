@@ -1,16 +1,13 @@
 <nav class="mb-4" style="display:flex; align-items:center; gap:12px; padding:8px 16px;">
-  <div>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    {% if site.data.navigation and site.data.navigation.main %}
-      {% for item in site.data.navigation.main %}
-        &nbsp;|&nbsp;<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-      {% endfor %}
-    {% endif %}
-  </div>
-  <div style="margin-left:auto">
-    <a class="btn-support" href="https://linktr.ee/QRF_Code_Veterans" target="_blank" rel="noopener">
-      Support FlightLine
-    </a>
-  </div>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  {% if site.data.navigation and site.data.navigation.main %}
+    {% for item in site.data.navigation.main %}
+      &nbsp;|&nbsp;
+      {% if item.external %}
+        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+      {% else %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </nav>
-<hr>
