@@ -1,7 +1,7 @@
 <div class="cta-bar">
-  <a href="https://linktr.ee/QRF_Code_Veterans" target="_blank" rel="noopener">Support</a>
-  <a href="https://linktr.ee/QRF_Code_Veterans" target="_blank" rel="noopener">Subscribe</a>
-  <a href="https://linktr.ee/QRF_Code_Veterans" target="_blank" rel="noopener">Download</a>
-  <a href="https://linktr.ee/QRF_Code_Veterans" target="_blank" rel="noopener">Community</a>
-  <a href="https://linktr.ee/QRF_Code_Veterans" target="_blank" rel="noopener">Course</a>
+  {% if site.data.cta %}
+    {% for link in site.data.cta %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+    {% endfor %}
+  {% endif %}
 </div>
