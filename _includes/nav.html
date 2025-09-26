@@ -1,13 +1,25 @@
-<nav class="mb-4" style="display:flex; align-items:center; gap:12px; padding:8px 16px;">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  {% if site.data.navigation and site.data.navigation.main %}
-    {% for item in site.data.navigation.main %}
-      &nbsp;|&nbsp;
-      {% if item.external %}
-        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
-      {% else %}
-        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+<nav class="site-nav" role="navigation" aria-label="Primary">
+  <div class="nav-inner container">
+    <a class="brand" href="{{ '/' | relative_url }}">FlightLine — Memphis DC</a>
+
+    <div class="links" aria-label="Main">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      {% if site.data.navigation and site.data.navigation.main %}
+        {% for item in site.data.navigation.main %}
+          <span class="sep" aria-hidden="true"> | </span>
+          {% if item.external %}
+            <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+          {% else %}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endif %}
+        {% endfor %}
       {% endif %}
-    {% endfor %}
-  {% endif %}
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="https://linktr.ee/QRF_Code_Veterans" target="_blank" rel="noopener">
+        Support FlightLine
+      </a>
+    </div>
+  </div>
 </nav>
