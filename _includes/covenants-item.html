@@ -1,0 +1,46 @@
+{% assign c = include.c %}
+{% assign slug = c.slug | default: c.title | slugify %}
+<section id="{{ slug }}" class="covenant-item" style="margin:24px 0;padding:16px;border:1px solid #e6e8eb;border-radius:12px;">
+  <h2 style="margin:0 0 8px 0;">{{ c.title }}</h2>
+
+  {% if c.level %}<p><strong>Level:</strong> {{ c.level }}</p>{% endif %}
+  {% if c.command_node %}<p><strong>Command Node:</strong> {{ c.command_node }}</p>{% endif %}
+  {% if c.assigned_pilots %}<p><strong>Assigned:</strong> {{ c.assigned_pilots }}</p>{% endif %}
+
+  {% if c.zips %}
+    <p><strong>ZIPs:</strong>
+      {% if c.zips | join: '' contains ',' %}
+        {{ c.zips }}
+      {% else %}
+        {{ c.zips | join: ' • ' }}
+      {% endif %}
+    </p>
+  {% endif %}
+
+  {% if c.orders %}
+    <div>
+      <strong>Orders</strong>
+      <ul>
+        {% for o in c.orders %}<li>{{ o }}</li>{% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if c.effect %}
+    <div>
+      <strong>Effect</strong>
+      <ul>
+        {% for e in c.effect %}<li>{{ e }}</li>{% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if c.proof_protocol %}
+    <div>
+      <strong>Proof Protocol</strong>
+      <ol>
+        {% for p in c.proof_protocol %}<li>{{ p }}</li>{% endfor %}
+      </ol>
+    </div>
+  {% endif %}
+</section>
