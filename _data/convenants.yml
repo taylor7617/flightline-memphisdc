@@ -1,0 +1,14 @@
+# Each covenant = one line item in the catalog
+- title: “Runway Charter — HQ”
+  slug: runway-charter-hq
+  blurb: Authority, scope, and review cadence for the Memphis DC hub.
+  file: /assets/covenants/runway-charter-hq.pdf
+  tags: [governance, hq]
+  last_updated: 2025-09-20
+
+- title: “Revenue Rules — Payments”
+  slug: revenue-rules-payments
+  blurb: How payments are logged, verified, and escalated on ledger.
+  file: /assets/covenants/revenue-rules-payments.pdf
+  tags: [payments, ledger]
+  last_updated: 2025-09-21
