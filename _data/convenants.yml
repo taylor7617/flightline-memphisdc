@@ -1,14 +1,294 @@
-# Each covenant = one line item in the catalog
-- title: “Runway Charter — HQ”
-  slug: runway-charter-hq
-  blurb: Authority, scope, and review cadence for the Memphis DC hub.
-  file: /assets/covenants/runway-charter-hq.pdf
-  tags: [governance, hq]
-  last_updated: 2025-09-20
+- title: City Core (Level 1)
+  slug: city-core
+  blurb: Secure downtown & midtown civic core; ignite sovereign grid; monetize nightlife presence.
+  level: 1
+  command_node: "Mayor Paul Young"
+  assigned_pilots: 9000
+  zips: ["38103 Downtown (5000)", "38104 Midtown (4000)"]
+  tags: [governance, city, core]
+  protocol: ["Scan → ZIP/site QR", "Snap → photo proof", "Log → ledger entry"]
 
-- title: “Revenue Rules — Payments”
-  slug: revenue-rules-payments
-  blurb: How payments are logged, verified, and escalated on ledger.
-  file: /assets/covenants/revenue-rules-payments.pdf
-  tags: [payments, ledger]
-  last_updated: 2025-09-21
+- title: County Ring (Level 2)
+  slug: county-ring
+  blurb: Close the outer ring; flip commerce corridors into equity loops; bind community assets.
+  level: 2
+  command_node: "Mayor Lee Harris"
+  assigned_pilots: 15500
+  zips: ["38109 Whitehaven (8000)", "38127 Frayser (7500)"]
+  tags: [county, commerce, corridors]
+  protocol: ["Scan → gate/site", "Snap → local presence", "Log → archive"]
+
+- title: State Reach (Level 3)
+  slug: state-reach
+  blurb: Make MEM airport the forward gate; fold education & culture into the lattice.
+  level: 3
+  command_node: "Rep. Justin Pearson"
+  assigned_pilots: 12500
+  zips: ["38118 Airport (6500)", "38114 South Memphis (6000)"]
+  tags: [state, airport, education, culture]
+  protocol: ["Scan → airport/college", "Snap → activity proof", "Log → ledger"]
+
+- title: Federal Anchor (Level 4)
+  slug: federal-anchor
+  blurb: Secure UofM, Liberty Bowl, Summer Ave; NIL economy wired as covenant asset class.
+  level: 4
+  command_node: "Keith Taylor — NetTopia / FlightLine"
+  assigned_pilots: 19500
+  zips: ["38111 University (7000)", "38122 Berclair (6000)", "38116 Graceland West (6500)"]
+  tags: [federal, nil, university]
+  protocol: ["Scan → anchor site", "Snap → NIL/corridor proof", "Log → national ledger"]
+
+- title: Community Nodes
+  slug: community-nodes
+  blurb: Complete the mycelium spread; paint all ZIPs; route equity proof back to neighborhoods.
+  level: 1
+  command_node: "Local Feeder Zones"
+  assigned_pilots: 23500
+  zips: ["38112 Evergreen/Heights (5000)", "38107 North Memphis (5000)", "38108 Raleigh (5000)", "38128 Raleigh North (5000)", "38105 Uptown/St. Jude (4500)", "38106 Riverside (4500)", "38115 Hickory Hill (5000)"]
+  tags: [neighborhoods, equity, feeders]
+  protocol: ["Scan → feeder zone", "Snap → node doc", "Log → shared ledger"]
+
+- title: Education
+  slug: education
+  blurb: QR at every school & campus; presence = learning credit; no student invisible.
+  tags: [education, nil, schools]
+  assigned_pilots: 6000
+  protocol: ["Scan → classroom", "Snap → learning proof", "Log → education credit"]
+
+- title: Health
+  slug: health
+  blurb: Hospitals/clinics/pharmacies on-grid; presence → health access credit.
+  tags: [healthcare, access]
+  assigned_pilots: 5500
+  protocol: ["Scan → clinic/hospital", "Snap → treatment proof", "Log → health equity"]
+
+- title: Commerce
+  slug: commerce
+  blurb: QR leases for businesses; every transaction becomes civic reinvestment.
+  tags: [commerce, markets, retail]
+  assigned_pilots: 8500
+  protocol: ["Scan → business", "Snap → exchange proof", "Log → commerce credit"]
+
+- title: NIL (Name, Image, Likeness)
+  slug: nil
+  blurb: Every citizen has a NIL QR; presence becomes protected covenant asset class.
+  tags: [nil, identity]
+  assigned_pilots: 7000
+  protocol: ["Scan → NIL QR", "Snap → activity", "Log → payout credit"]
+
+- title: Culture
+  slug: culture
+  blurb: Museums, murals, spiritual sites; cultural presence generates equity.
+  tags: [culture, heritage, arts]
+  assigned_pilots: 4500
+  protocol: ["Scan → cultural site", "Snap → presence", "Log → preservation credit"]
+
+- title: Infrastructure
+  slug: infrastructure
+  blurb: Roads/bridges/transit/internet on-ledger; movement routes become runways.
+  tags: [infrastructure, transit, broadband]
+  assigned_pilots: 7500
+  protocol: ["Scan → route/hub", "Snap → traffic/asset", "Log → infra credit"]
+
+- title: Energy
+  slug: energy
+  blurb: Substations, solar, gas; every watt produced/used logged as equity.
+  tags: [energy, grid, renewables]
+  assigned_pilots: 6000
+  protocol: ["Scan → grid/plant", "Snap → production/usage", "Log → energy credit"]
+
+- title: Food
+  slug: food
+  blurb: Markets, groceries, restaurants, distribution; every meal becomes food equity.
+  tags: [food, agriculture, distribution]
+  assigned_pilots: 5500
+  protocol: ["Scan → food site", "Snap → meal/produce", "Log → food credit"]
+
+- title: Housing
+  slug: housing
+  blurb: Housing QR anchors; roof scans prove residence and drive housing equity.
+  tags: [housing, shelters, construction]
+  assigned_pilots: 8000
+  protocol: ["Scan → house/shelter", "Snap → residence", "Log → housing credit"]
+
+- title: Utilities
+  slug: utilities
+  blurb: Water, sewage, sanitation, recycling logged; flows convert to civic equity.
+  tags: [utilities, water, sanitation]
+  assigned_pilots: 6500
+  protocol: ["Scan → utility site", "Snap → flow/recycle", "Log → utilities credit"]
+
+- title: Security
+  slug: security
+  blurb: Police/fire/EMS/community defense hubs on-grid; incident responses logged.
+  tags: [security, safety, first-responders]
+  assigned_pilots: 9000
+  protocol: ["Scan → security hub", "Snap → response", "Log → safety credit"]
+
+- title: Environment
+  slug: environment
+  blurb: Parks, rivers, sensors; stewardship logged as environmental credit.
+  tags: [environment, climate, parks]
+  assigned_pilots: 7500
+  protocol: ["Scan → park/river", "Snap → tree/sensor", "Log → env credit"]
+
+- title: Transportation
+  slug: transportation
+  blurb: Airport/rail/trucking/rideshare/bikes; movement monetized as motion proof.
+  tags: [transport, mobility]
+  assigned_pilots: 8500
+  protocol: ["Scan → transit hub", "Snap → vehicle/passenger", "Log → transit credit"]
+
+- title: Finance
+  slug: finance
+  blurb: Banks/ATMs/wallets; every swipe/event logged to community ledger.
+  tags: [finance, banking, fintech]
+  assigned_pilots: 6500
+  protocol: ["Scan → finance hub", "Snap → transaction", "Log → finance credit"]
+
+- title: Communications
+  slug: communications
+  blurb: Towers, WiFi, media hubs; communication flows recognized as equity.
+  tags: [communications, media, networks]
+  assigned_pilots: 7000
+  protocol: ["Scan → comms hub", "Snap → tower/broadcast", "Log → comms credit"]
+
+- title: Innovation
+  slug: innovation
+  blurb: Labs, startups, schools; prototypes & patents logged as innovation credit.
+  tags: [innovation, research, startups]
+  assigned_pilots: 8000
+  protocol: ["Scan → lab/innovation", "Snap → prototype", "Log → innovation credit"]
+
+- title: Culture (Civic Layer)
+  slug: culture-civic
+  blurb: Beale, NCRM, Stax, Graceland; meals, services, stories logged.
+  tags: [culture, civic, heritage]
+  assigned_pilots: 7500
+  protocol: ["Scan → cultural hub", "Snap → music/food/story", "Log → culture credit"]
+
+- title: Sports & NIL
+  slug: sports-nil
+  blurb: Stadiums, gyms, parks; athlete presence earns NIL credit.
+  tags: [sports, nil]
+  assigned_pilots: 9000
+  protocol: ["Scan → NIL QR", "Snap → game/jersey", "Log → NIL credit"]
+
+- title: Arts & Media
+  slug: arts-media
+  blurb: Galleries, studios, theaters, libraries; broadcasts logged as presence.
+  tags: [arts, media, creators]
+  assigned_pilots: 6500
+  protocol: ["Scan → arts/media", "Snap → artwork/show", "Log → arts/media credit"]
+
+- title: Governance
+  slug: governance
+  blurb: City/County/State/Federal; meetings, laws, votes scanned and logged.
+  tags: [governance, transparency]
+  assigned_pilots: 8500
+  protocol: ["Scan → govt QR", "Snap → meeting/bill", "Log → governance credit"]
+
+- title: Utilities 2.0
+  slug: utilities-2
+  blurb: Power/water/internet/air; outages & flows mapped to equity with grants.
+  tags: [utilities, resilience, recovery]
+  assigned_pilots: 7500
+  protocol: ["Scan → utility QR", "Snap → flow/outage", "Log → utility credit"]
+
+- title: Housing 2.0
+  slug: housing-2
+  blurb: Apartments, lots, shelters; roof = registered presence = equity.
+  tags: [housing, real-estate]
+  assigned_pilots: 9000
+  protocol: ["Scan → housing QR", "Snap → occupancy", "Log → housing credit"]
+
+- title: Food Systems 2.0
+  slug: food-2
+  blurb: Markets, farms, trucks, co-ops; eliminate food deserts via scan economy.
+  tags: [food, systems, agriculture]
+  assigned_pilots: 8500
+  protocol: ["Scan → food QR", "Snap → meal/farm/store", "Log → food credit"]
+
+- title: Digital Education Grid
+  slug: digital-education-grid
+  blurb: Schools, libraries, tutoring; every lesson logged as equity.
+  tags: [education, digital, libraries]
+  assigned_pilots: 10000
+  protocol: ["Scan → education QR", "Snap → lesson/test", "Log → edu credit"]
+
+- title: Legal Framework
+  slug: legal-framework
+  blurb: Courts, precincts, legal aid; arrests/rulings linked to public ledger.
+  tags: [legal, courts, transparency]
+  assigned_pilots: 6500
+  protocol: ["Scan → legal QR", "Snap → case/ruling", "Log → legal credit"]
+
+- title: Finance Grid
+  slug: finance-grid
+  blurb: Banks/fintech/ATMs; transactions feed a transparent community ledger.
+  tags: [finance, grid, nil]
+  assigned_pilots: 8000
+  protocol: ["Scan → finance QR", "Snap → transaction", "Log → finance credit"]
+
+- title: Transport Grid
+  slug: transport-grid
+  blurb: Airport/rail/highways/ports; motion proof replaces tolls/tickets.
+  tags: [transport, grid, mobility]
+  assigned_pilots: 7500
+  protocol: ["Scan → transport QR", "Snap → trip/route", "Log → transport credit"]
+
+- title: Health Grid 2.0
+  slug: health-grid-2
+  blurb: Hospitals/clinics/pharmacies; care outcomes logged as equity.
+  tags: [health, outcomes, coverage]
+  assigned_pilots: 9500
+  protocol: ["Scan → health QR", "Snap → visit/prescription", "Log → health credit"]
+
+- title: Climate & Environment
+  slug: climate-environment
+  blurb: Parks/green grids/air & water; stewardship logged; recovery funded instantly.
+  tags: [climate, environment, resilience]
+  assigned_pilots: 7000
+  protocol: ["Scan → climate QR", "Snap → green/clean/repair", "Log → climate credit"]
+
+- title: Veteran Anchor
+  slug: veteran-anchor
+  blurb: VA hospitals, bases, memorials; service presence logged as veteran credit.
+  tags: [veterans, federal, service]
+  assigned_pilots: 6500
+  protocol: ["Scan → veteran QR", "Snap → service/protection", "Log → veteran credit"]
+
+- title: International Layer
+  slug: international-layer
+  blurb: Terminals, ports, consulates; global QR leasing validates flows.
+  tags: [international, trade, ports]
+  assigned_pilots: 10000
+  protocol: ["Scan → global QR", "Snap → package/port/flight", "Log → intl credit"]
+
+- title: Culture Grid
+  slug: culture-grid
+  blurb: Music/art/sports/heritage; NIL capture without exploitation.
+  tags: [culture, grid, nil]
+  assigned_pilots: 8500
+  protocol: ["Scan → culture QR", "Snap → event/mural/performance", "Log → culture credit"]
+
+- title: Innovation Grid
+  slug: innovation-grid
+  blurb: Universities/startups/research; inventions logged as covenant assets.
+  tags: [innovation, research, education]
+  assigned_pilots: 9000
+  protocol: ["Scan → innovation QR", "Snap → lab/prototype/demo", "Log → innovation credit"]
+
+- title: Media & Streaming Layer
+  slug: media-streaming-layer
+  blurb: Studios/news/digital platforms; ZIP streaming rules turn views into income.
+  tags: [media, streaming, rules]
+  assigned_pilots: 7500
+  protocol: ["Scan → stream QR", "Check → ZIP policy", "Log → streaming credit"]
+
+- title: Final Covenant Declaration
+  slug: final-covenant-declaration
+  blurb: Seal of Memphis DC / NetTopia; motion proof archived; presence = asset class.
+  tags: [declaration, governance, seal]
+  assigned_pilots: "All"
+  protocol: ["Scan → seal QR", "Snap → civic seal", "Log → covenant credit"]
