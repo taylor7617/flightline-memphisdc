@@ -1,6 +1,10 @@
 main:
   - title: Gates
     url: /gates/
+  - title: Covenants
+    url: /covenants/
+  - title: Flight Papers
+    url: /flight-papers/
   - title: About
     url: /about/
   - title: Contact
@@ -11,3 +15,4 @@ main:
   - title: Division HQ — Hopkinsville, KY
     url: https://linktr.ee/FlightLineofHopkinsvilleKY?utm_source=linktree_profile_share&ltsid=09c75ef7-79d3-436c-bdcc-18c9b704b38a
     external: true
+
