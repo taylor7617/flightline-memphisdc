@@ -1,0 +1,56 @@
+cat > _pages/flight-papers/index.md <<'MD'
+---
+layout: default
+title: Flight Papers
+permalink: /flight-papers/
+---
+
+# Flight Papers (HQ)
+
+FlightLine doctrine, playbooks, and defense. Start here, then dive into each paper.
+
+<div class="paper-grid">
+  <a class="paper-card" href="/flight-papers/red/">
+    <h3>Red Paper</h3><p>Code of Restoration</p>
+  </a>
+  <a class="paper-card" href="/flight-papers/blue-careers/">
+    <h3>Blue Paper</h3><p>Career Ascent Code</p>
+  </a>
+  <a class="paper-card" href="/flight-papers/blue-vault/">
+    <h3>Blue Paper</h3><p>Vault Economics</p>
+  </a>
+  <a class="paper-card" href="/flight-papers/black/">
+    <h3>Black Paper</h3><p>Defense & Digital Security Matrix</p>
+  </a>
+  <a class="paper-card" href="/flight-papers/engine-equation/">
+    <h3>Engine Equation</h3><p>Googol activation</p>
+  </a>
+  <a class="paper-card" href="/flight-papers/keith-ledger/">
+    <h3>Keith Ledger</h3><p>Master Packet</p>
+  </a>
+  <a class="paper-card" href="/flight-papers/operation-mycelium-901/">
+    <h3>Operations</h3><p>Mycelium 901 Itinerary</p>
+  </a>
+</div>
+
+---
+
+## External Originals (Google Docs)
+
+These are the canonical Google Docs you shared; they open in a new tab.
+
+- **FlightLine HQ | Memphis DC — Finalized Setup / SOP**  
+  <a href="https://docs.google.com/document/d/1bCpBTGSP4b-rsWGjQHoT-v5zTzV0Ir31MAIm8SMfOZg/edit?usp=sharing" target="_blank" rel="noopener">Open SOP</a>
+
+- **Engine Equation (with Googol)**  
+  <a href="https://docs.google.com/document/d/1qhdptibAyjF8ewBHSvthDD5AyN9bWrlPOElIx2p1U6U/edit?usp=sharing" target="_blank" rel="noopener">Open Engine Equation</a>
+
+- **Red Paper**  
+  <a href="https://docs.google.com/document/d/1-TIzeebS-qD-rfiCL9TA5U_znTmEkuR68GBn7UXGnJQ/edit?usp=sharing" target="_blank" rel="noopener">Open Red Paper</a>
+
+- **40 Covenants (master)**  
+  <a href="https://docs.google.com/document/d/1rOEkRJHe368r-MuqPbpoXKdGM49YSLH9p2AzteYxsHg/edit?usp=sharing" target="_blank" rel="noopener">Open Covenants Doc</a>
+
+- **Operation Mycelium 901 — FlightLine Itinerary**  
+  <a href="https://docs.google.com/document/d/1gW8eR4ZRLDAwTUHE80EmPR1RQS2XrydOyw4tXFpaYy4/edit?usp=sharing" target="_blank" rel="noopener">Open Itinerary</a>
+MD
