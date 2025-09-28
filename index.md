@@ -1,3 +1,14 @@
+---
+layout: default
+title: FlightLine — Memphis DC
+---
+
+<div class="hero hero-image">
+  <h1>FlightLine — Memphis DC</h1>
+  <p class="lede">Every ZIP = Runway. Every Scan = Proof. Every Payment = Public.</p>
+  <p><a class="btn btn-primary" href="{{ '/gates/' | relative_url }}">Start at Gates</a></p>
+</div>
+
 ## What is the FlightLine?
 
 FlightLine is a public, QR-powered **proof & access line** for real places—blocks, schools, arenas, storefronts. Scan a code at a **Gate** to check in, find the right door, pay or get help, and leave a trail the whole community can verify.
@@ -14,8 +25,8 @@ FlightLine is a public, QR-powered **proof & access line** for real places—blo
 - **Funders & partners:** see live activity and payment proofs before you invest.
 
 ### What you can do today
-- Browse **[Gates](/gates/)** → pick a lane (HQ, Esports, Classroom, Store…)
-- Tap **Support** to fund operations via Linktree
+- Browse **[Gates]({{ '/gates/' | relative_url }})** → pick a lane (HQ, Esports, Classroom, Store…)
+- Tap **Support** (top-right) to fund operations via Linktree
 - Open maps from a Gate card to get there
 
 ### How it works (3 steps)
@@ -34,4 +45,4 @@ FlightLine is a public, QR-powered **proof & access line** for real places—blo
 Use the top nav to jump to Capital & Division HQ.
 
 ### Join the line
-Start at **[Gates](/gates/)** or back the mission via **Support** in the header.
+Start at **[Gates]({{ '/gates/' | relative_url }})** or back the mission via **Support** in the header.
