@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FlightLine — Memphis DC</title>
   <meta name="description" content="Every ZIP = Runway. Every Scan = Proof. Every Payment = Public." />
-  <!-- IMPORTANT for project sites on GitHub Pages -->
+  <!-- Works on GitHub Pages project URL -->
   <base href="/flightline-memphisdc/">
-  <!-- Tailwind CDN (official) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>html{scroll-behavior:smooth}</style>
 </head>
 <body class="bg-gray-50 text-gray-900">
-  <!-- Sticky Nav -->
+  <!-- NAV -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -21,20 +20,19 @@
           <span class="hidden sm:block">FlightLine</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#home" class="hover:text-black">Home</a>
-          <a href="#gates" class="hover:text-black">Gates</a>
-          <a href="#about" class="hover:text-black">About</a>
-          <a href="#contact" class="hover:text-black">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#gates">Gates</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
         <div class="hidden md:flex items-center gap-2">
-          <!-- map these paths later to real pages if you want -->
-          <a href="support" class="px-3 py-1.5 rounded-xl border border-gray-300 hover:border-black">Support</a>
-          <a href="subscribe" class="px-3 py-1.5 rounded-xl border border-gray-300 hover:border-black">Subscribe</a>
-          <a href="download" class="px-3 py-1.5 rounded-xl border border-gray-300 hover:border-black">Download</a>
-          <a href="community" class="px-3 py-1.5 rounded-xl border border-gray-300 hover:border-black">Community</a>
-          <a href="course" class="px-3 py-1.5 rounded-xl border border-gray-300 hover:border-black">Course</a>
+          <a href="support"   class="px-3 py-1.5 rounded-xl border">Support</a>
+          <a href="subscribe" class="px-3 py-1.5 rounded-xl border">Subscribe</a>
+          <a href="download"  class="px-3 py-1.5 rounded-xl border">Download</a>
+          <a href="community" class="px-3 py-1.5 rounded-xl border">Community</a>
+          <a href="course"    class="px-3 py-1.5 rounded-xl border">Course</a>
         </div>
-        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border px-3 py-2">Menu</button>
+        <button id="menuBtn" class="md:hidden rounded-xl border px-3 py-2">Menu</button>
       </div>
     </div>
     <nav id="mobileNav" class="md:hidden hidden border-t border-gray-200">
@@ -53,22 +51,22 @@
   </header>
 
   <main id="home" class="min-h-[60vh]">
-    <!-- Hero -->
-    <section class="relative overflow-hidden py-16 sm:py-24 bg-gradient-to-b from-white to-gray-100">
+    <!-- HERO -->
+    <section class="py-16 sm:py-24 bg-gradient-to-b from-white to-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
         <div>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">FlightLine — Memphis DC</h1>
+          <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight">FlightLine — Memphis DC</h1>
           <p class="mt-4 text-lg text-gray-700">Every ZIP = Runway. Every Scan = Proof. Every Payment = Public.</p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="#gates" class="px-5 py-3 rounded-2xl bg-black text-white font-medium">Start at Gates</a>
-            <a href="https://linktr.ee/YourFlightLineLink" class="px-5 py-3 rounded-2xl border border-gray-300 hover:border-black" target="_blank" rel="noopener">Support via Linktree</a>
+            <a href="https://linktr.ee/YourFlightLineLink" target="_blank" rel="noopener" class="px-5 py-3 rounded-2xl border">Support via Linktree</a>
           </div>
         </div>
 
-        <div class="p-6 bg-white rounded-3xl border border-gray-200 shadow-sm">
+        <div class="p-6 bg-white rounded-3xl border shadow-sm">
           <h2 class="text-base font-semibold">Enhance your workflow with extensions</h2>
           <p class="mt-1 text-sm text-gray-600">Tools from the community and partners to simplify tasks and automate processes.</p>
-          <input type="search" placeholder="Search Marketplace" class="mt-4 w-full rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black" />
+          <input type="search" placeholder="Search Marketplace" class="mt-4 w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black" />
           <div class="mt-4 rounded-xl bg-yellow-50 border border-yellow-200 p-4 text-sm text-yellow-900">
             <strong>Warning:</strong> GitHub Copilot Extensions will be deprecated on <strong>November 10, 2025</strong> in favor of MCP.
           </div>
@@ -76,6 +74,93 @@
       </div>
     </section>
 
-    <!-- Models -->
-    <section id="models" class="py-14">
-      <div class="max-w-7xl mx-auto px-4 sm:
+    <!-- GATES -->
+    <section id="gates" class="py-16 bg-white border-y">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-6">
+          <h2 class="text-2xl font-bold">Gates</h2>
+          <a href="gates" class="text-sm underline">Open full Gates directory</a>
+        </div>
+        <p class="mt-2 text-gray-600">Every ZIP = Runway. Each Gate is a leaseable digital location.</p>
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a href="gates/38103" class="block rounded-2xl border p-5 hover:shadow-sm">
+            <h3 class="font-semibold">Gate 38103 — Downtown</h3>
+            <p class="text-sm text-gray-600">City Hall • FedEx Forum • Beale Street</p>
+          </a>
+          <a href="gates/38104" class="block rounded-2xl border p-5 hover:shadow-sm">
+            <h3 class="font-semibold">Gate 38104 — Midtown</h3>
+            <p class="text-sm text-gray-600">Overton Square • Cooper-Young • Central HS</p>
+          </a>
+          <a href="gates/38109" class="block rounded-2xl border p-5 hover:shadow-sm">
+            <h3 class="font-semibold">Gate 38109 — Whitehaven</h3>
+            <p class="text-sm text-gray-600">Graceland • Elvis Presley Blvd</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold">About</h2>
+        <p class="mt-3 text-gray-700">FlightLine Memphis DC is the nerve center. Each ZIP becomes a runway; scans are proofs; payments are public.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 bg-gray-50 border-t">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold">Contact</h2>
+        <form class="mt-6 grid gap-4" action="contact" method="POST">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium">Name</label>
+              <input type="text" required class="mt-1 w-full rounded-xl border px-3 py-2">
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input type="email" required class="mt-1 w-full rounded-xl border px-3 py-2">
+            </div>
+          </div>
+          <label class="block text-sm font-medium">Message</label>
+          <textarea rows="5" class="mt-1 w-full rounded-xl border px-3 py-2"></textarea>
+          <div class="flex items-center justify-between">
+            <p class="text-xs text-gray-500">We’ll get back within 2–3 business days.</p>
+            <button class="rounded-2xl bg-black text-white px-4 py-2">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+      <div>
+        <p class="font-semibold">FlightLine — Memphis DC</p>
+        <p class="text-gray-600 mt-1">© 2025 FlightLine. All rights reserved.</p>
+      </div>
+      <nav class="grid grid-cols-2 gap-3">
+        <a href="terms" class="underline">Terms</a>
+        <a href="privacy" class="underline">Privacy</a>
+        <a href="security" class="underline">Security</a>
+        <a href="status" class="underline">Status</a>
+        <a href="docs" class="underline">Docs</a>
+        <a href="contact" class="underline">Contact</a>
+      </nav>
+      <div>
+        <p class="text-gray-600">Manage cookies</p>
+        <div class="mt-2 flex gap-2">
+          <a href="cookies" class="px-3 py-1.5 rounded-xl border">Settings</a>
+          <a href="cookies/accept" class="px-3 py-1.5 rounded-xl bg-black text-white">Accept</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn?.addEventListener('click', () => nav.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
