@@ -1,23 +1,29 @@
 main:
-  - title: Gates
-    url: https://www.google.com/maps/d/viewer?mid=1m5gy-1w5Ifr9kcIGHMhiUzCWM3fkEEc&usp=sharing
-    external: true
+  - title: "Home"
+    url: "/"
+  - title: "Gates"
+    url: "/gates/"
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
 
-  - title: Covenants
-    url: /covenants/
-
-  - title: About
-    url: https://suno.com/s/ETPsIp2IKJuOkkmq
-    external: true
-
-  - title: Contact
-  url: "mailto:taylor@theflightlinehq.com?subject=FlightLine%20HQ%20Inquiry"
-  external: true
-
-  - title: Memphis DC Capital
-    url: https://www.google.com/maps/d/u/0/edit?mid=1IkYcGhF3GuFwgGjruV-n3mX61Gm7XgA&usp=sharing
-    external: true
-
-  - title: Division HQ — Hopkinsville, KY
-    url: https://linktr.ee/FlightLineofHopkinsvilleKY?utm_source=linktree_profile_share&ltsid=09c75ef7-79d3-436c-bdcc-18c9b704b38a
-    external: true
+cta:
+  - title: "OASIS"
+    url: "https://linktr.ee/O.A.S.I.S"
+  - title: "Angel’s Kitchen"
+    url: "https://linktr.ee/Angel.Kitchen.1130.Lunch.Break"
+  - title: "Lightning Node Family Trust"
+    url: "https://linktr.ee/LIGHTNING.NODE.FAMILY.TRUST"
+  - title: "Support FlightLine"
+    url: "https://linktr.ee/QRF_Code_Veterans"
+  - title: "Support"
+    url: "https://linktr.ee/QRF_Code_Veterans"
+  - title: "Subscribe"
+    url: "https://www.generalbytes.com/en/products/batmfour"
+  - title: "Download"
+    url: "/downloads/"
+  - title: "Community"
+    url: "https://linktr.ee/WalkTheWorld"
+  - title: "Course"
+    url: "https://linktr.ee/_A_FIT_A_WEEK_"
