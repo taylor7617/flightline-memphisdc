@@ -1,13 +1,9 @@
-title: "FlightLine — Memphis DC"
-description: "Capital of NetTopia — public runway"
+# Jekyll site config (only the important lines shown)
+title: FlightLine — Memphis DC
+email: msrja9@gmail.com
+description: "Every ZIP = Runway. Every Scan = Proof. Every Payment = Public."
+url: "https://taylor7617.github.io"        # your GitHub Pages root
+baseurl: "/flightline-memphisdc"           # MUST match repo name
 theme: minima
-markdown: kramdown
 plugins:
-  - jekyll-seo-tag
-exclude:
-  - node_modules
-  - vendor
-  - .github
-  - README.md
-  - Repo Structure
-  
+  - jekyll-feed
