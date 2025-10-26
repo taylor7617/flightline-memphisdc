@@ -162,3 +162,12 @@ a:focus-visible, button:focus-visible{
   .cta-wrap{ top:calc(var(--nav-h) - 2px); } /* keep snug under nav */
 }
 
+
+/* FlightLine hero + gates grid */
+.hero { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+.hero img { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+
+.gates-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); gap:16px; margin: 20px 16px; }
+.gate-card { display:block; text-decoration:none; border:1px solid #eee; border-radius:12px; overflow:hidden; background:#fff; }
+.gate-card img { width:100%; display:block; }
+.gate-card figcaption { padding: 10px 12px; font-weight:600; background:#fff; }
