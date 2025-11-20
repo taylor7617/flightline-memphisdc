@@ -2,165 +2,317 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <title>FlightLine Memphis DC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FlightLine — Memphis DC</title>
-  <meta name="description" content="Every ZIP = Runway. Every Scan = Proof. Every Payment = Public." />
-  <!-- Works on GitHub Pages project URL -->
-  <base href="/flightline-memphisdc/">
+  <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>html{scroll-behavior:smooth}</style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <!-- NAV -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="#home" class="flex items-center gap-2 font-semibold">
-          <span class="inline-block rounded-md bg-black text-white text-xs px-2 py-1">Memphis DC</span>
-          <span class="hidden sm:block">FlightLine</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#home">Home</a>
-          <a href="#gates">Gates</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="hidden md:flex items-center gap-2">
-          <a href="support"   class="px-3 py-1.5 rounded-xl border">Support</a>
-          <a href="subscribe" class="px-3 py-1.5 rounded-xl border">Subscribe</a>
-          <a href="download"  class="px-3 py-1.5 rounded-xl border">Download</a>
-          <a href="community" class="px-3 py-1.5 rounded-xl border">Community</a>
-          <a href="course"    class="px-3 py-1.5 rounded-xl border">Course</a>
-        </div>
-        <button id="menuBtn" class="md:hidden rounded-xl border px-3 py-2">Menu</button>
+<body class="bg-slate-950 text-slate-100">
+  <!-- NAVBAR -->
+  <header class="border-b border-slate-800 bg-slate-950/90 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-lg tracking-wide">
+        🛫 FlightLine Memphis DC
       </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#home" class="hover:text-cyan-300">Home</a>
+        <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
+        <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
+        <a href="#book-session" class="hover:text-cyan-300">Book Session</a>
+        <a href="#contact" class="hover:text-cyan-300">Contact</a>
+      </nav>
+      <button id="mobileNavToggle" class="md:hidden inline-flex items-center justify-center rounded-full border border-slate-700 px-3 py-1 text-xs">
+        Menu
+      </button>
     </div>
-    <nav id="mobileNav" class="md:hidden hidden border-t border-gray-200">
-      <div class="px-4 py-3 grid grid-cols-2 gap-3 text-sm">
-        <a href="#home" class="px-3 py-2 rounded-lg bg-gray-100">Home</a>
-        <a href="#gates" class="px-3 py-2 rounded-lg bg-gray-100">Gates</a>
-        <a href="#about" class="px-3 py-2 rounded-lg bg-gray-100">About</a>
-        <a href="#contact" class="px-3 py-2 rounded-lg bg-gray-100">Contact</a>
-        <a href="support" class="px-3 py-2 rounded-lg bg-gray-100">Support</a>
-        <a href="subscribe" class="px-3 py-2 rounded-lg bg-gray-100">Subscribe</a>
-        <a href="download" class="px-3 py-2 rounded-lg bg-gray-100">Download</a>
-        <a href="community" class="px-3 py-2 rounded-lg bg-gray-100">Community</a>
-        <a href="course" class="px-3 py-2 rounded-lg bg-gray-100">Course</a>
+    <!-- Mobile nav -->
+    <nav id="mobileNav" class="md:hidden hidden border-t border-slate-800 bg-slate-950">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#home" class="hover:text-cyan-300">Home</a>
+        <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
+        <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
+        <a href="#book-session" class="hover:text-cyan-300">Book Session</a>
+        <a href="#contact" class="hover:text-cyan-300">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main id="home" class="min-h-[60vh]">
+  <main class="max-w-6xl mx-auto px-4 pb-16">
     <!-- HERO -->
-    <section class="py-16 sm:py-24 bg-gradient-to-b from-white to-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+    <section id="home" class="pt-10 pb-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight">FlightLine — Memphis DC</h1>
-          <p class="mt-4 text-lg text-gray-700">Every ZIP = Runway. Every Scan = Proof. Every Payment = Public.</p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#gates" class="px-5 py-3 rounded-2xl bg-black text-white font-medium">Start at Gates</a>
-            <a href="https://linktr.ee/YourFlightLineLink" target="_blank" rel="noopener" class="px-5 py-3 rounded-2xl border">Support via Linktree</a>
+          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
+            FlightLine Memphis DC<br/>
+            <span class="text-cyan-300">Digital Real Estate & Airport Grid</span>
+          </h1>
+          <p class="text-sm md:text-base text-slate-300 mb-4">
+            A live digital infrastructure for dreamers, agents, operators, and airports.
+            DSX Packs fund motion. Gates lease corridors. Strategy sessions align your seat
+            on the 🛫 FlightLine.
+          </p>
+          <div class="flex flex-wrap gap-3 mt-2">
+            <a href="#dsx-packs" class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500 text-slate-950 text-sm font-semibold">
+              View DSX Packs
+            </a>
+            <a href="#flightline-gates" class="inline-flex items-center px-4 py-2 rounded-full border border-cyan-500 text-cyan-300 text-sm font-semibold">
+              Explore Gates
+            </a>
+            <a href="#book-session" class="inline-flex items-center px-4 py-2 rounded-full border border-slate-600 text-sm">
+              Book a Strategy Session
+            </a>
           </div>
         </div>
-
-        <div class="p-6 bg-white rounded-3xl border shadow-sm">
-          <h2 class="text-base font-semibold">Enhance your workflow with extensions</h2>
-          <p class="mt-1 text-sm text-gray-600">Tools from the community and partners to simplify tasks and automate processes.</p>
-          <input type="search" placeholder="Search Marketplace" class="mt-4 w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black" />
-          <div class="mt-4 rounded-xl bg-yellow-50 border border-yellow-200 p-4 text-sm text-yellow-900">
-            <strong>Warning:</strong> GitHub Copilot Extensions will be deprecated on <strong>November 10, 2025</strong> in favor of MCP.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GATES -->
-    <section id="gates" class="py-16 bg-white border-y">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between gap-6">
-          <h2 class="text-2xl font-bold">Gates</h2>
-          <a href="gates" class="text-sm underline">Open full Gates directory</a>
-        </div>
-        <p class="mt-2 text-gray-600">Every ZIP = Runway. Each Gate is a leaseable digital location.</p>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="gates/38103" class="block rounded-2xl border p-5 hover:shadow-sm">
-            <h3 class="font-semibold">Gate 38103 — Downtown</h3>
-            <p class="text-sm text-gray-600">City Hall • FedEx Forum • Beale Street</p>
-          </a>
-          <a href="gates/38104" class="block rounded-2xl border p-5 hover:shadow-sm">
-            <h3 class="font-semibold">Gate 38104 — Midtown</h3>
-            <p class="text-sm text-gray-600">Overton Square • Cooper-Young • Central HS</p>
-          </a>
-          <a href="gates/38109" class="block rounded-2xl border p-5 hover:shadow-sm">
-            <h3 class="font-semibold">Gate 38109 — Whitehaven</h3>
-            <p class="text-sm text-gray-600">Graceland • Elvis Presley Blvd</p>
-          </a>
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40">
+          <h2 class="font-semibold text-lg mb-2">What This Page Does</h2>
+          <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
+            <li>Lets you purchase DSX Packs via Stripe.</li>
+            <li>Lists FlightLine Gates for leasing infrastructure.</li>
+            <li>Lets clients book live sessions (virtual or in person).</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="py-16">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold">About</h2>
-        <p class="mt-3 text-gray-700">FlightLine Memphis DC is the nerve center. Each ZIP becomes a runway; scans are proofs; payments are public.</p>
-      </div>
+    <!-- ========================= -->
+    <!--  DSX PACKS & GATES BLOCK  -->
+    <!-- ========================= -->
+
+    <section id="dsx-packs" class="mt-8 mb-10 border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
+      <h2 class="text-2xl font-bold text-center mb-1">DiGi Snax PACK</h2>
+      <p class="text-center text-sm text-slate-300 mb-4">
+        <strong>FlightLine DSX Wallet | DSX Credits</strong>
+      </p>
+
+      <h3 class="text-lg font-semibold mb-2">DSX Packs</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <strong>DSX Pack 01 – Starter</strong> — $1.00 USD<br/>
+          <a href="https://buy.stripe.com/dRm4gAaM75G09jJ92r7g405" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 01</a>
+        </li>
+        <li>
+          <strong>DSX Pack 02 – Local Ops</strong> — $5.00 USD<br/>
+          <a href="https://buy.stripe.com/aFa8wQf2n4BW0Nd3I77g406" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 02</a>
+        </li>
+        <li>
+          <strong>DSX Pack 03 – Corridor Builder</strong> — $10.00 USD<br/>
+          <a href="https://buy.stripe.com/14AaEY4nJgkEfI75Qf7g407" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 03</a>
+        </li>
+        <li>
+          <strong>DSX Pack 04 – City Runner</strong> — $25.00 USD<br/>
+          <a href="https://buy.stripe.com/8x228sf2nb0keE30vV7g408" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 04</a>
+        </li>
+        <li>
+          <strong>DSX Pack 05 – Regional Motion</strong> — $50.00 USD<br/>
+          <a href="https://buy.stripe.com/28E3cw07t1pK3Zp5Qf7g409" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 05</a>
+        </li>
+        <li>
+          <strong>DSX Pack 06 – Network Builder</strong> — $100.00 USD<br/>
+          <a href="https://buy.stripe.com/3cIeVecUffgAgMb92r7g40a" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 06</a>
+        </li>
+        <li>
+          <strong>DSX Pack 07 – Mission Ops</strong> — $250.00 USD<br/>
+          <a href="https://buy.stripe.com/9B600kbQb3xS1RhguT7g40d" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 07</a>
+        </li>
+        <li>
+          <strong>DSX Pack 08 – Layer Fuel</strong> — $500.00 USD<br/>
+          <a href="https://buy.stripe.com/eVq5kEf2ngkE8fF0vV7g40e" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 08</a>
+        </li>
+        <li>
+          <strong>DSX Pack 09 – Univercity Tier</strong> — $1,000.00 USD<br/>
+          <a href="https://buy.stripe.com/7sY4gAaM75G09jJ6Uj7g40f" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 09</a>
+        </li>
+        <li>
+          <strong>DSX Pack 10 – Googol</strong> — $10,000.00 USD<br/>
+          <a href="https://buy.stripe.com/dRm9AU3jF7O89jJemL7g40g" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 10</a>
+        </li>
+      </ul>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="py-16 bg-gray-50 border-t">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold">Contact</h2>
-        <form class="mt-6 grid gap-4" action="contact" method="POST">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium">Name</label>
-              <input type="text" required class="mt-1 w-full rounded-xl border px-3 py-2">
-            </div>
-            <div>
-              <label class="block text-sm font-medium">Email</label>
-              <input type="email" required class="mt-1 w-full rounded-xl border px-3 py-2">
-            </div>
-          </div>
-          <label class="block text-sm font-medium">Message</label>
-          <textarea rows="5" class="mt-1 w-full rounded-xl border px-3 py-2"></textarea>
-          <div class="flex items-center justify-between">
-            <p class="text-xs text-gray-500">We’ll get back within 2–3 business days.</p>
-            <button class="rounded-2xl bg-black text-white px-4 py-2">Send</button>
-          </div>
-        </form>
-      </div>
+    <section id="flightline-gates" class="mb-10 border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
+      <h2 class="text-2xl font-bold text-center mb-4">FlightLine Gates</h2>
+
+      <h3 class="text-lg font-semibold mb-2">Gate G17 – G13 Special Command</h3>
+      <ul class="space-y-2 text-sm mb-4">
+        <li>
+          <strong>✈️ G17 — CLEARSCi Brigade | Comms &amp; Broadcast</strong> — $2,600.00 USD<br/>
+          <a href="https://buy.stripe.com/4gMeVe1bx8Sc9jJ5Qf7g40h" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G17</a>
+        </li>
+        <li>
+          <strong>✈️ G16f — System Wing | S6 – Cyber &amp; Communications</strong> — $200.00 USD<br/>
+          <a href="https://buy.stripe.com/fZueVe9I3b0k8fFemL7g40i" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16f</a>
+        </li>
+        <li>
+          <strong>✈️ G16e — System Wing | S5 – Plan &amp; Policy</strong> — $200.00 USD<br/>
+          <a href="https://buy.stripe.com/00w9AU1bx1pK1Rh6Uj7g40j" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16e</a>
+        </li>
+        <li>
+          <strong>✈️ G16d — System Wing | S4 – Logistics &amp; Supply</strong> — $200.00 USD<br/>
+          <a href="https://buy.stripe.com/9B6eVebQbfgA9jJ6Uj7g40k" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16d</a>
+        </li>
+        <li>
+          <strong>✈️ G16c — System Wing | S3 – Operations &amp; Training</strong> — $200.00 USD<br/>
+          <a href="https://buy.stripe.com/7sY5kE1bxb0kgMb3I77g40l" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16c</a>
+        </li>
+        <li>
+          <strong>✈️ G16b — System Wing | S2 – Intelligence &amp; Security</strong> — $200.00 USD<br/>
+          <a href="https://buy.stripe.com/8x26oI07t5G0eE37Yn7g40m" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16b</a>
+        </li>
+        <li>
+          <strong>✈️ G16a — System Wing | S1 – Personal &amp; Admin</strong> — $200.00 USD<br/>
+          <a href="https://buy.stripe.com/8x26oI07t5G0eE37Yn7g40m" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16a</a>
+        </li>
+        <li>
+          <strong>✈️ G16 — Skyline Squadron</strong> — $200.00 USD<br/>
+          <a href="https://buy.stripe.com/eVq00k8DZ9WgbrRfqP7g40o" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16</a>
+        </li>
+        <li>
+          <strong>✈️ G15 — Wolfpack Training Grid</strong> — $39.00 USD / month<br/>
+          <a href="https://buy.stripe.com/fZu14o5rN7O8fI7fqP7g40q" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G15</a>
+        </li>
+        <li>
+          <strong>✈️ G14 — The Keith Ledger | World Engine</strong> — $99.00 USD / month<br/>
+          <a href="https://buy.stripe.com/9B65kE1bx5G0brR1zZ7g40p" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G14</a>
+        </li>
+        <li>
+          <strong>✈️ G13 — OASIS Outernet Launchpad (Layer 0)</strong> — $10,000.00 USD<br/>
+          <a href="https://buy.stripe.com/aFa5kE07tfgA1Rha6v7g40r" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G13</a>
+        </li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mb-2">Gate G11 – G12 Family Gates</h3>
+      <ul class="space-y-2 text-sm mb-4">
+        <li>
+          <strong>✈️ G12 — Da’Mani Spark Gate | #17</strong> — $7,060.00 USD / month<br/>
+          <a href="https://buy.stripe.com/aFa7sM9I34BW53t0vV7g40s" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G12</a>
+        </li>
+        <li>
+          <strong>✈️ G11 — Dezeraé Guardian Gate | #16</strong> — $5,150.00 USD<br/>
+          <a href="https://buy.stripe.com/bJe7sMcUf5G08fFfqP7g40t" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G11</a>
+        </li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mb-2">Gates G10a – G10d | NETTOPIA University</h3>
+      <ul class="space-y-2 text-sm mb-4">
+        <li>
+          <strong>✈️ G10D — NETTOPIA University | Hangar 4 (Duality Eng.)</strong> — $2,497.00 USD / month<br/>
+          <a href="https://buy.stripe.com/cNifZicUfgkEdzZ7Yn7g40u" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10D</a>
+        </li>
+        <li>
+          <strong>✈️ G10C — NETTOPIA University | Hangar 3 (Automation &amp; Mycelium)</strong> — $1,997.00 USD / month<br/>
+          <a href="https://buy.stripe.com/fZu6oI2fB4BW53t4Mb7g40v" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10C</a>
+        </li>
+        <li>
+          <strong>✈️ G10B — NETTOPIA University | Hangar 2 (BTC Engineering)</strong> — $1,497.00 USD / month<br/>
+          <a href="https://buy.stripe.com/9B600kf2nfgA67xceD7g40w" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10B</a>
+        </li>
+        <li>
+          <strong>✈️ G10A — NETTOPIA University | Hangar 1 (Digital Architecture)</strong> — $997.00 USD / month<br/>
+          <a href="https://buy.stripe.com/eVq28sf2nb0k3ZpguT7g40x" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10A</a>
+        </li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mb-2">Gates G7 – G9 | NETTOPIA University</h3>
+      <ul class="space-y-2 text-sm mb-4">
+        <li>
+          <strong>✈️ G9 — NETTOPIA Digital City Builder</strong> — $15,000.00 USD<br/>
+          <a href="https://buy.stripe.com/3cI9AUaM70lGeE3fqP7g40y" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G9</a>
+        </li>
+        <li>
+          <strong>✈️ G8 — Lightning Node Family Trust</strong> — $500.00 USD<br/>
+          <a href="https://buy.stripe.com/eVqfZi3jF6K4eE32E37g40z" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G8</a>
+        </li>
+        <li>
+          <strong>✈️ G7 — BTC Traveler Gridband</strong> — $4,997.00 USD<br/>
+          <a href="https://buy.stripe.com/cNi3cwdYj7O83Zpbaz7g40A" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G7</a>
+        </li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mb-2">Gates G6c – G6a | Terminals</h3>
+      <ul class="space-y-2 text-sm mb-4">
+        <li>
+          <strong>✈️ G6C — Terminal T3 (Enterprise Deploy)</strong> — $9,997.00 USD<br/>
+          <a href="https://buy.stripe.com/aFa8wQ8DZ4BW9jJemL7g40F" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G6C</a>
+        </li>
+        <li>
+          <strong>✈️ G6B — Terminal T2 (BTC Alignment)</strong><br/>
+          <a href="https://buy.stripe.com/00wdRa4nJ4BWbrR3I77g40E" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G6B</a>
+        </li>
+        <li>
+          <strong>✈️ G6A — Terminal T1 (Regional Command)</strong> — $1,497.00 USD / year<br/>
+          <a href="https://buy.stripe.com/6oU6oI1bx7O853tbaz7g40H" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G6A</a>
+        </li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mb-2">Gates G1 – G5 | World Gates</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <strong>✈️ G5 — Airport Leasing Gate</strong> — $7,500.00 USD<br/>
+          <a href="https://buy.stripe.com/3cIeVeg6r9WgeE37Yn7g40I" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G5</a>
+        </li>
+        <li>
+          <strong>✈️ G4 — Dreamer Gate (World Builders)</strong> — $25,000.00 USD<br/>
+          <a href="https://buy.stripe.com/3cI8wQ6vR0lGcvV1zZ7g40J" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G4</a>
+        </li>
+        <li>
+          <strong>✈️ G3 — Agent Gate</strong> — $35,000.00 USD<br/>
+          <a href="https://buy.stripe.com/9B69AU07t6K41Rh5Qf7g40K" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G3</a>
+        </li>
+        <li>
+          <strong>✈️ Gate 2 — Operator Gate</strong> — $50,000.00 USD<br/>
+          <a href="https://buy.stripe.com/28E7sM3jFd8sdzZ1zZ7g40L" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access Gate 2</a>
+        </li>
+        <li>
+          <strong>✈️ Gate 1 — FOUNDERS GATE</strong> — $1,000.00 USD<br/>
+          <a href="https://buy.stripe.com/4gMfZi9I34BW8fFceD7g40M" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access Gate 1</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ====================== -->
+    <!--  BOOKING / CALENDLY   -->
+    <!-- ====================== -->
+
+    <section id="book-session" class="mb-10 border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
+      <h2 class="text-2xl font-bold text-center mb-3">Book a FlightLine Strategy Session</h2>
+      <p class="text-sm text-slate-300 text-center mb-4">
+        Meet with me live (virtual or in person) to design your position on the FlightLine.<br/>
+        Pick a time, complete payment, and receive an instant Zoom/Meet link.
+      </p>
+      <p class="text-center mt-4">
+        <!-- TODO: Replace YOUR-CALENDLY-LINK with your real booking URL -->
+        <a href="https://calendly.com/YOUR-CALENDLY-LINK" target="_blank" rel="noopener noreferrer"
+           class="inline-block px-6 py-3 rounded-full bg-cyan-500 text-slate-950 font-semibold text-sm">
+          Schedule a FlightLine Session
+        </a>
+      </p>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <section id="contact" class="border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
+      <h2 class="text-xl font-bold mb-2">Contact</h2>
+      <p class="text-sm text-slate-300 mb-2">
+        For custom arrangements, partnerships, or airport / real estate ops:
+      </p>
+      <p class="text-sm">
+        Email: <a href="mailto:your-email@example.com" class="text-cyan-300 underline">your-email@example.com</a><br/>
+        Location: Hopkinsville, KY – Memphis DC corridor
+      </p>
     </section>
   </main>
 
-  <footer class="py-10 text-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
-      <div>
-        <p class="font-semibold">FlightLine — Memphis DC</p>
-        <p class="text-gray-600 mt-1">© 2025 FlightLine. All rights reserved.</p>
-      </div>
-      <nav class="grid grid-cols-2 gap-3">
-        <a href="terms" class="underline">Terms</a>
-        <a href="privacy" class="underline">Privacy</a>
-        <a href="security" class="underline">Security</a>
-        <a href="status" class="underline">Status</a>
-        <a href="docs" class="underline">Docs</a>
-        <a href="contact" class="underline">Contact</a>
-      </nav>
-      <div>
-        <p class="text-gray-600">Manage cookies</p>
-        <div class="mt-2 flex gap-2">
-          <a href="cookies" class="px-3 py-1.5 rounded-xl border">Settings</a>
-          <a href="cookies/accept" class="px-3 py-1.5 rounded-xl bg-black text-white">Accept</a>
-        </div>
-      </div>
-    </div>
+  <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
+    © <span id="year"></span> FlightLine Memphis DC · All Rights Reserved
   </footer>
 
   <script>
-    const btn = document.getElementById('menuBtn');
+    // Mobile nav toggle
+    const btn = document.getElementById('mobileNavToggle');
     const nav = document.getElementById('mobileNav');
     btn?.addEventListener('click', () => nav.classList.toggle('hidden'));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
