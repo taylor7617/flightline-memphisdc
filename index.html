@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="FlightLine Memphis DC is the capital node of NETTOPIA: a digital real estate and airport grid with DSX Packs, Gates, BTC Travel, a three-layer Proof Stack, and 24/7 FlightLine Radio. Every ZIP = Runway. Every Scan = Proof. Every Payment = Public."
+    content="FlightLine Memphis DC is the capital node of NETTOPIA: a digital real estate and airport grid with DSX Packs, Gates, BTC Travel, and a three-layer Proof Stack. Every ZIP = Runway. Every Scan = Proof. Every Payment = Public."
   />
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -124,7 +124,6 @@
         <a href="#proof-stack" class="hover:text-cyan-300">Proof Stack</a>
         <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
         <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
-        <a href="#flightline-radio" class="hover:text-cyan-300">FlightLine Radio</a>
         <a href="#book-session" class="hover:text-cyan-300">FlightLine P.C. Meeting</a>
         <a href="#contact" class="hover:text-cyan-300">Contact</a>
       </nav>
@@ -143,29 +142,31 @@
         <a href="#proof-stack" class="hover:text-cyan-300">Proof Stack</a>
         <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
         <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
-        <a href="#flightline-radio" class="hover:text-cyan-300">FlightLine Radio</a>
         <a href="#book-session" class="hover:text-cyan-300">FlightLine P.C. Meeting</a>
         <a href="#contact" class="hover:text-cyan-300">Contact</a>
       </div>
     </nav>
   </header>
 
-  <!-- "WHAT THIS PAGE DOES" BLIMP BANNER -->
-  <div class="border-b border-slate-800 bg-slate-900/80 scan-bar">
-    <div class="max-w-6xl mx-auto px-4 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-[11px] md:text-xs">
-      <div class="font-semibold text-slate-200 tracking-[0.18em] uppercase">
-        What This Page Does
+  <main class="max-w-6xl mx-auto px-4 pb-16">
+    <!-- GLOBAL WHAT THIS PAGE DOES BANNER -->
+    <section class="pt-4">
+      <div class="board-frame rounded-2xl border border-slate-800 bg-slate-900/80 px-4 py-3 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div>
+          <p class="text-[11px] tracking-[0.25em] uppercase text-slate-400">
+            What This Page Does
+          </p>
+          <p class="text-xs md:text-sm text-slate-200">
+            Shows DSX Packs as a motion credit board, lists FlightLine Gates like a departures screen,
+            exposes the three-layer Proof Stack, and routes you into Memphis DC maps, calls, and custody lanes.
+          </p>
+        </div>
+        <div class="text-[10px] text-slate-400 md:text-right">
+          <p>Every ZIP = Runway · Every Scan = Proof · Every Payment = Public.</p>
+        </div>
       </div>
-      <div class="text-slate-300 flex flex-wrap gap-x-4 gap-y-1">
-        <span>• Shows DSX Packs as a digital credit board for motion</span>
-        <span>• Lists FlightLine Gates like an airport departures screen</span>
-        <span>• Exposes the three-layer Proof Stack for scans, movement, and custody</span>
-        <span>• Adds FlightLine Radio + Universal Parking Deck for 24/7 waiting room flow</span>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <main class="max-w-6xl mx-auto px-4 pb-20 pt-4">
     <!-- HERO -->
     <section id="home" class="pt-6 pb-12">
       <div class="grid md:grid-cols-2 gap-8 items-start">
@@ -176,11 +177,11 @@
           </h1>
           <p class="text-sm md:text-base text-slate-300 mb-2">
             Memphis DC | Capital of NETTOPIA — Googol-level covenant hub with CUDA pilot engine,
-            QR maps, streaming rules, a motion-proof ledger, and 24/7 FlightLine Radio.
+            QR maps, streaming rules, and a motion-proof ledger.
           </p>
           <p class="text-xs md:text-sm text-slate-400 mb-4">
-            Every ZIP = Runway. Every Scan = Proof. Every Payment = Public.
-            DSX Packs fund motion. Gates lease corridors. P.C. Meetings lock in your seat on the 🛫 FlightLine.
+            DSX Packs fund motion. Gates lease corridors. Proof Stack turns every move into Flight Papers that
+            can stand in any boardroom or courtroom.
           </p>
 
           <!-- Mini "terminal ticker" for sections -->
@@ -215,11 +216,6 @@
                 <span class="truncate">Leasing &amp; Corridors</span>
                 <span class="text-right text-yellow-300">G1–G17</span>
               </div>
-              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#flightline-radio'">
-                <span>RADIO</span>
-                <span class="truncate">Anthem · Corridors · Parking Deck</span>
-                <span class="text-right text-yellow-300">FL-R</span>
-              </div>
               <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#book-session'">
                 <span>P.C. MEETING</span>
                 <span class="truncate">Production &amp; Creation</span>
@@ -246,7 +242,7 @@
           </div>
         </div>
 
-        <!-- Right column: Motion Court + NETTOPIA Maps + Tower Guard -->
+        <!-- Right column: Motion Court + NETTOPIA Map Grid + Tower Guard -->
         <div class="space-y-4">
           <!-- MOTION COURT CARD -->
           <div class="border border-emerald-300/70 rounded-2xl bg-slate-950/90 board-frame overflow-hidden">
@@ -272,25 +268,19 @@
               <div class="px-4 pb-3 pt-1 text-xs text-slate-300">
                 <p>
                   <span class="font-semibold text-emerald-300">Tower View:</span>
-                  DSX Packs, Gates, BTC paths, and FlightLine Radio form a single auditable ledger —
-                  the <span class="font-semibold">Flight Papers</span> for the Memphis DC / NETTOPIA era.
+                  DSX Packs, Gates, and BTC paths form a single auditable ledger — the
+                  <span class="font-semibold">Flight Papers</span> for the Memphis DC / NETTOPIA era.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- GRID OF NETTOPIA MAPS -->
-          <div class="mt-1 space-y-2">
-            <div>
-              <h2 class="text-sm font-semibold text-cyan-300 tracking-[0.18em] uppercase">
-                Grid of NETTOPIA · Live Maps
-              </h2>
-              <p class="text-[11px] text-slate-400">
-                Five live maps wired to Memphis DC: arrivals, departures, field ops, BTC routes, and O.A.S.I.S. sanctuary.
-              </p>
-            </div>
-
-            <div class="grid gap-3 max-w-md">
+          <!-- NETTOPIA GRID MAPS -->
+          <div>
+            <h2 class="font-semibold text-sm text-slate-200 mb-2">
+              NETTOPIA Grid · Live Maps from Memphis DC
+            </h2>
+            <div class="mt-1 grid gap-3 max-w-md">
               <!-- ARRIVALS: Memphis DC · Angel's Kitchen · QRF -->
               <a
                 href="https://linktr.ee/QRF_Code_Veterans"
@@ -377,7 +367,7 @@
 
               <!-- O.A.S.I.S. FROM ANGEL'S KITCHEN -->
               <a
-                href="https://linktr.ee/O.A.S.I.S"
+                href="https://linktr.ee/O.A.S.I.S."
                 target="_blank"
                 rel="noopener noreferrer"
                 class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-indigo-400 hover:bg-slate-900/90 transition"
@@ -437,8 +427,8 @@
           <span class="text-cyan-300">Every Scan = Proof · Proof in the Movement · Unbroken Custody.</span>
         </p>
         <p class="text-xs md:text-sm text-slate-400 max-w-2xl mx-auto mt-2">
-          Each layer has its own intake form for the tower: scan events (front), movement (middle), and custody (back-end).
-          Together they feed the maps above and form the Flight Papers for any city, client, or campaign on the grid.
+          Each layer is wired to its own log: scans (front), movement (middle), and custody (back-end).
+          Together they form the Flight Papers for any city, client, or campaign on the grid.
         </p>
       </div>
 
@@ -464,14 +454,12 @@
               Front-of-house verification: guests, agents, products, and payments all arrive through a scan.
               Each scan writes a verifiable event you can show to partners, auditors, or courts.
             </p>
-            <!-- TODO: replace href with your actual Google Form for scan log -->
             <a
-              href="https://docs.google.com/forms/d/YOUR_SCAN_LOG_FORM_ID_HERE/viewform"
+              href="https://docs.google.com/forms/d/e/SCAN_LOG_FORM_ID/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open scan log for Every Scan equals Proof"
               class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-cyan-500 text-slate-950 text-xs font-semibold"
-              data-stack="scan-log"
             >
               Open Scan Log
             </a>
@@ -499,14 +487,12 @@
               Mid-layer telemetry: every corridor between cities and towers is logged,
               so expansion is always tied to real movement — not just plans or slides.
             </p>
-            <!-- TODO: replace href with your actual Google Form for motion ledger -->
             <a
-              href="https://docs.google.com/forms/d/YOUR_MOTION_LEDGER_FORM_ID_HERE/viewform"
+              href="https://docs.google.com/forms/d/e/MOTION_LEDGER_FORM_ID/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View motion ledger for routes and leases"
               class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-indigo-500 text-slate-50 text-xs font-semibold"
-              data-stack="motion-ledger"
             >
               View Motion Ledger
             </a>
@@ -534,14 +520,12 @@
               Back-end assurance: who held what, when, and where is never a mystery.
               Custody is continuous from Memphis DC, through the towers, and out into NETTOPIA.
             </p>
-            <!-- TODO: replace href with your actual Google Form for custody register -->
             <a
-              href="https://docs.google.com/forms/d/YOUR_CUSTODY_REGISTER_FORM_ID_HERE/viewform"
+              href="https://docs.google.com/forms/d/e/CUSTODY_REGISTER_FORM_ID/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open BTC Traveler custody register"
               class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-emerald-500 text-slate-950 text-xs font-semibold"
-              data-stack="custody-register"
             >
               BTC Traveler · Check-In / Out
             </a>
@@ -723,7 +707,7 @@
           Gates are leased corridors on the grid — storefronts, neighborhoods, cities, regions, and beyond.
         </p>
         <p class="text-xs md:text-sm text-slate-400 max-w-2xl mx-auto mt-2">
-          Each gate can be tied to a DSX Pack, Proof Stack forms, and NETTOPIA maps, so every campaign, city, and partner has a clear lane.
+          Each gate can be tied to a DSX Pack and Proof Stack logs, so every campaign, city, and partner has a clear lane.
         </p>
       </div>
 
@@ -833,9 +817,181 @@
       </div>
 
       <p class="mt-3 text-xs md:text-sm text-slate-400 text-center max-w-2xl mx-auto">
-        To lease a gate, lock in a DSX Pack, complete your Proof Stack forms, and schedule a FlightLine P.C. Meeting.
-        We align your gate with maps and Motion Court so every move is documented from day one.
+        To lease a gate, lock in a DSX Pack and schedule a FlightLine P.C. Meeting.
+        We align your gate with Proof Stack logs so every move is documented from day one.
       </p>
+    </section>
+
+    <!-- ========================= -->
+    <!--  FLIGHTLINE P.C. MEETING -->
+    <!-- ========================= -->
+
+    <section id="book-session" class="mt-10 mb-12">
+      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
+        <h2 class="text-2xl font-bold mb-2 neon-title text-center">FlightLine P.C. Meeting</h2>
+        <p class="text-sm md:text-base text-slate-300 text-center mb-4">
+          P.C. = Production &amp; Creation. This is where we sit in the cockpit and map your lanes:
+          DSX Packs, gates, BTC travel, and Proof Stack wiring.
+        </p>
+        <p class="text-xs md:text-sm text-slate-400 text-center mb-6">
+          Use the Calendly badge in the corner or the button below to lock in a 30-minute FlightLine HQ session.
+        </p>
+        <div class="flex justify-center">
+          <a
+            href="https://calendly.com/taylor-theflightlinehq/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-5 py-2.5 rounded-full bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition"
+          >
+            Book a 30-Min FlightLine HQ Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!--  CONTACT SECTION         -->
+    <!-- ========================= -->
+
+    <section id="contact" class="mt-10 mb-6">
+      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
+        <h2 class="text-2xl font-bold mb-2 neon-title text-center">Contact &amp; Ops</h2>
+        <p class="text-sm md:text-base text-slate-300 text-center mb-4">
+          FlightLine Memphis DC is the Memphis capital node for the NETTOPIA grid.
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 text-xs md:text-sm text-slate-300">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-cyan-300 text-sm">Operations &amp; Partnerships</h3>
+            <ul class="space-y-1">
+              <li>🛫 Gate leasing &amp; DSX Pack alignments</li>
+              <li>🛰️ BTC Travel Grid &amp; B10 Tower routes</li>
+              <li>🏙️ City / region FlightLine deployments</li>
+            </ul>
+          </div>
+          <div class="space-y-2">
+            <h3 class="font-semibold text-cyan-300 text-sm">How to Reach FlightLine HQ</h3>
+            <ul class="space-y-1">
+              <li>
+                🔗 Linktree:
+                <a
+                  href="https://linktr.ee/QRF_Code_Veterans"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-cyan-300 underline"
+                >
+                  QRF_Code_Veterans
+                </a>
+              </li>
+              <li>
+                📅 Schedule:
+                <a
+                  href="https://calendly.com/taylor-theflightlinehq/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-cyan-300 underline"
+                >
+                  FlightLine HQ Calendly
+                </a>
+              </li>
+              <li>🧾 All calls, scans, and lanes can be logged into the Proof Stack as Flight Papers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!--  FLIGHTLINE BASEMENT     -->
+    <!-- ========================= -->
+
+    <section id="flightline-basement" class="mt-10 mb-12">
+      <div class="max-w-4xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/95 p-6">
+        <h2 class="text-2xl md:text-3xl font-bold neon-title text-center">
+          FlightLine Basement · Art · News · Deep Dive
+        </h2>
+        <p class="text-sm md:text-base text-slate-300 text-center mt-2 mb-4">
+          The lower deck of Memphis DC — where we park the long-form thinking:
+          podcasts, PSAs, art, books, and the universal parking lot for the FlightLine.
+        </p>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <!-- Deep Dive · NotebookLM -->
+          <a
+            href="https://notebooklm.google.com/notebook/7c3cbbe4-4460-4d9b-ba15-4de9e9dd1407"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-cyan-400 hover:bg-slate-900 transition"
+          >
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+              Deep Dive · NotebookLM
+            </p>
+            <p class="text-sm font-semibold text-cyan-300">
+              FlightLine Deep Dive · Memphis DC
+            </p>
+            <p class="text-[11px] text-slate-400">
+              Long-form breakdowns of the grid, towers, DSX Packs, and NETTOPIA routes — straight from the NotebookLM cockpit.
+            </p>
+          </a>
+
+          <!-- Basic Training · Radio Tower -->
+          <a
+            href="https://notebooklm.google.com/notebook/e4f57dad-4cba-454d-85d0-5879f5ab2a30?authuser=4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-emerald-400 hover:bg-slate-900 transition"
+          >
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+              Basic Training · FlightLine Radio Tower
+            </p>
+            <p class="text-sm font-semibold text-emerald-300">
+              FlightLine Air Assault · Crown 17 Stack
+            </p>
+            <p class="text-[11px] text-slate-400">
+              Onboarding realm for contractors: access, keys, and aircraft — mapping your Google stack into FlightLine roles.
+            </p>
+          </a>
+
+          <!-- FlightLine PSAs · Google Flow -->
+          <a
+            href="https://notebooklm.google.com/notebook/cbbb55f1-7cca-49e2-beec-7834ce85d3fa?authuser=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-yellow-400 hover:bg-slate-900 transition"
+          >
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+              FlightLine PSA · Google Flow
+            </p>
+            <p class="text-sm font-semibold text-yellow-300">
+              8-Second Clips · Mass Coverage
+            </p>
+            <p class="text-[11px] text-slate-400">
+              Short-form PSAs scripted for the grid — Google Flow videos that speak to whole towers and lanes in under 10 seconds.
+            </p>
+          </a>
+
+          <!-- Universal Parking Deck · TheUniversalFlightLine -->
+          <a
+            href="https://linktr.ee/TheUniversalFlightLine"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-indigo-400 hover:bg-slate-900 transition"
+          >
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+              Universal Parking Deck · Waiting Room
+            </p>
+            <p class="text-sm font-semibold text-indigo-300">
+              The Universal FlightLine · 24/7 Scroll
+            </p>
+            <p class="text-[11px] text-slate-400">
+              Always-on landing page for agents and guests — park, taxi down the active, and scroll content while deliveries and lanes load.
+            </p>
+          </a>
+        </div>
+
+        <p class="mt-4 text-[11px] text-slate-400 text-center">
+          Everything above the Basement runs the live ops. Everything in the Basement keeps the culture, training, and story synced.
+        </p>
+      </div>
     </section>
 
     <!-- ========================= -->
@@ -848,10 +1004,10 @@
           FlightLine Radio · Motion Proof Anthem
         </h2>
         <p class="text-sm md:text-base text-slate-300 text-center mt-2 mb-3">
-          Official FlightLine soundtrack for Memphis DC — songs that run with the grid, towers, BTC travel lanes, and 24/7 parking deck.
+          Official FlightLine soundtrack for Memphis DC — songs that run with the grid, towers, and BTC travel lanes.
         </p>
         <p class="text-xs md:text-sm text-slate-400 text-center mb-6">
-          Audio is hosted on Suno and The Universal FlightLine. Click a card to open it in a new tab while you explore the grid.
+          Tracks are hosted on Suno. Click a track to open the full experience in a new tab while you explore the grid.
         </p>
 
         <div class="space-y-4">
@@ -900,120 +1056,6 @@
               <span class="text-xl md:text-2xl">🎼</span>
             </div>
           </a>
-
-          <!-- Relaxation & Study Hub -->
-          <a
-            href="https://linktr.ee/TheUniversalFlightLine?utm_source=linktree_profile_share&amp;ltsid=e77cbe2e-1ba8-448c-9137-1d56c3a8ea1a"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block board-frame border border-slate-800 bg-slate-900/70 rounded-2xl px-4 py-3 hover:border-indigo-400 hover:bg-slate-900/90 transition"
-          >
-            <div class="flex items-center justify-between gap-3">
-              <div>
-                <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                  FL-HUB · 24/7 Parking Deck
-                </p>
-                <p class="text-sm md:text-base font-semibold text-indigo-300">
-                  The Universal FlightLine · Waiting Room &amp; Study Channel
-                </p>
-                <p class="text-[11px] md:text-xs text-slate-400">
-                  Universal parking lot for the FlightLine — a 24/7 waiting room where flights can park, taxi down the active, and scroll.
-                  Complementary package for everyone passing through while deliveries and lanes are loading.
-                </p>
-              </div>
-              <span class="text-xl md:text-2xl">📺</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= -->
-    <!--  FLIGHTLINE P.C. MEETING -->
-    <!-- ========================= -->
-
-    <section id="book-session" class="mt-10 mb-12">
-      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
-        <h2 class="text-2xl font-bold mb-2 neon-title text-center">FlightLine P.C. Meeting</h2>
-        <p class="text-sm md:text-base text-slate-300 text-center mb-4">
-          P.C. = Production &amp; Creation. This is where we sit in the cockpit and map your lanes:
-          DSX Packs, gates, BTC travel, Proof Stack wiring, and how you use the Universal Parking Deck.
-        </p>
-        <p class="text-xs md:text-sm text-slate-400 text-center mb-6">
-          Use the Calendly badge in the corner or the button below to lock in a 30-minute FlightLine HQ session.
-        </p>
-        <div class="flex justify-center">
-          <a
-            href="https://calendly.com/taylor-theflightlinehq/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center px-5 py-2.5 rounded-full bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition"
-          >
-            Book a 30-Min FlightLine HQ Call
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= -->
-    <!--  CONTACT SECTION         -->
-    <!-- ========================= -->
-
-    <section id="contact" class="mt-10 mb-10">
-      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
-        <h2 class="text-2xl font-bold mb-2 neon-title text-center">Contact &amp; Ops</h2>
-        <p class="text-sm md:text-base text-slate-300 text-center mb-4">
-          FlightLine Memphis DC is the Memphis capital node for the NETTOPIA grid.
-        </p>
-        <div class="grid md:grid-cols-2 gap-4 text-xs md:text-sm text-slate-300">
-          <div class="space-y-2">
-            <h3 class="font-semibold text-cyan-300 text-sm">Operations &amp; Partnerships</h3>
-            <ul class="space-y-1">
-              <li>🛫 Gate leasing &amp; DSX Pack alignments</li>
-              <li>🛰️ BTC Travel Grid &amp; B10 Tower routes</li>
-              <li>🏙️ City / region FlightLine deployments</li>
-              <li>📊 Motion Court exhibits &amp; Proof Stack wiring</li>
-            </ul>
-          </div>
-          <div class="space-y-2">
-            <h3 class="font-semibold text-cyan-300 text-sm">How to Reach FlightLine HQ</h3>
-            <ul class="space-y-1">
-              <li>
-                🔗 Linktree:
-                <a
-                  href="https://linktr.ee/QRF_Code_Veterans"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-cyan-300 underline"
-                >
-                  QRF_Code_Veterans
-                </a>
-              </li>
-              <li>
-                📺 24/7 Parking Deck:
-                <a
-                  href="https://linktr.ee/TheUniversalFlightLine?utm_source=linktree_profile_share&amp;ltsid=e77cbe2e-1ba8-448c-9137-1d56c3a8ea1a"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-cyan-300 underline"
-                >
-                  The Universal FlightLine
-                </a>
-              </li>
-              <li>
-                📅 Schedule:
-                <a
-                  href="https://calendly.com/taylor-theflightlinehq/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-cyan-300 underline"
-                >
-                  FlightLine HQ Calendly
-                </a>
-              </li>
-              <li>🧾 All calls, scans, lanes, and parking sessions can be logged into the Proof Stack as Flight Papers.</li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
