@@ -4,24 +4,106 @@
   <meta charset="utf-8" />
   <title>FlightLine Memphis DC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="FlightLine Memphis DC is a digital real estate and airport grid with DSX Packs, Gates, and FlightLine P.C. Meetings for agents, operators, airports, and world builders."
+  />
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Calendly badge styles -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+
+  <style>
+    /* Neon airport terminal vibe */
+    body {
+      background:
+        radial-gradient(circle at top, #020617 0, #020617 25%, #000 60%) fixed,
+        #020617;
+    }
+
+    .board-frame {
+      box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.9),
+        0 0 25px rgba(8, 47, 73, 0.7),
+        0 0 55px rgba(6, 182, 212, 0.3);
+    }
+
+    .board-header {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 10px rgba(34, 211, 238, 0.7),
+        0 0 20px rgba(34, 211, 238, 0.4);
+    }
+
+    .board-row {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    }
+
+    .board-row-hover:hover {
+      background: radial-gradient(circle at left, rgba(34, 211, 238, 0.12), transparent);
+    }
+
+    /* Subtle scan-line across headers */
+    .scan-bar {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scan-bar::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -40%;
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(148, 163, 184, 0.25),
+        transparent
+      );
+      animation: scan 4s linear infinite;
+    }
+
+    @keyframes scan {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(350%);
+      }
+    }
+
+    .neon-title {
+      text-shadow:
+        0 0 12px rgba(34, 211, 238, 0.75),
+        0 0 35px rgba(34, 211, 238, 0.45);
+    }
+  </style>
 </head>
 <body class="bg-slate-950 text-slate-100">
   <!-- NAVBAR -->
-  <header class="border-b border-slate-800 bg-slate-950/90 sticky top-0 z-40">
+  <header class="border-b border-slate-800 bg-slate-950/90 sticky top-0 z-40 backdrop-blur">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="font-bold text-lg tracking-wide">
-        🛫 FlightLine Memphis DC
+      <div class="font-bold text-lg tracking-wide flex items-center gap-2">
+        <span class="text-cyan-300">🛫</span>
+        <span class="neon-title">FlightLine Memphis DC</span>
       </div>
       <nav class="hidden md:flex gap-6 text-sm">
         <a href="#home" class="hover:text-cyan-300">Home</a>
         <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
         <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
-        <a href="#book-session" class="hover:text-cyan-300">Book Session</a>
+        <a href="#book-session" class="hover:text-cyan-300">FlightLine P.C. Meeting</a>
         <a href="#contact" class="hover:text-cyan-300">Contact</a>
       </nav>
-      <button id="mobileNavToggle" class="md:hidden inline-flex items-center justify-center rounded-full border border-slate-700 px-3 py-1 text-xs">
+      <button
+        id="mobileNavToggle"
+        aria-label="Toggle navigation"
+        class="md:hidden inline-flex items-center justify-center rounded-full border border-slate-700 px-3 py-1 text-xs"
+      >
         Menu
       </button>
     </div>
@@ -31,7 +113,7 @@
         <a href="#home" class="hover:text-cyan-300">Home</a>
         <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
         <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
-        <a href="#book-session" class="hover:text-cyan-300">Book Session</a>
+        <a href="#book-session" class="hover:text-cyan-300">FlightLine P.C. Meeting</a>
         <a href="#contact" class="hover:text-cyan-300">Contact</a>
       </div>
     </nav>
@@ -40,17 +122,58 @@
   <main class="max-w-6xl mx-auto px-4 pb-16">
     <!-- HERO -->
     <section id="home" class="pt-10 pb-12">
-      <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
         <div>
-          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
+          <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4 neon-title">
             FlightLine Memphis DC<br/>
-            <span class="text-cyan-300">Digital Real Estate & Airport Grid</span>
+            <span class="text-cyan-300">Digital Real Estate &amp; Airport Grid</span>
           </h1>
           <p class="text-sm md:text-base text-slate-300 mb-4">
             A live digital infrastructure for dreamers, agents, operators, and airports.
-            DSX Packs fund motion. Gates lease corridors. Strategy sessions align your seat
+            DSX Packs fund motion. Gates lease corridors. P.C. Meetings lock in your seat
             on the 🛫 FlightLine.
           </p>
+
+          <!-- Mini "terminal ticker" for sections -->
+          <div class="mb-4 board-frame rounded-xl border border-slate-800 bg-slate-900/80 scan-bar">
+            <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
+              <span>TERMINAL MENU</span>
+              <span class="text-cyan-300">FLIGHTLINE BOARD</span>
+            </div>
+            <div class="divide-y divide-slate-800 text-xs board-row">
+              <div class="grid grid-cols-3 gap-2 px-4 py-2">
+                <span class="text-slate-400">SECTION</span>
+                <span class="text-slate-400">ROUTE</span>
+                <span class="text-right text-slate-400">CODE</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#home'">
+                <span>HOME</span>
+                <span class="truncate">Memphis DC &rarr; NETTOPIA</span>
+                <span class="text-right text-yellow-300">HUB</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#dsx-packs'">
+                <span>DSX PACKS</span>
+                <span class="truncate">Credits &amp; Motion Fuel</span>
+                <span class="text-right text-yellow-300">DSX</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#flightline-gates'">
+                <span>GATES</span>
+                <span class="truncate">Leasing &amp; Corridors</span>
+                <span class="text-right text-yellow-300">G1–G17</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#book-session'">
+                <span>P.C. MEETING</span>
+                <span class="truncate">Production &amp; Creation</span>
+                <span class="text-right text-yellow-300">PC-30</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#contact'">
+                <span>CONTACT</span>
+                <span class="truncate">Ops &amp; Partnerships</span>
+                <span class="text-right text-yellow-300">OPS</span>
+              </div>
+            </div>
+          </div>
+
           <div class="flex flex-wrap gap-3 mt-2">
             <a href="#dsx-packs" class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500 text-slate-950 text-sm font-semibold">
               View DSX Packs
@@ -59,243 +182,573 @@
               Explore Gates
             </a>
             <a href="#book-session" class="inline-flex items-center px-4 py-2 rounded-full border border-slate-600 text-sm">
-              Book a Strategy Session
+              Book a FlightLine P.C. Meeting
             </a>
           </div>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40">
+
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/40 board-frame">
           <h2 class="font-semibold text-lg mb-2">What This Page Does</h2>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li>Lets you purchase DSX Packs via Stripe.</li>
-            <li>Lists FlightLine Gates for leasing infrastructure.</li>
-            <li>Lets clients book live sessions (virtual or in person).</li>
+            <li>Shows DSX Packs as a digital credit board for motion.</li>
+            <li>Lists FlightLine Gates like an airport departures screen.</li>
+            <li>Lets clients book live FlightLine P.C. Meetings.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- ========================= -->
-    <!--  DSX PACKS & GATES BLOCK  -->
+    <!--  DSX PACKS BOARD         -->
     <!-- ========================= -->
 
-    <section id="dsx-packs" class="mt-8 mb-10 border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
-      <h2 class="text-2xl font-bold text-center mb-1">DiGi Snax PACK</h2>
+    <section id="dsx-packs" class="mt-4 mb-10">
+      <h2 class="text-2xl font-bold text-center mb-1 neon-title">DiGi Snax PACK</h2>
       <p class="text-center text-sm text-slate-300 mb-4">
         <strong>FlightLine DSX Wallet | DSX Credits</strong>
       </p>
 
-      <h3 class="text-lg font-semibold mb-2">DSX Packs</h3>
-      <ul class="space-y-2 text-sm">
-        <li>
-          <strong>DSX Pack 01 – Starter</strong> — $1.00 USD<br/>
-          <a href="https://buy.stripe.com/dRm4gAaM75G09jJ92r7g405" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 01</a>
-        </li>
-        <li>
-          <strong>DSX Pack 02 – Local Ops</strong> — $5.00 USD<br/>
-          <a href="https://buy.stripe.com/aFa8wQf2n4BW0Nd3I77g406" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 02</a>
-        </li>
-        <li>
-          <strong>DSX Pack 03 – Corridor Builder</strong> — $10.00 USD<br/>
-          <a href="https://buy.stripe.com/14AaEY4nJgkEfI75Qf7g407" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 03</a>
-        </li>
-        <li>
-          <strong>DSX Pack 04 – City Runner</strong> — $25.00 USD<br/>
-          <a href="https://buy.stripe.com/8x228sf2nb0keE30vV7g408" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 04</a>
-        </li>
-        <li>
-          <strong>DSX Pack 05 – Regional Motion</strong> — $50.00 USD<br/>
-          <a href="https://buy.stripe.com/28E3cw07t1pK3Zp5Qf7g409" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 05</a>
-        </li>
-        <li>
-          <strong>DSX Pack 06 – Network Builder</strong> — $100.00 USD<br/>
-          <a href="https://buy.stripe.com/3cIeVecUffgAgMb92r7g40a" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 06</a>
-        </li>
-        <li>
-          <strong>DSX Pack 07 – Mission Ops</strong> — $250.00 USD<br/>
-          <a href="https://buy.stripe.com/9B600kbQb3xS1RhguT7g40d" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 07</a>
-        </li>
-        <li>
-          <strong>DSX Pack 08 – Layer Fuel</strong> — $500.00 USD<br/>
-          <a href="https://buy.stripe.com/eVq5kEf2ngkE8fF0vV7g40e" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 08</a>
-        </li>
-        <li>
-          <strong>DSX Pack 09 – Univercity Tier</strong> — $1,000.00 USD<br/>
-          <a href="https://buy.stripe.com/7sY4gAaM75G09jJ6Uj7g40f" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 09</a>
-        </li>
-        <li>
-          <strong>DSX Pack 10 – Googol</strong> — $10,000.00 USD<br/>
-          <a href="https://buy.stripe.com/dRm9AU3jF7O89jJemL7g40g" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Buy DSX Pack 10</a>
-        </li>
-      </ul>
+      <div class="border border-slate-800 rounded-2xl bg-slate-900/70 board-frame overflow-hidden">
+        <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
+          <span>DEPARTURES · DSX CREDIT BOARD</span>
+          <span class="text-yellow-300">PACKS 01–10</span>
+        </div>
+
+        <!-- Header row -->
+        <div class="hidden md:grid grid-cols-4 gap-2 px-4 py-2 text-[11px] text-slate-400 board-row border-b border-slate-800">
+          <span>PACK</span>
+          <span>DESCRIPTION</span>
+          <span class="text-right">VALUE (USD)</span>
+          <span class="text-right">ACTION</span>
+        </div>
+
+        <!-- Rows -->
+        <div class="divide-y divide-slate-800 text-sm board-row">
+          <!-- Pack 01 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 01</div>
+            <div>Starter · First fuel for the grid.</div>
+            <div class="md:text-right">$1.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/dRm4gAaM75G09jJ92r7g405" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 01
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 02 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 02</div>
+            <div>Local Ops · Neighborhood motion.</div>
+            <div class="md:text-right">$5.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/aFa8wQf2n4BW0Nd3I77g406" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 02
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 03 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 03</div>
+            <div>Corridor Builder · Connect key routes.</div>
+            <div class="md:text-right">$10.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/14AaEY4nJgkEfI75Qf7g407" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 03
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 04 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 04</div>
+            <div>City Runner · Power one digital city.</div>
+            <div class="md:text-right">$25.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/8x228sf2nb0keE30vV7g408" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 04
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 05 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 05</div>
+            <div>Regional Motion · Multiple cities active.</div>
+            <div class="md:text-right">$50.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/28E3cw07t1pK3Zp5Qf7g409" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 05
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 06 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 06</div>
+            <div>Network Builder · Multi-region grid.</div>
+            <div class="md:text-right">$100.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/3cIeVecUffgAgMb92r7g40a" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 06
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 07 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 07</div>
+            <div>Mission Ops · Campaign-level fuel.</div>
+            <div class="md:text-right">$250.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/9B600kbQb3xS1RhguT7g40d" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 07
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 08 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 08</div>
+            <div>Layer Fuel · Long-haul deployments.</div>
+            <div class="md:text-right">$500.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/eVq5kEf2ngkE8fF0vV7g40e" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 08
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 09 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 09</div>
+            <div>Univercity Tier · Training + campus grid.</div>
+            <div class="md:text-right">$1,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/7sY4gAaM75G09jJ6Uj7g40f" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 09
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 10 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 10</div>
+            <div>Googol · Flag-plant for mega-motion.</div>
+            <div class="md:text-right">$10,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/dRm9AU3jF7O89jJemL7g40g" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 10
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="flightline-gates" class="mb-10 border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
-      <h2 class="text-2xl font-bold text-center mb-4">FlightLine Gates</h2>
+    <!-- ========================= -->
+    <!--  GATES BOARD             -->
+    <!-- ========================= -->
 
-      <h3 class="text-lg font-semibold mb-2">Gate G17 – G13 Special Command</h3>
-      <ul class="space-y-2 text-sm mb-4">
-        <li>
-          <strong>✈️ G17 — CLEARSCi Brigade | Comms &amp; Broadcast</strong> — $2,600.00 USD<br/>
-          <a href="https://buy.stripe.com/4gMeVe1bx8Sc9jJ5Qf7g40h" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G17</a>
-        </li>
-        <li>
-          <strong>✈️ G16f — System Wing | S6 – Cyber &amp; Communications</strong> — $200.00 USD<br/>
-          <a href="https://buy.stripe.com/fZueVe9I3b0k8fFemL7g40i" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16f</a>
-        </li>
-        <li>
-          <strong>✈️ G16e — System Wing | S5 – Plan &amp; Policy</strong> — $200.00 USD<br/>
-          <a href="https://buy.stripe.com/00w9AU1bx1pK1Rh6Uj7g40j" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16e</a>
-        </li>
-        <li>
-          <strong>✈️ G16d — System Wing | S4 – Logistics &amp; Supply</strong> — $200.00 USD<br/>
-          <a href="https://buy.stripe.com/9B6eVebQbfgA9jJ6Uj7g40k" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16d</a>
-        </li>
-        <li>
-          <strong>✈️ G16c — System Wing | S3 – Operations &amp; Training</strong> — $200.00 USD<br/>
-          <a href="https://buy.stripe.com/7sY5kE1bxb0kgMb3I77g40l" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16c</a>
-        </li>
-        <li>
-          <strong>✈️ G16b — System Wing | S2 – Intelligence &amp; Security</strong> — $200.00 USD<br/>
-          <a href="https://buy.stripe.com/8x26oI07t5G0eE37Yn7g40m" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16b</a>
-        </li>
-        <li>
-          <strong>✈️ G16a — System Wing | S1 – Personal &amp; Admin</strong> — $200.00 USD<br/>
-          <a href="https://buy.stripe.com/8x26oI07t5G0eE37Yn7g40m" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16a</a>
-        </li>
-        <li>
-          <strong>✈️ G16 — Skyline Squadron</strong> — $200.00 USD<br/>
-          <a href="https://buy.stripe.com/eVq00k8DZ9WgbrRfqP7g40o" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G16</a>
-        </li>
-        <li>
-          <strong>✈️ G15 — Wolfpack Training Grid</strong> — $39.00 USD / month<br/>
-          <a href="https://buy.stripe.com/fZu14o5rN7O8fI7fqP7g40q" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G15</a>
-        </li>
-        <li>
-          <strong>✈️ G14 — The Keith Ledger | World Engine</strong> — $99.00 USD / month<br/>
-          <a href="https://buy.stripe.com/9B65kE1bx5G0brR1zZ7g40p" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G14</a>
-        </li>
-        <li>
-          <strong>✈️ G13 — OASIS Outernet Launchpad (Layer 0)</strong> — $10,000.00 USD<br/>
-          <a href="https://buy.stripe.com/aFa5kE07tfgA1Rha6v7g40r" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G13</a>
-        </li>
-      </ul>
+    <section id="flightline-gates" class="mb-10">
+      <h2 class="text-2xl font-bold text-center mb-4 neon-title">FlightLine Gates</h2>
 
-      <h3 class="text-lg font-semibold mb-2">Gate G11 – G12 Family Gates</h3>
-      <ul class="space-y-2 text-sm mb-4">
-        <li>
-          <strong>✈️ G12 — Da’Mani Spark Gate | #17</strong> — $7,060.00 USD / month<br/>
-          <a href="https://buy.stripe.com/aFa7sM9I34BW53t0vV7g40s" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G12</a>
-        </li>
-        <li>
-          <strong>✈️ G11 — Dezeraé Guardian Gate | #16</strong> — $5,150.00 USD<br/>
-          <a href="https://buy.stripe.com/bJe7sMcUf5G08fFfqP7g40t" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G11</a>
-        </li>
-      </ul>
+      <!-- Special Command Gates -->
+      <div class="mb-6 border border-slate-800 rounded-2xl bg-slate-900/70 board-frame overflow-hidden">
+        <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
+          <span>DEPARTURES · SPECIAL COMMAND</span>
+          <span class="text-yellow-300">G17 – G13</span>
+        </div>
+        <div class="hidden md:grid grid-cols-4 gap-2 px-4 py-2 text-[11px] text-slate-400 board-row border-b border-slate-800">
+          <span>GATE</span>
+          <span>ROUTE / UNIT</span>
+          <span class="text-right">LEASE (USD)</span>
+          <span class="text-right">BOARDING</span>
+        </div>
+        <div class="divide-y divide-slate-800 text-sm board-row">
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G17</div>
+            <div>CLEARSCi Brigade · Comms &amp; Broadcast</div>
+            <div class="md:text-right">$2,600.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/4gMeVe1bx8Sc9jJ5Qf7g40h" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G17
+              </a>
+            </div>
+          </div>
 
-      <h3 class="text-lg font-semibold mb-2">Gates G10a – G10d | NETTOPIA University</h3>
-      <ul class="space-y-2 text-sm mb-4">
-        <li>
-          <strong>✈️ G10D — NETTOPIA University | Hangar 4 (Duality Eng.)</strong> — $2,497.00 USD / month<br/>
-          <a href="https://buy.stripe.com/cNifZicUfgkEdzZ7Yn7g40u" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10D</a>
-        </li>
-        <li>
-          <strong>✈️ G10C — NETTOPIA University | Hangar 3 (Automation &amp; Mycelium)</strong> — $1,997.00 USD / month<br/>
-          <a href="https://buy.stripe.com/fZu6oI2fB4BW53t4Mb7g40v" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10C</a>
-        </li>
-        <li>
-          <strong>✈️ G10B — NETTOPIA University | Hangar 2 (BTC Engineering)</strong> — $1,497.00 USD / month<br/>
-          <a href="https://buy.stripe.com/9B600kf2nfgA67xceD7g40w" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10B</a>
-        </li>
-        <li>
-          <strong>✈️ G10A — NETTOPIA University | Hangar 1 (Digital Architecture)</strong> — $997.00 USD / month<br/>
-          <a href="https://buy.stripe.com/eVq28sf2nb0k3ZpguT7g40x" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G10A</a>
-        </li>
-      </ul>
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G16f</div>
+            <div>System Wing · S6 – Cyber &amp; Communications</div>
+            <div class="md:text-right">$200.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/fZueVe9I3b0k8fFemL7g40i" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G16f
+              </a>
+            </div>
+          </div>
 
-      <h3 class="text-lg font-semibold mb-2">Gates G7 – G9 | NETTOPIA University</h3>
-      <ul class="space-y-2 text-sm mb-4">
-        <li>
-          <strong>✈️ G9 — NETTOPIA Digital City Builder</strong> — $15,000.00 USD<br/>
-          <a href="https://buy.stripe.com/3cI9AUaM70lGeE3fqP7g40y" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G9</a>
-        </li>
-        <li>
-          <strong>✈️ G8 — Lightning Node Family Trust</strong> — $500.00 USD<br/>
-          <a href="https://buy.stripe.com/eVqfZi3jF6K4eE32E37g40z" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G8</a>
-        </li>
-        <li>
-          <strong>✈️ G7 — BTC Traveler Gridband</strong> — $4,997.00 USD<br/>
-          <a href="https://buy.stripe.com/cNi3cwdYj7O83Zpbaz7g40A" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G7</a>
-        </li>
-      </ul>
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G16e</div>
+            <div>System Wing · S5 – Plan &amp; Policy</div>
+            <div class="md:text-right">$200.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/00w9AU1bx1pK1Rh6Uj7g40j" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G16e
+              </a>
+            </div>
+          </div>
 
-      <h3 class="text-lg font-semibold mb-2">Gates G6c – G6a | Terminals</h3>
-      <ul class="space-y-2 text-sm mb-4">
-        <li>
-          <strong>✈️ G6C — Terminal T3 (Enterprise Deploy)</strong> — $9,997.00 USD<br/>
-          <a href="https://buy.stripe.com/aFa8wQ8DZ4BW9jJemL7g40F" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G6C</a>
-        </li>
-        <li>
-          <strong>✈️ G6B — Terminal T2 (BTC Alignment)</strong><br/>
-          <a href="https://buy.stripe.com/00wdRa4nJ4BWbrR3I77g40E" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G6B</a>
-        </li>
-        <li>
-          <strong>✈️ G6A — Terminal T1 (Regional Command)</strong> — $1,497.00 USD / year<br/>
-          <a href="https://buy.stripe.com/6oU6oI1bx7O853tbaz7g40H" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G6A</a>
-        </li>
-      </ul>
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G16d</div>
+            <div>System Wing · S4 – Logistics &amp; Supply</div>
+            <div class="md:text-right">$200.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/9B6eVebQbfgA9jJ6Uj7g40k" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G16d
+              </a>
+            </div>
+          </div>
 
-      <h3 class="text-lg font-semibold mb-2">Gates G1 – G5 | World Gates</h3>
-      <ul class="space-y-2 text-sm">
-        <li>
-          <strong>✈️ G5 — Airport Leasing Gate</strong> — $7,500.00 USD<br/>
-          <a href="https://buy.stripe.com/3cIeVeg6r9WgeE37Yn7g40I" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G5</a>
-        </li>
-        <li>
-          <strong>✈️ G4 — Dreamer Gate (World Builders)</strong> — $25,000.00 USD<br/>
-          <a href="https://buy.stripe.com/3cI8wQ6vR0lGcvV1zZ7g40J" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G4</a>
-        </li>
-        <li>
-          <strong>✈️ G3 — Agent Gate</strong> — $35,000.00 USD<br/>
-          <a href="https://buy.stripe.com/9B69AU07t6K41Rh5Qf7g40K" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access G3</a>
-        </li>
-        <li>
-          <strong>✈️ Gate 2 — Operator Gate</strong> — $50,000.00 USD<br/>
-          <a href="https://buy.stripe.com/28E7sM3jFd8sdzZ1zZ7g40L" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access Gate 2</a>
-        </li>
-        <li>
-          <strong>✈️ Gate 1 — FOUNDERS GATE</strong> — $1,000.00 USD<br/>
-          <a href="https://buy.stripe.com/4gMfZi9I34BW8fFceD7g40M" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">Access Gate 1</a>
-        </li>
-      </ul>
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G16c</div>
+            <div>System Wing · S3 – Operations &amp; Training</div>
+            <div class="md:text-right">$200.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/7sY5kE1bxb0kgMb3I77g40l" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G16c
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G16b</div>
+            <div>System Wing · S2 – Intelligence &amp; Security</div>
+            <div class="md:text-right">$200.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/8x26oI07t5G0eE37Yn7g40m" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G16b
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G16a</div>
+            <div>System Wing · S1 – Personal &amp; Admin</div>
+            <div class="md:text-right">$200.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/8x26oI07t5G0eE37Yn7g40m" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G16a
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G16</div>
+            <div>Skyline Squadron</div>
+            <div class="md:text-right">$200.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/eVq00k8DZ9WgbrRfqP7g40o" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G16
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G15</div>
+            <div>Wolfpack Training Grid</div>
+            <div class="md:text-right">$39.00 / month</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/fZu14o5rN7O8fI7fqP7g40q" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G15
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G14</div>
+            <div>The Keith Ledger · World Engine</div>
+            <div class="md:text-right">$99.00 / month</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/9B65kE1bx5G0brR1zZ7g40p" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G14
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G13</div>
+            <div>OASIS Outernet Launchpad (Layer 0)</div>
+            <div class="md:text-right">$10,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/aFa5kE07tfgA1Rha6v7g40r" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G13
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Family Gates -->
+      <div class="mb-6 border border-slate-800 rounded-2xl bg-slate-900/70 board-frame overflow-hidden">
+        <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
+          <span>DEPARTURES · FAMILY GATES</span>
+          <span class="text-yellow-300">G12 – G11</span>
+        </div>
+        <div class="divide-y divide-slate-800 text-sm board-row">
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G12</div>
+            <div>Da’Mani Spark Gate · #17</div>
+            <div class="md:text-right">$7,060.00 / month</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/aFa7sM9I34BW53t0vV7g40s" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G12
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G11</div>
+            <div>Dezeraé Guardian Gate · #16</div>
+            <div class="md:text-right">$5,150.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/bJe7sMcUf5G08fFfqP7g40t" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G11
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NETTOPIA University Gates -->
+      <div class="mb-6 border border-slate-800 rounded-2xl bg-slate-900/70 board-frame overflow-hidden">
+        <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
+          <span>DEPARTURES · NETTOPIA UNIVERSITY</span>
+          <span class="text-yellow-300">G10 – G7</span>
+        </div>
+        <div class="divide-y divide-slate-800 text-sm board-row">
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G10D</div>
+            <div>Hangar 4 · Duality Engineering</div>
+            <div class="md:text-right">$2,497.00 / month</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/cNifZicUfgkEdzZ7Yn7g40u" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G10D
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G10C</div>
+            <div>Hangar 3 · Automation &amp; Mycelium</div>
+            <div class="md:text-right">$1,997.00 / month</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/fZu6oI2fB4BW53t4Mb7g40v" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G10C
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G10B</div>
+            <div>Hangar 2 · BTC Engineering</div>
+            <div class="md:text-right">$1,497.00 / month</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/9B600kf2nfgA67xceD7g40w" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G10B
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G10A</div>
+            <div>Hangar 1 · Digital Architecture</div>
+            <div class="md:text-right">$997.00 / month</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/eVq28sf2nb0k3ZpguT7g40x" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G10A
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G9</div>
+            <div>NETTOPIA Digital City Builder</div>
+            <div class="md:text-right">$15,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/3cI9AUaM70lGeE3fqP7g40y" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G9
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G8</div>
+            <div>Lightning Node Family Trust</div>
+            <div class="md:text-right">$500.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/eVqfZi3jF6K4eE32E37g40z" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G8
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G7</div>
+            <div>BTC Traveler Gridband</div>
+            <div class="md:text-right">$4,997.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/cNi3cwdYj7O83Zpbaz7g40A" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G7
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terminals + World Gates -->
+      <div class="border border-slate-800 rounded-2xl bg-slate-900/70 board-frame overflow-hidden">
+        <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
+          <span>DEPARTURES · TERMINALS &amp; WORLD GATES</span>
+          <span class="text-yellow-300">G6 – G1</span>
+        </div>
+        <div class="divide-y divide-slate-800 text-sm board-row">
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G6C</div>
+            <div>Terminal T3 · Enterprise Deploy</div>
+            <div class="md:text-right">$9,997.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/aFa8wQ8DZ4BW9jJemL7g40F" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G6C
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G6B</div>
+            <div>Terminal T2 · BTC Alignment</div>
+            <div class="md:text-right">Custom</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/00wdRa4nJ4BWbrR3I77g40E" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G6B
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G6A</div>
+            <div>Terminal T1 · Regional Command</div>
+            <div class="md:text-right">$1,497.00 / year</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/6oU6oI1bx7O853tbaz7g40H" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G6A
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G5</div>
+            <div>Airport Leasing Gate</div>
+            <div class="md:text-right">$7,500.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/3cIeVeg6r9WgeE37Yn7g40I" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G5
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G4</div>
+            <div>Dreamer Gate · World Builders</div>
+            <div class="md:text-right">$25,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/3cI8wQ6vR0lGcvV1zZ7g40J" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G4
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">G3</div>
+            <div>Agent Gate</div>
+            <div class="md:text-right">$35,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/9B69AU07t6K41Rh5Qf7g40K" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access G3
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">Gate 2</div>
+            <div>Operator Gate</div>
+            <div class="md:text-right">$50,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/28E7sM3jFd8sdzZ1zZ7g40L" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access Gate 2
+              </a>
+            </div>
+          </div>
+
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 board-row-hover">
+            <div class="font-semibold text-yellow-300">Gate 1</div>
+            <div>FOUNDERS GATE</div>
+            <div class="md:text-right">$1,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/4gMfZi9I34BW8fFceD7g40M" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Access Gate 1
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ====================== -->
     <!--  BOOKING / CALENDLY   -->
     <!-- ====================== -->
 
-    <section id="book-session" class="mb-10 border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
-      <h2 class="text-2xl font-bold text-center mb-3">Book a FlightLine Strategy Session</h2>
+    <section id="book-session" class="mb-10 border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/80 board-frame">
+      <div class="px-4 py-2 mb-3 bg-slate-950/90 border border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between rounded-lg">
+        <span>ARRIVALS · CHECK-IN</span>
+        <span class="text-yellow-300">P.C. MEETING · PC-30</span>
+      </div>
+      <h2 class="text-2xl font-bold text-center mb-3 neon-title">Book a FlightLine P.C. Meeting</h2>
       <p class="text-sm text-slate-300 text-center mb-4">
-        Meet with me live (virtual or in person) to design your position on the FlightLine.<br/>
-        Pick a time, complete payment, and receive an instant Zoom/Meet link.
+        A 30-minute FlightLine P.C. Meeting (Production &amp; Creation) to design your seat on the grid.<br/>
+        We map your current position, select the right DSX Pack + Gate, and outline your next 30-day motion.
+      </p>
+      <p class="text-xs text-slate-400 text-center mb-4">
+        Format: Google Meet · Focus: Digital real estate, airport/airline ops, brand architecture, DSX/Gates alignment.
       </p>
       <p class="text-center mt-4">
-        <!-- TODO: Replace YOUR-CALENDLY-LINK with your real booking URL -->
-        <a href="https://calendly.com/YOUR-CALENDLY-LINK" target="_blank" rel="noopener noreferrer"
+        <a href="https://calendly.com/taylor-theflightlinehq/30min" target="_blank" rel="noopener noreferrer"
            class="inline-block px-6 py-3 rounded-full bg-cyan-500 text-slate-950 font-semibold text-sm">
-          Schedule a FlightLine Session
+          Book a FlightLine P.C. Meeting
         </a>
       </p>
     </section>
 
     <!-- CONTACT / FOOTER -->
-    <section id="contact" class="border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/40">
-      <h2 class="text-xl font-bold mb-2">Contact</h2>
+    <section id="contact" class="border border-slate-800 rounded-2xl p-4 md:p-6 bg-slate-900/80 board-frame">
+      <div class="px-4 py-2 mb-3 bg-slate-950/90 border border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between rounded-lg">
+        <span>ARRIVALS · OPS DESK</span>
+        <span class="text-yellow-300">GROUND CONTROL</span>
+      </div>
+      <h2 class="text-xl font-bold mb-2 neon-title">Contact</h2>
       <p class="text-sm text-slate-300 mb-2">
         For custom arrangements, partnerships, or airport / real estate ops:
       </p>
       <p class="text-sm">
-        Email: <a href="mailto:your-email@example.com" class="text-cyan-300 underline">your-email@example.com</a><br/>
+        Personal / Nonprofit Email:
+        <a href="mailto:taylor@theflightlinehq.com" class="text-cyan-300 underline">
+          taylor@theflightlinehq.com
+        </a><br/>
+        HQ Website:
+        <a href="https://theflightlinehq.com" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline">
+          theflightlinehq.com
+        </a><br/>
         Location: Hopkinsville, KY – Memphis DC corridor
       </p>
     </section>
@@ -305,14 +758,30 @@
     © <span id="year"></span> FlightLine Memphis DC · All Rights Reserved
   </footer>
 
+  <!-- Calendly badge widget script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script type="text/javascript">
+    window.onload = function() {
+      // Calendly floating badge
+      Calendly.initBadgeWidget({
+        url: 'https://calendly.com/taylor-theflightlinehq/30min',
+        text: 'Schedule time with FlightLine HQ',
+        color: '#22d3ee',
+        textColor: '#020617',
+        branding: true
+      });
+    };
+  </script>
+
   <script>
     // Mobile nav toggle
     const btn = document.getElementById('mobileNavToggle');
     const nav = document.getElementById('mobileNav');
     btn?.addEventListener('click', () => nav.classList.toggle('hidden'));
 
-    // Year
+    // Year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
+
