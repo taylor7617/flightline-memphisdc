@@ -1,36 +1,284 @@
-<!-- Begin: Global Ask the Broker / Receptionist Desk component -->
-<!-- This floating button appears on every page of the FlightLine site -->
-<div id="brokerFloatingBtn" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z‑index: 1000;">
-  <button style="
-    background: #22d3ee;
-    color: #020617;
-    padding: 14px 18px;
-    border‑radius: 9999px;
-    font‑size: 1rem;
-    font‑weight: bold;
-    box‑shadow: 0 4px 12px rgba(0,0,0,0.35);
-    transition: transform 0.2s ease;
-    ">
-    Ask the Broker
-  </button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FlightLine Memphis DC | Capital of NETTOPIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="FlightLine Memphis DC is the capital node of NETTOPIA: a digital real estate and airport grid with DSX Packs, Gates, BTC Travel, and a three-layer Proof Stack. Every ZIP = Runway. Every Scan = Proof. Every Payment = Public."
+  />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-  // Add click handler: opens the custom GPT link in new tab/window
-  document.getElementById('brokerFloatingBtn').addEventListener('click', function(){
-    window.open('https://chat.openai.com/g/g‑XXXXXX‑digi‑snax‑assistant','_blank');
-  });
+  <!-- Calendly badge styles -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
-  // Simple mouseover/mouseout animations for hover effect
-  document.getElementById('brokerFloatingBtn').addEventListener('mouseover', function(){
-    this.style.transform = 'scale(1.05)';
-  });
-  document.getElementById('brokerFloatingBtn').addEventListener('mouseout', function(){
-    this.style.transform = 'scale(1)';
-  });
-</script>
-<!-- End: Broker component -->
+  <style>
+    /* Neon airport terminal vibe */
+    body {
+      background:
+        radial-gradient(circle at top, #020617 0, #020617 25%, #000 60%) fixed,
+        #020617;
+    }
+
+    .board-frame {
+      box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.9),
+        0 0 25px rgba(8, 47, 73, 0.7),
+        0 0 55px rgba(6, 182, 212, 0.3);
+    }
+
+    .board-header {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 10px rgba(34, 211, 238, 0.7),
+        0 0 20px rgba(34, 211, 238, 0.4);
+    }
+
+    .board-row {
+      font-family: ui‑monospace, SFMono‑Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    }
+
+    .board-row‑hover:hover {
+      background: radial‑gradient(circle at left, rgba(34, 211, 238, 0.12), transparent);
+    }
+
+    /* Subtle scan‑line across headers */
+    .scan‑bar {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scan‑bar::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -40%;
+      width: 40%;
+      height: 100%;
+      background: linear‑gradient(
+        120deg,
+        transparent,
+        rgba(148, 163, 184, 0.25),
+        transparent
+      );
+      animation: scan 4s linear infinite;
+    }
+
+    @keyframes scan {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(350%);
+      }
+    }
+
+    .neon‑title {
+      text‑shadow:
+        0 0 12px rgba(34, 211, 238, 0.75),
+        0 0 35px rgba(34, 211, 238, 0.45);
+    }
+
+    /* Tower Guard button – subtle standout */
+    .tower‑guard‑btn {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tower‑guard‑btn::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: conic‑gradient(
+        from 210deg,
+        rgba(251, 191, 36, 0.15),
+        rgba(248, 250, 252, 0.02),
+        rgba(52, 211, 153, 0.15),
+        rgba(248, 250, 252, 0.02),
+        rgba(251, 191, 36, 0.15)
+      );
+      opacity: 0.9;
+      z‑index: -1;
+    }
+
+    .tower‑guard‑btn‑inner {
+      position: relative;
+      z‑index: 1;
+    }
+  </style>
+</head>
+<body class="bg‑slate‑950 text‑slate‑100">
+  <!-- NAVBAR -->
+  <header class="border‑b border‑slate‑800 bg‑slate‑950/90 sticky top‑0 z‑40 backdrop‑blur">
+    <div class="max‑w‑6xl mx‑auto px‑4 py‑3 flex items‑center justify‑between">
+      <div class="font‑bold text‑lg tracking‑wide flex items‑center gap‑2">
+        <span class="text‑cyan‑300">🛫</span>
+        <span class="neon‑title">FlightLine Memphis DC</span>
+      </div>
+      <nav class="hidden md:flex gap‑6 text‑sm">
+        <a href="#home" class="hover:text‑cyan‑300">Home</a>
+        <a href="#proof‑stack" class="hover:text‑cyan‑300">Proof Stack</a>
+        <a href="#dsx‑packs" class="hover:text‑cyan‑300">DSX Packs</a>
+        <a href="#flightline‑gates" class="hover:text‑cyan‑300">Gates</a>
+        <a href="#book‑session" class="hover:text‑cyan‑300">FlightLine P.C. Meeting</a>
+        <a href="#contact" class="hover:text‑cyan‑300">Contact</a>
+      </nav>
+      <button
+        id="mobileNavToggle"
+        aria‑label="Toggle navigation"
+        class="md:hidden inline‑flex items‑center justify‑center rounded‑full border border‑slate‑700 px‑3 py‑1 text‑xs"
+      >
+        Menu
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <nav id="mobileNav" class="md:hidden hidden border‑t border‑slate‑800 bg‑slate‑950">
+      <div class="max‑w‑6xl mx‑auto px‑4 py‑3 flex flex‑col gap‑2 text‑sm">
+        <a href="#home" class="hover:text‑cyan‑300">Home</a>
+        <a href="#proof‑stack" class="hover:text‑cyan‑300">Proof Stack</a>
+        <a href="#dsx‑packs" class="hover:text‑cyan‑300">DSX Packs</a>
+        <a href="#flightline‑gates" class="hover:text‑cyan‑300">Gates</a>
+        <a href="#book‑session" class="hover:text‑cyan‑300">FlightLine P.C. Meeting</a>
+        <a href="#contact" class="hover:text‑cyan‑300">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max‑w‑6xl mx‑auto px‑4 pb‑16">
+    <!-- GLOBAL WHAT THIS PAGE DOES BANNER -->
+    <section class="pt‑4">
+      <div class="board‑frame rounded‑2xl border border‑slate‑800 bg‑slate‑900/80 px‑4 py‑3 flex flex‑col md:flex‑row md:items‑center md:justify‑between gap‑3">
+        <div>
+          <p class="text‑[11px] tracking‑[0.25em] uppercase text‑slate‑400">
+            What This Page Does
+          </p>
+          <p class="text‑xs md:text‑sm text‑slate‑200">
+            Shows DSX Packs as a motion credit board, lists FlightLine Gates like a departures screen,
+            exposes the three‑layer Proof Stack, and routes you into Memphis DC maps, calls, and custody lanes.
+          </p>
+        </div>
+        <div class="text‑[10px] text‑slate‑400 md:text‑right">
+          <p>Every ZIP = Runway · Every Scan = Proof · Every Payment = Public.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO -->
+    <section id="home" class="pt‑6 pb‑12">
+      <div class="grid md:grid‑cols‑2 gap‑8 items‑start">
+        <div>
+          <h1 class="text‑3xl md:text‑4xl font‑extrabold leading‑tight mb‑4 neon‑title">
+            FlightLine Memphis DC<br/>
+            <span class="text‑cyan‑300">Digital Real Estate &amp; Airport Grid</span>
+          </h1>
+          <p class="text‑sm md:text‑base text‑slate‑300 mb‑2">
+            Memphis DC | Capital of NETTOPIA — Googol‐level covenant hub with CUDA pilot engine,
+            QR maps, streaming rules, and a motion‑proof ledger.
+          </p>
+          <p class="text‑xs md:text‑sm text‑slate‑400 mb‑4">
+            DSX Packs fund motion. Gates lease corridors. Proof Stack turns every move into Flight Papers that
+            can stand in any boardroom or courtroom.
+          </p>
+
+          <!-- Mini "terminal ticker" for sections -->
+          <div class="mb‑4 board‑frame rounded‑xl border border‑slate‑800 bg‑slate‑900/80 scan‑bar">
+            <div class="px‑4 py‑2 bg‑slate‑950/90 border‑b border‑slate‑800 board‑header text‑[11px] text‑slate‑400 flex items‑center justify‑between">
+              <span>TERMINAL MENU</span>
+              <span class="text‑cyan‑300">FLIGHTLINE BOARD</span>
+            </div>
+            <div class="divide‑y divide‑slate‑800 text‑xs board‑row">
+              <div class="grid grid‑cols‑3 gap‑2 px‑4 py‑2">
+                <span class="text‑slate‑400">SECTION</span>
+                <span class="text‑slate‑400">ROUTE</span>
+                <span class="text‑right text‑slate‑400">CODE</span>
+              </div>
+              <div class="grid grid‑cols‑3 gap‑2 px‑4 py‑1 cursor‑pointer board‑row‑hover" onclick="location.href='#home'">
+                <span>HOME</span>
+                <span class="truncate">Memphis DC → NETTOPIA</span>
+                <span class="text‑right text‑yellow‑300">HUB</span>
+              </div>
+              <div class="grid grid‑cols‑3 gap‑2 px‑4 py‑1 cursor‑pointer board‑row‑hover" onclick="location.href='#proof‑stack'">
+                <span>PROOF STACK</span>
+                <span class="truncate">Scan · Move · Custody</span>
+                <span class="text‑right text‑yellow‑300">PFX</span>
+              </div>
+              <div class="grid grid‑cols‑3 gap‑2 px‑4 py‑1 cursor‑pointer board‑row‑hover" onclick="location.href='#dsx‑packs'">
+                <span>DSX PACKS</span>
+                <span class="truncate">Credits &amp; Motion Fuel</span>
+                <span class="text‑right text‑yellow‑300">DSX</span>
+              </div>
+              <div class="grid grid‑cols‑3 gap‑2 px‑4 py‑1 cursor‑pointer board‑row‑hover" onclick="location.href='#flightline‑gates'">
+                <span>GATES</span>
+                <span class="truncate">Leasing &amp; Corridors</span>
+                <span class="text‑right text‑yellow‑300">G1–G17</span>
+              </div>
+              <div class="grid grid‑cols‑3 gap‑2 px‑4 py‑1 cursor‑pointer board‑row‑hover" onclick="location.href='#book‑session'">
+                <span>P.C. MEETING</span>
+                <span class="truncate">Production &amp; Creation</span>
+                <span class="text‑right text‑yellow‑300">PC‑30</span>
+              </div>
+              <div the rest of the content continues...
+            </div>
+          </div>
+
+          <div class="flex flex‑wrap gap‑3 mt‑2">
+            <a href="#proof‑stack" class="inline‑flex items‑center px‑4 py‑2 rounded‑full bg‑cyan‑500 text‑slate‑950 text‑sm font‑semibold">
+              View Proof Stack
+            </a>
+            <a href="#dsx‑packs" class="inline‑flex items‑center px‑4 py‑2 rounded‑full border border‑cyan‑500 text‑cyan‑300 text‑sm font‑semibold">
+              View DSX Credit Board
+            </a>
+            <a href="#book‑session" class="inline‑flex items‑center px‑4 py‑2 rounded‑full border border‑slate‑600 text‑sm">
+              Book a FlightLine P.C. Meeting
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column continues... -->
+        <!-- (Motion Court card, Grid Maps, Tower Guard Meter) -->
+        <!-- … -->
+      </div>
+    </section>
+
+    <!--  PROOF STACK SECTION, DSX PACKS, GATES, etc. -->
+    <!--  (Continue with all the sections you had earlier) -->
+
+  </main>
+
+  <footer class="border‑t border‑slate‑800 py‑4 text‑center text‑xs text‑slate‑500">
+    © <span id="year"></span> FlightLine Memphis DC · All Rights Reserved
+  </footer>
+
+  <!-- Calendly badge widget script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script type="text/javascript">
+    window.onload = function() {
+      if (window.Calendly) {
+        Calendly.initBadgeWidget({
+          url: 'https://calendly.com/taylor‑theflightlinehq/30min',
+          text: 'Schedule time with FlightLine HQ',
+          color: '#22d3ee',
+          textColor: '#020617',
+          branding: true
+        });
+      }
+    };
+  </script>
+
+  <script>
+    // Mobile nav toggle
+    const btn = document.getElementById('mobileNavToggle');
+    const nav = document.getElementById('mobileNav');
+    btn?.addEventListener('click', () => nav.classList.toggle('hidden'));
+
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // If you had a radio rotation script or other floating elements, re‑insert here as needed
+  </script>
+</body>
+</html>
