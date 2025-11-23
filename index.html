@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="FlightLine Memphis DC is the capital node of NETTOPIA: a digital real‑estate and airport grid with DSX Packs, Gates, BTC Travel, and a three‑layer Proof Stack. Every ZIP = Runway. Every Scan = Proof. Every Payment = Public."
+    content="FlightLine Memphis DC is the capital node of NETTOPIA: a digital real estate and airport grid with DSX Packs, Gates, BTC Travel, and a three-layer Proof Stack. Every ZIP = Runway. Every Scan = Proof. Every Payment = Public."
   />
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +38,7 @@
     }
 
     .board-row {
-      font-family: ui‑monospace, SFMono‑Regular, Menlo, Monaco, Consolas,
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
     }
 
@@ -46,7 +46,7 @@
       background: radial-gradient(circle at left, rgba(34, 211, 238, 0.12), transparent);
     }
 
-    /* Subtle scan‑line across headers */
+    /* Subtle scan-line across headers */
     .scan-bar {
       position: relative;
       overflow: hidden;
@@ -69,8 +69,12 @@
     }
 
     @keyframes scan {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(350%); }
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(350%);
+      }
     }
 
     .neon-title {
@@ -173,7 +177,7 @@
           </h1>
           <p class="text-sm md:text-base text-slate-300 mb-2">
             Memphis DC | Capital of NETTOPIA — Googol-level covenant hub with CUDA pilot engine,
-            QR maps, streaming rules, and a motion‑proof ledger.
+            QR maps, streaming rules, and a motion-proof ledger.
           </p>
           <p class="text-xs md:text-sm text-slate-400 mb-4">
             DSX Packs fund motion. Gates lease corridors. Proof Stack turns every move into Flight Papers that
@@ -194,7 +198,7 @@
               </div>
               <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#home'">
                 <span>HOME</span>
-                <span class="truncate">Memphis DC → NETTOPIA</span>
+                <span class="truncate">Memphis DC &rarr; NETTOPIA</span>
                 <span class="text-right text-yellow-300">HUB</span>
               </div>
               <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#proof-stack'">
@@ -215,12 +219,12 @@
               <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#book-session'">
                 <span>P.C. MEETING</span>
                 <span class="truncate">Production &amp; Creation</span>
-                <span class="text-right text-yellow-300">PC‑30</span>
+                <span class="text-right text-yellow-300">PC-30</span>
               </div>
-              <div class="grid grid-cols-3 gap-2 px-4 py‑1 cursor‑pointer board‑row‑hover" onclick="location.href='#contact'">
+              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#contact'">
                 <span>CONTACT</span>
                 <span class="truncate">Ops &amp; Partnerships</span>
-                <span class="text‑right text‑yellow‑300">OPS</span>
+                <span class="text-right text-yellow-300">OPS</span>
               </div>
             </div>
           </div>
@@ -232,96 +236,178 @@
             <a href="#dsx-packs" class="inline-flex items-center px-4 py-2 rounded-full border border-cyan-500 text-cyan-300 text-sm font-semibold">
               View DSX Credit Board
             </a>
-            <a href="#book-session" class="inline-flex items‑center px‑4 py‑2 rounded‑full border border‑slate‑600 text‑sm">
+            <a href="#book-session" class="inline-flex items-center px-4 py-2 rounded-full border border-slate-600 text-sm">
               Book a FlightLine P.C. Meeting
             </a>
           </div>
         </div>
 
-        <!-- Right column: Motion Court + NETTOPIA Grid + Tower Guard -->
+        <!-- Right column: Motion Court + NETTOPIA Map Grid + Tower Guard -->
         <div class="space-y-4">
-          <!-- Motion Court card -->
+          <!-- MOTION COURT CARD -->
           <div class="border border-emerald-300/70 rounded-2xl bg-slate-950/90 board-frame overflow-hidden">
-            <div class="px-4 py-2 bg-slate-950/95 border-b border-slate-800 board-header text-[10px] text-slate-400 flex items‑center justify‑between">
+            <div class="px-4 py-2 bg-slate-950/95 border-b border-slate-800 board-header text-[10px] text-slate-400 flex items-center justify-between">
               <span>FLIGHTLINE MOTION COURT</span>
               <span class="text-emerald-300">EVERY MOVE IS EVIDENCE</span>
             </div>
             <div class="grid gap-3 md:grid-cols-1">
               <div class="relative overflow-hidden">
-                <div class="pointer-events-none absolute inset-0 bg-gradient‑to‑tr from‑cyan‑500/10 via‑transparent to‑emerald‑400/10 mix‑blend‑soft‑light"></div>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-emerald-400/10 mix-blend-soft-light"></div>
                 <img
                   src="gavel-motion-court.jpg"
                   alt="Digital judge's gavel made of glowing code with FlightLine insignia."
-                  class="w‑full h‑52 object‑cover md:h‑60 rounded‑b‑2xl brightness‑110 saturate‑125"
+                  class="w-full h-52 object-cover md:h-60 rounded-b-2xl brightness-110 saturate-125"
                 />
-                <div class="absolute inset‑x‑0 bottom‑0 bg‑gradient‑to‑t from‑slate‑950/90 via‑slate‑950/40 to‑transparent px‑4 py‑3 text‑xs">
-                  <p class="text‑[11px] text‑slate‑100 font‑semibold">
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent px-4 py-3 text-xs">
+                  <p class="text-[11px] text-slate-200">
                     The same grid that moves planes and people can hold up in any boardroom or courtroom.
                     Motion logs, custody lanes, and scan trails are structured as living exhibits.
                   </p>
                 </div>
               </div>
-              <div class="px‑4 pb‑3 pt‑1 text‑xs text‑slate‑300">
+              <div class="px-4 pb-3 pt-1 text-xs text-slate-300">
                 <p>
-                  <span class="font‑semibold text‑emerald‑300">Tower View:</span>
+                  <span class="font-semibold text-emerald-300">Tower View:</span>
                   DSX Packs, Gates, and BTC paths form a single auditable ledger — the
-                  <span class="font‑semibold">Flight Papers</span> for the Memphis DC / NETTOPIA era.
+                  <span class="font-semibold">Flight Papers</span> for the Memphis DC / NETTOPIA era.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- NETTOPIA Grid Maps -->
+          <!-- NETTOPIA GRID MAPS -->
           <div>
-            <h2 class="font‑semibold text‑sm text‑slate‑200 mb‑2">
+            <h2 class="font-semibold text-sm text-slate-200 mb-2">
               NETTOPIA Grid · Live Maps from Memphis DC
             </h2>
-            <div class="mt‑1 grid gap‑3 max‑w‑md">
-              <!-- Example link card -->
+            <div class="mt-1 grid gap-3 max-w-md">
+              <!-- ARRIVALS: Memphis DC · Angel's Kitchen · QRF -->
               <a
                 href="https://linktr.ee/QRF_Code_Veterans"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="board‑frame border border‑slate‑800 bg‑slate‑950/80 rounded‑2xl px‑4 py‑3 flex items‑center justify‑between hover:border‑cyan‑400 hover:bg‑slate‑900/90 transition"
+                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-cyan-400 hover:bg-slate-900/90 transition"
               >
-                <div class="flex flex‑col">
-                  <span class="text‑[10px] tracking‑[0.2em] uppercase text‑slate‑400">
+                <div class="flex flex-col">
+                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
                     ARRIVALS · MEMPHIS DC TERMINAL
                   </span>
-                  <span class="text‑sm font‑semibold text‑cyan‑300">
+                  <span class="text-sm font-semibold text-cyan-300">
                     Angel's Kitchen · QRF Code Veterans
                   </span>
-                  <span class="text‑[11px] text‑slate‑400">
-                    First stop on arrival & last stop before departure — veteran ops, ground support, and Angel's Kitchen hospitality hub.
+                  <span class="text-[11px] text-slate-400">
+                    First stop on arrival &amp; last stop before departure — veteran ops, ground support, and Angel's Kitchen hospitality hub.
                   </span>
                 </div>
-                <span class="text‑xl">🛬</span>
+                <span class="text-xl">🛬</span>
               </a>
 
-              <!-- Additional link cards as you already had... -->
+              <!-- DEPARTURES: NETTOPIA iOi Sector Map -->
+              <a
+                href="https://www.google.com/maps/d/viewer?mid=1-0hzlDqdjnbGTLPvbIf7WHHX2yF4owk&amp;usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-cyan-400 hover:bg-slate-900/90 transition"
+              >
+                <div class="flex flex-col">
+                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                    DEPARTURES · NETTOPIA
+                  </span>
+                  <span class="text-sm font-semibold text-cyan-300">
+                    iOi Sector · Memphis DC Capital Map
+                  </span>
+                  <span class="text-[11px] text-slate-400">
+                    First Outernet flight path into NETTOPIA’s live city grid, originating from Memphis DC.
+                  </span>
+                </div>
+                <span class="text-xl">🛫</span>
+              </a>
+
+              <!-- FIELD OPS: FlightLine Grid Under Construction -->
+              <a
+                href="https://www.google.com/maps/d/viewer?mid=1POvNXR-46CR7qju1OnWYkK80n5BFxwE&amp;usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="board-frame border border-slate-800 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-yellow-400 hover:bg-slate-900/90 transition"
+              >
+                <div class="flex flex-col">
+                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                    FIELD OPS · FLIGHTLINE MAP
+                  </span>
+                  <span class="text-sm font-semibold text-yellow-300">
+                    FlightLine Grid · Under Construction
+                  </span>
+                  <span class="text-[11px] text-slate-200">
+                    Live worksite map — lanes opening in real time as towers, corridors, and cities come online.
+                  </span>
+                </div>
+                <span class="text-2xl">🚧</span>
+              </a>
+
+              <!-- CODE OF D.A.V.I.D.: Jason Summerfall Grid -->
+              <a
+                href="https://www.google.com/maps/d/edit?mid=1IkYcGhF3GuFwgGjruV-n3mX61Gm7XgA&amp;usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-emerald-400 hover:bg-slate-900/90 transition"
+              >
+                <div class="flex flex-col">
+                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                    FLIGHTLINE · CODE OF D.A.V.I.D.
+                  </span>
+                  <span class="text-sm font-semibold text-emerald-300">
+                    Jason Summerfall · BTC Travel Grid
+                  </span>
+                  <span class="text-[11px] text-slate-400">
+                    Origin map for the Code of D.A.V.I.D. — route spine feeding the BTC Travel Grid and B10 Tower corridors.
+                  </span>
+                </div>
+                <span class="text-xl">🛰️</span>
+              </a>
+
+              <!-- O.A.S.I.S. FROM ANGEL'S KITCHEN -->
+              <a
+                href="https://linktr.ee/O.A.S.I.S."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-indigo-400 hover:bg-slate-900/90 transition"
+              >
+                <div class="flex flex-col">
+                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                    O.A.S.I.S. · OUTERENET SANCTUARY
+                  </span>
+                  <span class="text-sm font-semibold text-indigo-300">
+                    O.A.S.I.S. from Angel's Kitchen
+                  </span>
+                  <span class="text-[11px] text-slate-400">
+                    Soft-landing concourse for restoration, briefing, and reset before deeper NETTOPIA and FlightLine missions.
+                  </span>
+                </div>
+                <span class="text-xl">💧</span>
+              </a>
             </div>
           </div>
 
-          <!-- Tower Guard Motion Meter button -->
-          <div class="max‑w‑xl">
+          <!-- TOWER GUARD MOTION METER – SINGLE STANDOUT BUTTON -->
+          <div class="max-w-xl">
             <a
-              href="#proof‑stack"
-              class="tower‑guard‑btn board‑frame rounded‑2xl border border‑amber‑300/70 bg‑slate‑950/95 hover:bg‑slate‑900/95 transition"
+              href="#proof-stack"
+              class="tower-guard-btn board-frame rounded-2xl border border-amber-300/70 bg-slate-950/95 hover:bg-slate-900/95 transition"
             >
-              <div class="tower‑guard‑btn‑inner px‑4 py‑3 flex items‑center justify‑between gap‑3">
-                <div class="flex flex‑col">
-                  <span class="text‑[10px] tracking‑[0.25em] uppercase text‑amber‑300">
+              <div class="tower-guard-btn-inner px-4 py-3 flex items-center justify-between gap-3">
+                <div class="flex flex-col">
+                  <span class="text-[10px] tracking-[0.25em] uppercase text-amber-300">
                     TOWER GUARD MOTION METER
                   </span>
-                  <span class="text‑sm font‑semibold text‑slate‑100">
+                  <span class="text-sm font-semibold text-slate-100">
                     Motion Proof · Route Recon · B10 Towers
                   </span>
-                  <span class="text‑[11px] text‑slate‑300">
-                    First‑ever MOTION PROOF strip — records live movement for more than a movie.
+                  <span class="text-[11px] text-slate-300">
+                    First-ever MOTION PROOF strip — records live movement for more than a movie.
                     Route recon for expansion and continuous evolution of the BTC Travel Grid for the B10 Towers.
                   </span>
                 </div>
-                <span class="text‑2xl">📡</span>
+                <span class="text-2xl">📡</span>
               </div>
             </a>
           </div>
@@ -329,277 +415,469 @@
       </div>
     </section>
 
-    <!-- PROOF STACK Section -->
-    <section id="proof-stack" class="mb‑12">
-      <div class="text-center mb‑6">
-        <h2 class="text‑2xl md:text‑3xl font‑bold neon‑title">Proof Stack</h2>
-        <p class="text‑sm md:text‑base text‑slate‑300 mt‑1">
-          Three live layers that turn Memphis DC into an evidence‑grade grid:
-          <span class="text‑cyan‑300">Every Scan = Proof · Proof in the Movement · Unbroken Custody.</span>
+    <!-- ========================= -->
+    <!--  PROOF STACK SECTION     -->
+    <!-- ========================= -->
+
+    <section id="proof-stack" class="mb-12">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold neon-title">Proof Stack</h2>
+        <p class="text-sm md:text-base text-slate-300 mt-1">
+          Three live layers that turn Memphis DC into an evidence-grade grid:
+          <span class="text-cyan-300">Every Scan = Proof · Proof in the Movement · Unbroken Custody.</span>
         </p>
-        <p class="text‑xs md:text‑sm text‑slate‑400 max‑w‑2xl mx‑auto mt‑2">
-          Each layer is wired to its own log: scans (front), movement (middle), and custody (back‑end).
+        <p class="text-xs md:text-sm text-slate-400 max-w-2xl mx-auto mt-2">
+          Each layer is wired to its own log: scans (front), movement (middle), and custody (back-end).
           Together they form the Flight Papers for any city, client, or campaign on the grid.
         </p>
       </div>
 
-      <div class="grid gap‑6 md:grid‑cols‑3">
-        <!-- Card 1 -->
-        <article class="board‑frame border border‑slate‑800 bg‑slate‑950/90 rounded‑2xl overflow‑hidden flex flex‑col">
-          <div class="relative overflow‑hidden">
-            <div class="pointer‑events‑none absolute inset‑0 bg‑gradient‑to‑tr from‑cyan‑500/10 via‑transparent to‑emerald‑400/10 mix‑blend‑soft‑light"></div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- Card 1: Every Scan = Proof -->
+        <article class="board-frame border border-slate-800 bg-slate-950/90 rounded-2xl overflow-hidden flex flex-col">
+          <div class="relative overflow-hidden">
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-emerald-400/10 mix-blend-soft-light"></div>
             <img
-              src="every‑scan‑proof.png"
+              src="every-scan-proof.png"
               alt="Angel's Kitchen Flight Hub with QR stands and the line Every Scan = Proof."
-              class="w‑full h‑52 object‑cover rounded‑t‑2xl brightness‑110 saturate‑125"
+              class="w-full h-52 object-cover rounded-t-2xl brightness-110 saturate-125"
             />
-            <div class="absolute inset‑x‑0 bottom‑0 bg‑gradient‑to‑t from‑slate‑950 via‑slate‑950/60 to‑transparent px‑4 py‑3 text‑[11px]">
-              <p class="text‑slate‑100 font‑semibold">Layer 1 · Scan Proof</p>
-              <p class="text‑slate‑300">
-                Front‑of‑house verification: guests, agents, products, and payments all arrive through a scan.
-                Each scan writes a verifiable event you can show to partners, auditors, or courts.
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent px-4 py-3 text-[11px]">
+              <p class="text-slate-100 font-semibold">Layer 1 · Scan Proof</p>
+              <p class="text-slate-300">
+                Angel’s Kitchen is the front gate. Every QR scan becomes a time-stamped entry on the DSX ledger.
               </p>
             </div>
           </div>
-          <div class="p‑4 flex‑1 flex flex‑col justify‑between">
-            <p class="text‑xs text‑slate‑300 mb‑3">
-              Front‑of‑house verification: guests, agents, products, and payments all arrive through a scan.
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <p class="text-xs text-slate-300 mb-3">
+              Front-of-house verification: guests, agents, products, and payments all arrive through a scan.
               Each scan writes a verifiable event you can show to partners, auditors, or courts.
             </p>
             <a
               href="https://docs.google.com/forms/d/e/SCAN_LOG_FORM_ID/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
-              aria‑label="Open scan log for Every Scan equals Proof"
-              class="mt‑auto inline‑flex justify‑center w‑full px‑4 py‑2 rounded‑full bg‑cyan‑500 text‑slate‑950 text‑xs font‑semibold"
+              aria-label="Open scan log for Every Scan equals Proof"
+              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-cyan-500 text-slate-950 text-xs font-semibold"
             >
               Open Scan Log
             </a>
           </div>
         </article>
 
-        <!-- Card 2 -->
-        <article class="board‑frame border border‑slate‑800 bg‑slate‑950/90 rounded‑2xl overflow‑hidden flex flex‑col">
-          <div class="relative overflow‑hidden">
-            <div class="pointer‑events‑none absolute inset‑0 bg‑gradient‑to‑tr from‑cyan‑500/10 via‑transparent to‑emerald‑400/10 mix‑blend‑soft‑light"></div>
+        <!-- Card 2: The Proof Is in the Movement -->
+        <article class="board-frame border border-slate-800 bg-slate-950/90 rounded-2xl overflow-hidden flex flex-col">
+          <div class="relative overflow-hidden">
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-emerald-400/10 mix-blend-soft-light"></div>
             <img
-              src="proof‑is‑in‑movement.png"
+              src="proof-is-in-movement.png"
               alt="World map made of glowing network lines with the text The proof is in the movement."
-              class="w‑full h‑52 object‑cover rounded‑t‑2xl brightness‑110 saturate‑125"
+              class="w-full h-52 object-cover rounded-t-2xl brightness-110 saturate-125"
             />
-            <div class="absolute inset‑x‑0 bottom‑0 bg‑gradient‑to‑t from‑slate‑950 via‑slate‑950/60 to‑transparent px‑4 py‑3 text‑[11px]">
-              <p class="text‑slate‑100 font‑semibold">Layer 2 · Motion Proof</p>
-              <p class="text‑slate‑300">
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent px-4 py-3 text-[11px]">
+              <p class="text-slate-100 font-semibold">Layer 2 · Motion Proof</p>
+              <p class="text-slate-300">
                 Routes, leases, and lanes render as a live trail of work across cities and towers.
               </p>
             </div>
           </div>
-          <div class="p‑4 flex‑1 flex flex‑col justify‑between">
-            <p class="text‑xs text‑slate‑300 mb‑3">
-              Mid‑layer telemetry: every corridor between cities and towers is logged,
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <p class="text-xs text-slate-300 mb-3">
+              Mid-layer telemetry: every corridor between cities and towers is logged,
               so expansion is always tied to real movement — not just plans or slides.
             </p>
             <a
               href="https://docs.google.com/forms/d/e/MOTION_LEDGER_FORM_ID/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
-              aria‑label="View motion ledger for routes and leases"
-              class="mt‑auto inline‑flex justify‑center w‑full px‑4 py‑2 rounded‑full bg‑indigo‑500 text‑slate‑50 text‑xs font‑semibold"
+              aria-label="View motion ledger for routes and leases"
+              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-indigo-500 text-slate-50 text-xs font-semibold"
             >
               View Motion Ledger
             </a>
           </div>
         </article>
 
-        <!-- Card 3 -->
-        <article class="board‑frame border border‑slate‑800 bg‑slate‑950/90 rounded‑2xl overflow‑hidden flex flex‑col">
-          <div class="relative overflow‑hidden">
-            <div class="pointer‑events‑none absolute inset‑0 bg‑gradient‑to‑tr from‑cyan‑500/10 via‑transparent to‑emerald‑400/10 mix‑blend‑soft‑light"></div>
+        <!-- Card 3: Pillar 3 · Unbroken Custody -->
+        <article class="board-frame border border-slate-800 bg-slate-950/90 rounded-2xl overflow-hidden flex flex-col">
+          <div class="relative overflow-hidden">
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-emerald-400/10 mix-blend-soft-light"></div>
             <img
-              src="pillar3‑unbroken‑custody.png"
+              src="pillar3-unbroken-custody.png"
               alt="Flight Papers boarding pass over private jet and BTC network with Pillar 3: Unbroken Custody."
-              class="w‑full h‑52 object‑cover rounded‑t‑2xl brightness‑110 saturate‑125"
+              class="w-full h-52 object-cover rounded-t-2xl brightness-110 saturate-125"
             />
-            <div class="absolute inset‑x‑0 bottom‑0 bg‑gradient‑to‑t from‑slate‑950 via‑slate‑950/60 to‑transparent px‑4 py‑3 text‑[11px]">
-              <p class="text‑slate‑100 font‑semibold">Layer 3 · Unbroken Custody</p>
-              <p class="text‑slate‑300">
-                From Lightning Node Family Trust to BTC Traveler — every hand‑off is traceable, never guesswork.
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent px-4 py-3 text-[11px]">
+              <p class="text-slate-100 font-semibold">Layer 3 · Unbroken Custody</p>
+              <p class="text-slate-300">
+                From Lightning Node Family Trust to BTC Traveler — every handoff is traceable, never guesswork.
               </p>
             </div>
           </div>
-          <div class="p‑4 flex‑1 flex flex‑col justify‑between">
-            <p class="text‑xs text‑slate‑300 mb‑3">
-              Back‑end assurance: who held what, when, and where is never a mystery.
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <p class="text-xs text-slate-300 mb-3">
+              Back-end assurance: who held what, when, and where is never a mystery.
               Custody is continuous from Memphis DC, through the towers, and out into NETTOPIA.
             </p>
             <a
               href="https://docs.google.com/forms/d/e/CUSTODY_REGISTER_FORM_ID/viewform?usp=sf_link"
               target="_blank"
               rel="noopener noreferrer"
-              aria‑label="Open BTC Traveler custody register"
-              class="mt‑auto inline‑flex justify‑center w‑full px‑4 py‑2 rounded‑full bg‑emerald‑500 text‑slate‑950 text‑xs font‑semibold"
+              aria-label="Open BTC Traveler custody register"
+              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-emerald-500 text-slate-950 text-xs font-semibold"
             >
-              BTC Traveler · Check‑In / Out
+              BTC Traveler · Check-In / Out
             </a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- DSX PACKS Board -->
-    <section id="dsx-packs" class="mt‑4 mb‑10">
-      <h2 class="text‑2xl font‑bold text‑center mb‑1 neon‑title">DiGi Snax PACK</h2>
-      <p class="text‑center text‑sm text‑slate‑300 mb‑1">
+    <!-- ========================= -->
+    <!--  DSX PACKS BOARD         -->
+    <!-- ========================= -->
+
+    <section id="dsx-packs" class="mt-4 mb-10">
+      <h2 class="text-2xl font-bold text-center mb-1 neon-title">DiGi Snax PACK</h2>
+      <p class="text-center text-sm text-slate-300 mb-1">
         <strong>FlightLine DSX Wallet · DSX Credits for Motion</strong>
       </p>
-      <p class="text‑center text‑xs md:text‑sm text‑slate‑400 mb‑4">
+      <p class="text-center text-xs md:text-sm text-slate-400 mb-4">
         Pick a pack, fuel a corridor, and log every move into the Proof Stack.
       </p>
 
-      <div class="border border‑slate‑800 rounded‑2xl bg‑slate‑900/70 board‑frame overflow‑hidden">
-        <div class="px‑4 py‑2 bg‑slate‑950/90 border‑b border‑slate‑800 board‑header text‑[11px] text‑slate‑400 flex items‑center justify‑between">
+      <div class="border border-slate-800 rounded-2xl bg-slate-900/70 board-frame overflow-hidden">
+        <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
           <span>DEPARTURES · DSX CREDIT BOARD</span>
-          <span class="text‑yellow‑300">PACKS 01–10</span>
+          <span class="text-yellow-300">PACKS 01–10</span>
         </div>
 
         <!-- Header row -->
-        <div class="hidden md:grid grid‑cols‑4 gap‑2 px‑4 py‑2 text‑[11px] text‑slate‑400 board‑row border‑b border‑slate‑800">
+        <div class="hidden md:grid grid-cols-4 gap-2 px-4 py-2 text-[11px] text-slate-400 board-row border-b border-slate-800">
           <span>PACK</span>
           <span>DESCRIPTION</span>
-          <span class="text‑right">VALUE (USD)</span>
-          <span class="text‑right">ACTION</span>
+          <span class="text-right">VALUE (USD)</span>
+          <span class="text-right">ACTION</span>
         </div>
 
-        <div class="divide‑y divide‑slate‑800 text‑sm board‑row">
+        <!-- Rows -->
+        <div class="divide-y divide-slate-800 text-sm board-row">
           <!-- Pack 01 -->
-          <div class="px‑4 py‑2 grid grid‑cols‑1 md:grid‑cols‑4 gap‑1 md:gap‑2 board‑row‑hover">
-            <div class="flex items‑center gap‑1">
-              <span class="font‑semibold text‑yellow‑300">DSX 01</span>
-              <span class="text‑[10px] px‑2 py‑[2px] rounded‑full bg‑emerald‑500/10 text‑emerald‑300 border border‑emerald‑500/40">
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="flex items-center gap-1">
+              <span class="font-semibold text-yellow-300">DSX 01</span>
+              <span class="text-[10px] px-2 py-[2px] rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/40">
                 Start Here
               </span>
             </div>
             <div>Starter · First spark of motion on the grid.</div>
-            <div class="md:text‑right">$1.00</div>
-            <div class="md:text‑right">
-              <a href="https://buy.stripe.com/dRm4gAaM75G09jJ92r7g405" target="_blank" rel="noopener noreferrer" class="text‑cyan‑300 underline text‑xs md:text‑sm">
+            <div class="md:text-right">$1.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/dRm4gAaM75G09jJ92r7g405" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
                 Buy Pack 01
               </a>
             </div>
           </div>
 
           <!-- Pack 02 -->
-          <div class="px‑4 py‑2 grid grid‑cols‑1 md:grid‑cols‑4 gap‑1 md:gap‑2 board‑row‑hover">
-            <div class="font‑semibold text‑yellow‑300">DSX 02</div>
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 02</div>
             <div>Local Ops · Light up one neighborhood or single shop.</div>
-            <div class="md:text‑right">$5.00</div>
-            <div class="md:text‑right">
-              <a href="https://buy.stripe.com/aFa8wQf2n4BW0Nd3I77g406" target="_blank" rel="noopener noreferrer" class="text‑cyan‑300 underline text‑xs md:text‑sm">
+            <div class="md:text-right">$5.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/aFa8wQf2n4BW0Nd3I77g406" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
                 Buy Pack 02
               </a>
             </div>
           </div>
 
-          <!-- Packs 03‑10 ... (the rest of the rows) -->
+          <!-- Pack 03 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 03</div>
+            <div>Corridor Builder · Connect two or more live routes between hubs.</div>
+            <div class="md:text-right">$10.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/14AaEY4nJgkEfI75Qf7g407" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 03
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 04 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="flex items-center gap-1">
+              <span class="font-semibold text-yellow-300">DSX 04</span>
+              <span class="text-[10px] px-2 py-[2px] rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/40">
+                City Start
+              </span>
+            </div>
+            <div>City Runner · Power one city-level grid with active lanes.</div>
+            <div class="md:text-right">$25.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/8x228sf2nb0keE30vV7g408" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 04
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 05 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 05</div>
+            <div>Regional Motion · Keep multiple cities and towers moving together.</div>
+            <div class="md:text-right">$50.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/28E3cw07t1pK3Zp5Qf7g409" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 05
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 06 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 06</div>
+            <div>Network Builder · Stitch regions into one continuous network.</div>
+            <div class="md:text-right">$100.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/3cIeVecUffgAgMb92r7g40a" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 06
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 07 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 07</div>
+            <div>Mission Ops · Fuel a full campaign, launch, or seasonal push.</div>
+            <div class="md:text-right">$250.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/9B600kbQb3xS1RhguT7g40d" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 07
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 08 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 08</div>
+            <div>Layer Fuel · Long-haul deployments across states and corridors.</div>
+            <div class="md:text-right">$500.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/eVq5kEf2ngkE8fF0vV7g40e" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 08
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 09 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 09</div>
+            <div>UniverCity Tier · Train campuses, teams, and cohorts on the grid.</div>
+            <div class="md:text-right">$1,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/7sY4gAaM75G09jJ6Uj7g40f" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 09
+              </a>
+            </div>
+          </div>
+
+          <!-- Pack 10 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-yellow-300">DSX 10</div>
+            <div>Googol · Plant the flag for mega-motion and full network takeover.</div>
+            <div class="md:text-right">$10,000.00</div>
+            <div class="md:text-right">
+              <a href="https://buy.stripe.com/dRm9AU3jF7O89jJemL7g40g" target="_blank" rel="noopener noreferrer" class="text-cyan-300 underline text-xs md:text-sm">
+                Buy Pack 10
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- GATES Board -->
-    <section id="flightline-gates" class="mt‑8 mb‑12">
-      <div class="text‑center mb‑6">
-        <h2 class="text‑2xl md:text‑3xl font‑bold neon‑title">FlightLine Gates</h2>
-        <p class="text‑sm md:text‑base text‑slate‑300 mt‑1">
+    <!-- ========================= -->
+    <!--  GATES BOARD             -->
+    <!-- ========================= -->
+
+    <section id="flightline-gates" class="mt-8 mb-12">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold neon-title">FlightLine Gates</h2>
+        <p class="text-sm md:text-base text-slate-300 mt-1">
           Gates are leased corridors on the grid — storefronts, neighborhoods, cities, regions, and beyond.
         </p>
-        <p class="text‑xs md:text‑sm text‑slate‑400 max‑w‑2xl mx‑auto mt‑2">
+        <p class="text-xs md:text-sm text-slate-400 max-w-2xl mx-auto mt-2">
           Each gate can be tied to a DSX Pack and Proof Stack logs, so every campaign, city, and partner has a clear lane.
         </p>
       </div>
 
-      <div class="border border‑slate‑800 rounded‑2xl bg‑slate‑900/70 board‑frame overflow‑hidden">
-        <div class="px‑4 py‑2 bg‑slate‑950/90 border‑b border‑slate‑800 board‑header text‑[11px] text‑slate‑400 flex items‑center justify‑between">
+      <div class="border border-slate-800 rounded-2xl bg-slate-900/70 board-frame overflow-hidden">
+        <div class="px-4 py-2 bg-slate-950/90 border-b border-slate-800 board-header text-[11px] text-slate-400 flex items-center justify-between">
           <span>DEPARTURES · GATE BOARD</span>
-          <span class="text‑yellow‑300">G1–G17</span>
+          <span class="text-yellow-300">G1–G17</span>
         </div>
 
         <!-- Header row -->
-        <div class="hidden md:grid grid‑cols‑4 gap‑2 px‑4 py‑2 text‑[11px] text‑slate‑400 board‑row border‑b border‑slate‑800">
+        <div class="hidden md:grid grid-cols-4 gap-2 px-4 py-2 text-[11px] text-slate-400 board-row border-b border-slate-800">
           <span>GATE</span>
           <span>TIER</span>
-          <span class="text‑right">USE CASE</span>
-          <span class="text‑right">STATUS</span>
+          <span class="text-right">USE CASE</span>
+          <span class="text-right">STATUS</span>
         </div>
 
-        <div class="divide‑y divide‑slate‑800 text‑sm board‑row">
+        <div class="divide-y divide-slate-800 text-sm board-row">
           <!-- G1 -->
-          <div class="px‑4 py‑2 grid grid‑cols‑1 md:grid‑cols‑4 gap‑1 md:gap‑2 board‑row-hover">
-            <div class="font‑semibold text‑cyan‑300">G1</div>
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G1</div>
             <div>Storefront Lane</div>
-            <div class="md:text‑right">Single brand / first entry</div>
-            <div class="md:text‑right text‑emerald‑400">Open for Lease</div>
+            <div class="md:text-right">Single brand / first entry</div>
+            <div class="md:text-right text-emerald-400">Open for Lease</div>
           </div>
 
-          <!-- G2‑G17 rows follow similarly -->
+          <!-- G2 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G2</div>
+            <div>Neighborhood Runway</div>
+            <div class="md:text-right">Blocks, streets, small clusters</div>
+            <div class="md:text-right text-emerald-400">Open for Lease</div>
+          </div>
+
+          <!-- G3 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G3</div>
+            <div>City Grid Gate</div>
+            <div class="md:text-right">One city, multiple lanes</div>
+            <div class="md:text-right text-amber-300">Reserved · Memphis DC</div>
+          </div>
+
+          <!-- G4 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G4</div>
+            <div>Regional Corridor</div>
+            <div class="md:text-right">Multi-city / state corridor</div>
+            <div class="md:text-right text-emerald-400">Open for Lease</div>
+          </div>
+
+          <!-- G5 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G5</div>
+            <div>State Grid</div>
+            <div class="md:text-right">Full state deployment</div>
+            <div class="md:text-right text-slate-300">Planning</div>
+          </div>
+
+          <!-- G6 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G6</div>
+            <div>Interstate Spine</div>
+            <div class="md:text-right">Cross-state travel + BTC lanes</div>
+            <div class="md:text-right text-slate-300">Planning</div>
+          </div>
+
+          <!-- G7 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G7</div>
+            <div>Region Hub</div>
+            <div class="md:text-right">Cluster of states / cities</div>
+            <div class="md:text-right text-slate-300">Under Review</div>
+          </div>
+
+          <!-- G8 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G8</div>
+            <div>BTC Travel Gate</div>
+            <div class="md:text-right">BTC Traveler &amp; B10 Towers</div>
+            <div class="md:text-right text-amber-300">Reserved · Code of D.A.V.I.D.</div>
+          </div>
+
+          <!-- G9 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G9</div>
+            <div>Campus / UniverCity</div>
+            <div class="md:text-right">Schools, teams, academies</div>
+            <div class="md:text-right text-emerald-400">Open for Lease</div>
+          </div>
+
+          <!-- G10 -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G10</div>
+            <div>Enterprise Gate</div>
+            <div class="md:text-right">Corporate / national partners</div>
+            <div class="md:text-right text-slate-300">In Discussion</div>
+          </div>
+
+          <!-- G11–G17: reserved / expansion -->
+          <div class="px-4 py-2 grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-2 board-row-hover">
+            <div class="font-semibold text-cyan-300">G11–G17</div>
+            <div>Expansion Lanes</div>
+            <div class="md:text-right">Future towers, continents, alliances</div>
+            <div class="md:text-right text-slate-400">Reserved for Growth</div>
+          </div>
         </div>
       </div>
 
-      <p class="mt‑3 text‑xs md:text‑sm text‑slate‑400 text‑center max‑w‑2xl mx‑auto">
+      <p class="mt-3 text-xs md:text-sm text-slate-400 text-center max-w-2xl mx-auto">
         To lease a gate, lock in a DSX Pack and schedule a FlightLine P.C. Meeting.
         We align your gate with Proof Stack logs so every move is documented from day one.
       </p>
     </section>
 
-    <!-- FLIGHTLINE P.C. Meeting Section -->
-    <section id="book‑session" class="mt‑10 mb‑12">
-      <div class="max‑w‑3xl mx‑auto board‑frame border border‑slate‑800 rounded‑2xl bg‑slate‑950/90 p‑6">
-        <h2 class="text‑2xl font‑bold mb‑2 neon‑title text‑center">FlightLine P.C. Meeting</h2>
-        <p class="text‑sm md:text‑base text‑slate‑300 text‑center mb‑4">
-          P.C. = Production &amp; Creation. This is where we map your lanes:
+    <!-- ========================= -->
+    <!--  FLIGHTLINE P.C. MEETING -->
+    <!-- ========================= -->
+
+    <section id="book-session" class="mt-10 mb-12">
+      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
+        <h2 class="text-2xl font-bold mb-2 neon-title text-center">FlightLine P.C. Meeting</h2>
+        <p class="text-sm md:text-base text-slate-300 text-center mb-4">
+          P.C. = Production &amp; Creation. This is where we sit in the cockpit and map your lanes:
           DSX Packs, gates, BTC travel, and Proof Stack wiring.
         </p>
-        <p class="text‑xs md:text‑sm text‑slate‑400 text‑center mb‑6">
-          Use the Calendly badge below to lock in a 30‑minute FlightLine HQ session.
+        <p class="text-xs md:text-sm text-slate-400 text-center mb-6">
+          Use the Calendly badge in the corner or the button below to lock in a 30-minute FlightLine HQ session.
         </p>
-        <div class="flex justify‑center">
+        <div class="flex justify-center">
           <a
-            href="https://calendly.com/taylor‑theflightlinehq/30min"
+            href="https://calendly.com/taylor-theflightlinehq/30min"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline‑flex items‑center px‑5 py‑2.5 rounded‑full bg‑cyan‑500 text‑slate‑950 text‑sm font‑semibold hover:bg‑cyan‑400 transition"
+            class="inline-flex items-center px-5 py-2.5 rounded-full bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition"
           >
-            Book a 30‑Min FlightLine HQ Call
+            Book a 30-Min FlightLine HQ Call
           </a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT Section -->
-    <section id="contact" class="mt‑10 mb‑6">
-      <div class="max‑w‑3xl mx‑auto board‑frame border border‑slate‑800 rounded‑2xl bg‑slate‑950/90 p‑6">
-        <h2 class="text‑2xl font‑bold mb‑2 neon‑title text‑center">Contact &amp; Ops</h2>
-        <p class="text‑sm md:text‑base text‑slate‑300 text‑center mb‑4">
+    <!-- ========================= -->
+    <!--  CONTACT SECTION         -->
+    <!-- ========================= -->
+
+    <section id="contact" class="mt-10 mb-6">
+      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
+        <h2 class="text-2xl font-bold mb-2 neon-title text-center">Contact &amp; Ops</h2>
+        <p class="text-sm md:text-base text-slate-300 text-center mb-4">
           FlightLine Memphis DC is the Memphis capital node for the NETTOPIA grid.
         </p>
-        <div class="grid md:grid‑cols‑2 gap‑4 text‑xs md:text‑sm text‑slate‑300">
-          <div class="space‑y‑2">
-            <h3 class="font‑semibold text‑cyan‑300 text‑sm">Operations &amp; Partnerships</h3>
-            <ul class="space‑y‑1">
-              <li>🛫 Gate leasing & DSX Pack alignments</li>
-              <li>🛰️ BTC Travel Grid & B10 Tower routes</li>
-              <li>🏙️ City/node FlightLine deployments</li>
+        <div class="grid md:grid-cols-2 gap-4 text-xs md:text-sm text-slate-300">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-cyan-300 text-sm">Operations &amp; Partnerships</h3>
+            <ul class="space-y-1">
+              <li>🛫 Gate leasing &amp; DSX Pack alignments</li>
+              <li>🛰️ BTC Travel Grid &amp; B10 Tower routes</li>
+              <li>🏙️ City / region FlightLine deployments</li>
             </ul>
           </div>
-          <div class="space‑y‑2">
-            <h3 class="font‑semibold text‑cyan‑300 text‑sm">How to Reach FlightLine HQ</h3>
-            <ul class="space‑y‑1">
+          <div class="space-y-2">
+            <h3 class="font-semibold text-cyan-300 text-sm">How to Reach FlightLine HQ</h3>
+            <ul class="space-y-1">
               <li>
                 🔗 Linktree:
                 <a
                   href="https://linktr.ee/QRF_Code_Veterans"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text‑cyan‑300 underline"
+                  class="text-cyan-300 underline"
                 >
                   QRF_Code_Veterans
                 </a>
@@ -607,114 +885,175 @@
               <li>
                 📅 Schedule:
                 <a
-                  href="https://calendly.com/taylor‑theflightlinehq/30min"
+                  href="https://calendly.com/taylor-theflightlinehq/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text‑cyan‑300 underline"
+                  class="text-cyan-300 underline"
                 >
                   FlightLine HQ Calendly
                 </a>
               </li>
-              <li>🧾 All calls, scans, and lanes can be logged into the Proof Stack.</li>
+              <li>🧾 All calls, scans, and lanes can be logged into the Proof Stack as Flight Papers.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FLIGHTLINE BASEMENT Section -->
-    <section id="flightline-basement" class="mt‑10 mb‑12">
-      <div class="max‑w‑4xl mx‑auto board‑frame border border‑slate‑800 rounded‑2xl bg‑slate‑950/95 p‑6">
-        <h2 class="text‑2xl md:text‑3xl font‑bold neon‑title text‑center">
+    <!-- ========================= -->
+    <!--  FLIGHTLINE BASEMENT     -->
+    <!-- ========================= -->
+
+    <section id="flightline-basement" class="mt-10 mb-12">
+      <div class="max-w-4xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/95 p-6">
+        <h2 class="text-2xl md:text-3xl font-bold neon-title text-center">
           FlightLine Basement · Art · News · Deep Dive
         </h2>
-        <p class="text‑sm md:text‑base text‑slate‑300 text‑center mt‑2 mb‑4">
-          The lower deck of Memphis DC — where we park long‑form thinking:
-          podcasts, PSAs, art, books, and the universal parking lot for FlightLine.
+        <p class="text-sm md:text-base text-slate-300 text-center mt-2 mb-4">
+          The lower deck of Memphis DC — where we park the long-form thinking:
+          podcasts, PSAs, art, books, and the universal parking lot for the FlightLine.
         </p>
 
-        <div class="grid gap‑4 md:grid‑cols‑2">
+        <div class="grid gap-4 md:grid-cols-2">
+          <!-- Deep Dive · NotebookLM -->
           <a
-            href="https://notebooklm.google.com/notebook/7c3cbbe4‑4460‑4d9b‑ba15‑4de9e9dd1407"
+            href="https://notebooklm.google.com/notebook/7c3cbbe4-4460-4d9b-ba15-4de9e9dd1407"
             target="_blank"
             rel="noopener noreferrer"
-            class="board‑frame border border‑slate‑800 bg‑slate‑900/80 rounded‑2xl px‑4 py‑3 hover:border‑cyan‑400 hover:bg‑slate‑900 transition"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-cyan-400 hover:bg-slate-900 transition"
           >
-            <p class="text‑[10px] tracking‑[0.2em] uppercase text‑slate‑400">
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
               Deep Dive · NotebookLM
             </p>
-            <p class="text‑sm font‑semibold text‑cyan‑300">
+            <p class="text-sm font-semibold text-cyan-300">
               FlightLine Deep Dive · Memphis DC
             </p>
-            <p class="text‑[11px] text‑slate‑400">
-              Long‑form breakdowns: grid, towers, DSX Packs, NETTOPIA routes.
+            <p class="text-[11px] text-slate-400">
+              Long-form breakdowns of the grid, towers, DSX Packs, and NETTOPIA routes — straight from the NotebookLM cockpit.
             </p>
           </a>
 
-          <!-- Additional cards… -->
+          <!-- Basic Training · Radio Tower -->
+          <a
+            href="https://notebooklm.google.com/notebook/e4f57dad-4cba-454d-85d0-5879f5ab2a30?authuser=4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-emerald-400 hover:bg-slate-900 transition"
+          >
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+              Basic Training · FlightLine Radio Tower
+            </p>
+            <p class="text-sm font-semibold text-emerald-300">
+              FlightLine Air Assault · Crown 17 Stack
+            </p>
+            <p class="text-[11px] text-slate-400">
+              Onboarding realm for contractors: access, keys, and aircraft — mapping your Google stack into FlightLine roles.
+            </p>
+          </a>
+
+          <!-- FlightLine PSAs · Google Flow -->
+          <a
+            href="https://notebooklm.google.com/notebook/cbbb55f1-7cca-49e2-beec-7834ce85d3fa?authuser=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-yellow-400 hover:bg-slate-900 transition"
+          >
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+              FlightLine PSA · Google Flow
+            </p>
+            <p class="text-sm font-semibold text-yellow-300">
+              8-Second Clips · Mass Coverage
+            </p>
+            <p class="text-[11px] text-slate-400">
+              Short-form PSAs scripted for the grid — Google Flow videos that speak to whole towers and lanes in under 10 seconds.
+            </p>
+          </a>
+
+          <!-- Universal Parking Deck · TheUniversalFlightLine -->
+          <a
+            href="https://linktr.ee/TheUniversalFlightLine"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-indigo-400 hover:bg-slate-900 transition"
+          >
+            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+              Universal Parking Deck · Waiting Room
+            </p>
+            <p class="text-sm font-semibold text-indigo-300">
+              The Universal FlightLine · 24/7 Scroll
+            </p>
+            <p class="text-[11px] text-slate-400">
+              Always-on landing page for agents and guests — park, taxi down the active, and scroll content while deliveries and lanes load.
+            </p>
+          </a>
         </div>
 
-        <p class="mt‑4 text‑[11px] text‑slate‑400 text‑center">
-          Everything above the Basement runs live ops. Everything in the Basement keeps training, culture, and story synced.
+        <p class="mt-4 text-[11px] text-slate-400 text-center">
+          Everything above the Basement runs the live ops. Everything in the Basement keeps the culture, training, and story synced.
         </p>
       </div>
     </section>
 
-    <!-- FLIGHTLINE RADIO Section -->
-    <section id="flightline-radio" class="mt‑10 mb‑12">
-      <div class="max‑w‑3xl mx‑auto board‑frame border border‑slate‑800 rounded‑2xl bg‑slate‑950/90 p‑6">
-        <h2 class="text‑2xl md:text‑3xl font‑bold neon‑title text‑center">
+    <!-- ========================= -->
+    <!--  FLIGHTLINE RADIO        -->
+    <!-- ========================= -->
+
+    <section id="flightline-radio" class="mt-10 mb-12">
+      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
+        <h2 class="text-2xl md:text-3xl font-bold neon-title text-center">
           FlightLine Radio · Motion Proof Anthem
         </h2>
-        <p class="text‑sm md:text‑base text‑slate‑300 text‑center mt‑2 mb‑3">
-          Official FlightLine soundtrack for Memphis DC — tracks that run with the grid, towers, and BTC travel lanes.
+        <p class="text-sm md:text-base text-slate-300 text-center mt-2 mb-3">
+          Official FlightLine soundtrack for Memphis DC — songs that run with the grid, towers, and BTC travel lanes.
         </p>
-        <p class="text‑xs md:text‑sm text‑slate‑400 text‑center mb‑6">
-          Click a track to open the full experience in a new tab while you explore the grid.
+        <p class="text-xs md:text-sm text-slate-400 text-center mb-6">
+          Tracks are hosted on Suno. Click a track to open the full experience in a new tab while you explore the grid.
         </p>
 
-        <div class="space‑y‑4">
+        <div class="space-y-4">
+          <!-- Track 1 -->
           <a
             href="https://suno.com/s/jR5dGR9Cbjyjngcn"
             target="_blank"
             rel="noopener noreferrer"
-            class="block board‑frame border border‑slate‑800 bg‑slate‑900/70 rounded‑2xl px‑4 py‑3 hover:border‑cyan‑400 hover:bg‑slate‑900/90 transition"
+            class="block board-frame border border-slate-800 bg-slate-900/70 rounded-2xl px-4 py-3 hover:border-cyan-400 hover:bg-slate-900/90 transition"
           >
-            <div class="flex items‑center justify‑between gap‑3">
+            <div class="flex items-center justify-between gap-3">
               <div>
-                <p class="text‑[10px] tracking‑[0.2em] uppercase text‑slate‑400">
-                  Track FL‑01 · Anthem
+                <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  Track FL-01 · Anthem
                 </p>
-                <p class="text‑sm md:text‑base font‑semibold text‑cyan‑300">
+                <p class="text-sm md:text-base font-semibold text-cyan-300">
                   FlightLine Memphis DC · Runway Signal
                 </p>
-                <p class="text‑[11px] md:text‑xs text‑slate‑400">
+                <p class="text-[11px] md:text-xs text-slate-400">
                   Opening anthem for Memphis DC — pairs with DSX Packs, Proof Stack, and B10 tower movement.
                 </p>
               </div>
-              <span class="text‑xl md:text‑2xl">🎧</span>
+              <span class="text-xl md:text-2xl">🎧</span>
             </div>
           </a>
 
+          <!-- Track 2 -->
           <a
             href="https://suno.com/s/GhdcYhl5JJtUobqT"
             target="_blank"
             rel="noopener noreferrer"
-            class="block board‑frame border border‑slate‑800 bg‑slate‑900/70 rounded‑2xl px‑4 py‑3 hover:border‑emerald‑400 hover:bg‑slate‑900/90 transition"
+            class="block board-frame border border-slate-800 bg-slate-900/70 rounded-2xl px-4 py-3 hover:border-emerald-400 hover:bg-slate-900/90 transition"
           >
-            <div class="flex items‑center justify‑between gap‑3">
+            <div class="flex items-center justify-between gap-3">
               <div>
-                <p class="text‑[10px] tracking‑[0.2em] uppercase text‑slate‑400">
-                  Track FL‑02 · Corridor
+                <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  Track FL-02 · Corridor
                 </p>
-                <p class="text‑sm md:text‑base font‑semibold text‑emerald‑300">
+                <p class="text-sm md:text-base font-semibold text-emerald-300">
                   BTC Traveler · Motion Proof Loop
                 </p>
-                <p class="text‑[11px] md:text‑xs text‑slate‑400">
-                  Corridor track for BTC Traveler lanes — fits with Motion Ledger and Unbroken Custody.
+                <p class="text-[11px] md:text-xs text-slate-400">
+                  Corridor track for BTC Traveler lanes — fits with Motion Ledger and Unbroken Custody routes.
                 </p>
               </div>
-              <span class="text‑xl md:text‑2xl">🎼</span>
+              <span class="text-xl md:text-2xl">🎼</span>
             </div>
           </a>
         </div>
@@ -722,9 +1061,33 @@
     </section>
   </main>
 
-  <footer class="border‑t border‑slate‑800 py‑4 text‑center text‑xs text‑slate‑500">
+  <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
     © <span id="year"></span> FlightLine Memphis DC · All Rights Reserved
   </footer>
+
+  <!-- Floating NOW PLAYING bar -->
+  <div
+    id="flightlineRadioBar"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-30 board-frame border border-slate-800 bg-slate-950/95 rounded-full px-4 py-2 flex items-center gap-3 shadow-lg"
+  >
+    <div class="flex flex-col">
+      <span class="text-[9px] tracking-[0.25em] uppercase text-slate-400">
+        Now Playing · FlightLine Radio
+      </span>
+      <span id="flightlineRadioTitle" class="text-xs font-semibold text-cyan-300">
+        FlightLine Memphis DC · Runway Signal
+      </span>
+    </div>
+    <a
+      id="flightlineRadioButton"
+      href="https://suno.com/s/jR5dGR9Cbjyjngcn"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="ml-2 inline-flex items-center px-3 py-1.5 rounded-full bg-cyan-500 text-slate-950 text-[11px] font-semibold hover:bg-cyan-400 transition"
+    >
+      Play FlightLine Radio
+    </a>
+  </div>
 
   <!-- Calendly badge widget script -->
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -750,6 +1113,40 @@
 
     // Year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FlightLine Radio: rotate "Now Playing" between Suno tracks
+    const radioTracks = [
+      {
+        title: 'FlightLine Memphis DC · Runway Signal',
+        url: 'https://suno.com/s/jR5dGR9Cbjyjngcn',
+      },
+      {
+        title: 'BTC Traveler · Motion Proof Loop',
+        url: 'https://suno.com/s/GhdcYhl5JJtUobqT',
+      },
+    ];
+
+    const radioTitleEl = document.getElementById('flightlineRadioTitle');
+    const radioButtonEl = document.getElementById('flightlineRadioButton');
+
+    if (radioTitleEl && radioButtonEl) {
+      let currentRadioIndex = 0;
+
+      function setRadioTrack(index) {
+        const track = radioTracks[index];
+        radioTitleEl.textContent = track.title;
+        radioButtonEl.href = track.url;
+      }
+
+      // Initialize
+      setRadioTrack(currentRadioIndex);
+
+      // Rotate every 20 seconds
+      setInterval(() => {
+        currentRadioIndex = (currentRadioIndex + 1) % radioTracks.length;
+        setRadioTrack(currentRadioIndex);
+      }, 20000);
+    }
   </script>
 </body>
 </html>
