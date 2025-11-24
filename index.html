@@ -122,6 +122,7 @@
       <nav class="hidden md:flex gap-6 text-sm">
         <a href="#home" class="hover:text-cyan-300">Home</a>
         <a href="#proof-stack" class="hover:text-cyan-300">Proof Stack</a>
+        <a href="#jt-iii" class="hover:text-cyan-300">JT iii Matrix</a>
         <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
         <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
         <a href="#book-session" class="hover:text-cyan-300">FlightLine P.C. Meeting</a>
@@ -140,6 +141,7 @@
       <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
         <a href="#home" class="hover:text-cyan-300">Home</a>
         <a href="#proof-stack" class="hover:text-cyan-300">Proof Stack</a>
+        <a href="#jt-iii" class="hover:text-cyan-300">JT iii Matrix</a>
         <a href="#dsx-packs" class="hover:text-cyan-300">DSX Packs</a>
         <a href="#flightline-gates" class="hover:text-cyan-300">Gates</a>
         <a href="#book-session" class="hover:text-cyan-300">FlightLine P.C. Meeting</a>
@@ -149,26 +151,8 @@
   </header>
 
   <main class="max-w-6xl mx-auto px-4 pb-16">
-    <!-- GLOBAL WHAT THIS PAGE DOES BANNER -->
-    <section class="pt-4">
-      <div class="board-frame rounded-2xl border border-slate-800 bg-slate-900/80 px-4 py-3 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <div>
-          <p class="text-[11px] tracking-[0.25em] uppercase text-slate-400">
-            What This Page Does
-          </p>
-          <p class="text-xs md:text-sm text-slate-200">
-            Shows DSX Packs as a motion credit board, lists FlightLine Gates like a departures screen,
-            exposes the three-layer Proof Stack, and routes you into Memphis DC maps, calls, and custody lanes.
-          </p>
-        </div>
-        <div class="text-[10px] text-slate-400 md:text-right">
-          <p>Every ZIP = Runway · Every Scan = Proof · Every Payment = Public.</p>
-        </div>
-      </div>
-    </section>
-
     <!-- HERO -->
-    <section id="home" class="pt-6 pb-12">
+    <section id="home" class="pt-10 pb-12">
       <div class="grid md:grid-cols-2 gap-8 items-start">
         <div>
           <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4 neon-title">
@@ -180,8 +164,8 @@
             QR maps, streaming rules, and a motion-proof ledger.
           </p>
           <p class="text-xs md:text-sm text-slate-400 mb-4">
-            DSX Packs fund motion. Gates lease corridors. Proof Stack turns every move into Flight Papers that
-            can stand in any boardroom or courtroom.
+            Every ZIP = Runway. Every Scan = Proof. Every Payment = Public.
+            DSX Packs fund motion. Gates lease corridors. P.C. Meetings lock in your seat on the 🛫 FlightLine.
           </p>
 
           <!-- Mini "terminal ticker" for sections -->
@@ -205,6 +189,11 @@
                 <span>PROOF STACK</span>
                 <span class="truncate">Scan · Move · Custody</span>
                 <span class="text-right text-yellow-300">PFX</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#jt-iii'">
+                <span>JT iii MATRIX</span>
+                <span class="truncate">Stewardship &amp; Placement</span>
+                <span class="text-right text-yellow-300">JT-III</span>
               </div>
               <div class="grid grid-cols-3 gap-2 px-4 py-1 cursor-pointer board-row-hover" onclick="location.href='#dsx-packs'">
                 <span>DSX PACKS</span>
@@ -242,7 +231,7 @@
           </div>
         </div>
 
-        <!-- Right column: Motion Court + NETTOPIA Map Grid + Tower Guard -->
+        <!-- Right column: Motion Court + Maps + Tower Guard -->
         <div class="space-y-4">
           <!-- MOTION COURT CARD -->
           <div class="border border-emerald-300/70 rounded-2xl bg-slate-950/90 board-frame overflow-hidden">
@@ -275,117 +264,133 @@
             </div>
           </div>
 
-          <!-- NETTOPIA GRID MAPS -->
-          <div>
-            <h2 class="font-semibold text-sm text-slate-200 mb-2">
-              NETTOPIA Grid · Live Maps from Memphis DC
-            </h2>
-            <div class="mt-1 grid gap-3 max-w-md">
-              <!-- ARRIVALS: Memphis DC · Angel's Kitchen · QRF -->
-              <a
-                href="https://linktr.ee/QRF_Code_Veterans"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-cyan-400 hover:bg-slate-900/90 transition"
-              >
-                <div class="flex flex-col">
-                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                    ARRIVALS · MEMPHIS DC TERMINAL
-                  </span>
-                  <span class="text-sm font-semibold text-cyan-300">
-                    Angel's Kitchen · QRF Code Veterans
-                  </span>
-                  <span class="text-[11px] text-slate-400">
-                    First stop on arrival &amp; last stop before departure — veteran ops, ground support, and Angel's Kitchen hospitality hub.
-                  </span>
-                </div>
-                <span class="text-xl">🛬</span>
-              </a>
+          <!-- ARRIVALS / DEPARTURES / MAP GRID -->
+          <div class="mt-1 grid gap-3 max-w-md">
+            <!-- ARRIVALS: Memphis DC · Angel's Kitchen · QRF -->
+            <a
+              href="https://linktr.ee/QRF_Code_Veterans"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-cyan-400 hover:bg-slate-900/90 transition"
+            >
+              <div class="flex flex-col">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  ARRIVALS · MEMPHIS DC TERMINAL
+                </span>
+                <span class="text-sm font-semibold text-cyan-300">
+                  Angel's Kitchen · QRF Code Veterans
+                </span>
+                <span class="text-[11px] text-slate-400">
+                  First stop on arrival &amp; last stop before departure — veteran ops, ground support, and Angel's Kitchen hospitality hub.
+                </span>
+              </div>
+              <span class="text-xl">🛬</span>
+            </a>
 
-              <!-- DEPARTURES: NETTOPIA iOi Sector Map -->
-              <a
-                href="https://www.google.com/maps/d/viewer?mid=1-0hzlDqdjnbGTLPvbIf7WHHX2yF4owk&amp;usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-cyan-400 hover:bg-slate-900/90 transition"
-              >
-                <div class="flex flex-col">
-                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                    DEPARTURES · NETTOPIA
-                  </span>
-                  <span class="text-sm font-semibold text-cyan-300">
-                    iOi Sector · Memphis DC Capital Map
-                  </span>
-                  <span class="text-[11px] text-slate-400">
-                    First Outernet flight path into NETTOPIA’s live city grid, originating from Memphis DC.
-                  </span>
-                </div>
-                <span class="text-xl">🛫</span>
-              </a>
+            <!-- DEPARTURES: NETTOPIA iOi Sector Map -->
+            <a
+              href="https://www.google.com/maps/d/viewer?mid=1-0hzlDqdjnbGTLPvbIf7WHHX2yF4owk&amp;usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-cyan-400 hover:bg-slate-900/90 transition"
+            >
+              <div class="flex flex-col">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  DEPARTURES · NETTOPIA
+                </span>
+                <span class="text-sm font-semibold text-cyan-300">
+                  iOi Sector · Memphis DC Capital Map
+                </span>
+                <span class="text-[11px] text-slate-400">
+                  First Outernet flight path into NETTOPIA’s live city grid, originating from Memphis DC.
+                </span>
+              </div>
+              <span class="text-xl">🛫</span>
+            </a>
 
-              <!-- FIELD OPS: FlightLine Grid Under Construction -->
-              <a
-                href="https://www.google.com/maps/d/viewer?mid=1POvNXR-46CR7qju1OnWYkK80n5BFxwE&amp;usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="board-frame border border-slate-800 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-yellow-400 hover:bg-slate-900/90 transition"
-              >
-                <div class="flex flex-col">
-                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                    FIELD OPS · FLIGHTLINE MAP
-                  </span>
-                  <span class="text-sm font-semibold text-yellow-300">
-                    FlightLine Grid · Under Construction
-                  </span>
-                  <span class="text-[11px] text-slate-200">
-                    Live worksite map — lanes opening in real time as towers, corridors, and cities come online.
-                  </span>
-                </div>
-                <span class="text-2xl">🚧</span>
-              </a>
+            <!-- FIELD OPS: FlightLine Grid Under Construction -->
+            <a
+              href="https://www.google.com/maps/d/viewer?mid=1POvNXR-46CR7qju1OnWYkK80n5BFxwE&amp;usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="board-frame border border-slate-800 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-yellow-400 hover:bg-slate-900/90 transition"
+            >
+              <div class="flex flex-col">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  FIELD OPS · FLIGHTLINE MAP
+                </span>
+                <span class="text-sm font-semibold text-yellow-300">
+                  FlightLine Grid · Under Construction
+                </span>
+                <span class="text-[11px] text-slate-200">
+                  Live worksite map — lanes opening in real time as towers, corridors, and cities come online.
+                </span>
+              </div>
+              <span class="text-2xl">🚧</span>
+            </a>
 
-              <!-- CODE OF D.A.V.I.D.: Jason Summerfall Grid -->
-              <a
-                href="https://www.google.com/maps/d/edit?mid=1IkYcGhF3GuFwgGjruV-n3mX61Gm7XgA&amp;usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-emerald-400 hover:bg-slate-900/90 transition"
-              >
-                <div class="flex flex-col">
-                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                    FLIGHTLINE · CODE OF D.A.V.I.D.
-                  </span>
-                  <span class="text-sm font-semibold text-emerald-300">
-                    Jason Summerfall · BTC Travel Grid
-                  </span>
-                  <span class="text-[11px] text-slate-400">
-                    Origin map for the Code of D.A.V.I.D. — route spine feeding the BTC Travel Grid and B10 Tower corridors.
-                  </span>
-                </div>
-                <span class="text-xl">🛰️</span>
-              </a>
+            <!-- CODE OF D.A.V.I.D.: Jason Summerfall Grid -->
+            <a
+              href="https://www.google.com/maps/d/edit?mid=1IkYcGhF3GuFwgGjruV-n3mX61Gm7XgA&amp;usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-emerald-400 hover:bg-slate-900/90 transition"
+            >
+              <div class="flex flex-col">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  FLIGHTLINE · CODE OF D.A.V.I.D.
+                </span>
+                <span class="text-sm font-semibold text-emerald-300">
+                  Jason Summerfall · BTC Travel Grid
+                </span>
+                <span class="text-[11px] text-slate-400">
+                  Origin map for the Code of D.A.V.I.D. — route spine feeding the BTC Travel Grid and B10 Tower corridors.
+                </span>
+              </div>
+              <span class="text-xl">🛰️</span>
+            </a>
 
-              <!-- O.A.S.I.S. FROM ANGEL'S KITCHEN -->
-              <a
-                href="https://linktr.ee/O.A.S.I.S."
-                target="_blank"
-                rel="noopener noreferrer"
-                class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-indigo-400 hover:bg-slate-900/90 transition"
-              >
-                <div class="flex flex-col">
-                  <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                    O.A.S.I.S. · OUTERENET SANCTUARY
-                  </span>
-                  <span class="text-sm font-semibold text-indigo-300">
-                    O.A.S.I.S. from Angel's Kitchen
-                  </span>
-                  <span class="text-[11px] text-slate-400">
-                    Soft-landing concourse for restoration, briefing, and reset before deeper NETTOPIA and FlightLine missions.
-                  </span>
-                </div>
-                <span class="text-xl">💧</span>
-              </a>
-            </div>
+            <!-- O.A.S.I.S. FROM ANGEL'S KITCHEN -->
+            <a
+              href="https://linktr.ee/O.A.S.I.S."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-indigo-400 hover:bg-slate-900/90 transition"
+            >
+              <div class="flex flex-col">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  O.A.S.I.S. · OUTERENET SANCTUARY
+                </span>
+                <span class="text-sm font-semibold text-indigo-300">
+                  O.A.S.I.S. from Angel's Kitchen
+                </span>
+                <span class="text-[11px] text-slate-400">
+                  Soft-landing concourse for restoration, briefing, and reset before deeper NETTOPIA and FlightLine missions.
+                </span>
+              </div>
+              <span class="text-xl">💧</span>
+            </a>
+
+            <!-- FLIGHTLINE BASEMENT · UNIVERSAL LOUNGE -->
+            <a
+              href="https://linktr.ee/TheUniversalFlightLine?utm_source=linktree_profile_share&amp;ltsid=e77cbe2e-1ba8-448c-9137-1d56c3a8ea1a"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="board-frame border border-slate-800 bg-slate-950/80 rounded-2xl px-4 py-3 flex items-center justify-between hover:border-fuchsia-400 hover:bg-slate-900/90 transition"
+            >
+              <div class="flex flex-col">
+                <span class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
+                  FLIGHTLINE BASEMENT · UNIVERSAL LOUNGE
+                </span>
+                <span class="text-sm font-semibold text-fuchsia-300">
+                  24/7 Parking · Taxi · Waiting Room
+                </span>
+                <span class="text-[11px] text-slate-400">
+                  Complementary “scrolling concourse” while flights, lanes, and deliveries are loading across the FlightLine grid.
+                </span>
+              </div>
+              <span class="text-2xl">🏁</span>
+            </a>
           </div>
 
           <!-- TOWER GUARD MOTION METER – SINGLE STANDOUT BUTTON -->
@@ -424,7 +429,7 @@
         <h2 class="text-2xl md:text-3xl font-bold neon-title">Proof Stack</h2>
         <p class="text-sm md:text-base text-slate-300 mt-1">
           Three live layers that turn Memphis DC into an evidence-grade grid:
-          <span class="text-cyan-300">Every Scan = Proof · Proof in the Movement · Unbroken Custody.</span>
+          <span class="text-cyan-300">Every Scan = Proof · The Proof Is in the Movement · Unbroken Custody.</span>
         </p>
         <p class="text-xs md:text-sm text-slate-400 max-w-2xl mx-auto mt-2">
           Each layer is wired to its own log: scans (front), movement (middle), and custody (back-end).
@@ -454,12 +459,13 @@
               Front-of-house verification: guests, agents, products, and payments all arrive through a scan.
               Each scan writes a verifiable event you can show to partners, auditors, or courts.
             </p>
+            <!-- FORM #1: Scan Log -->
             <a
-              href="https://docs.google.com/forms/d/e/SCAN_LOG_FORM_ID/viewform?usp=sf_link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfG31qLQ3YICSNpwyL8z4PZmTT-okamL-q7jb1iBLcNI9enPQ/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open scan log for Every Scan equals Proof"
-              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-cyan-500 text-slate-950 text-xs font-semibold"
+              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-cyan-500 text-slate-950 text-xs font-semibold hover:bg-cyan-400 transition"
             >
               Open Scan Log
             </a>
@@ -487,12 +493,13 @@
               Mid-layer telemetry: every corridor between cities and towers is logged,
               so expansion is always tied to real movement — not just plans or slides.
             </p>
+            <!-- FORM #2: Motion Ledger -->
             <a
-              href="https://docs.google.com/forms/d/e/MOTION_LEDGER_FORM_ID/viewform?usp=sf_link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe-bpSq-9L_0PNhkCpTnZUwL2sq9nALzMQMmVDfFzfW41Utdw/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View motion ledger for routes and leases"
-              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-indigo-500 text-slate-50 text-xs font-semibold"
+              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-indigo-500 text-slate-50 text-xs font-semibold hover:bg-indigo-400 transition"
             >
               View Motion Ledger
             </a>
@@ -520,17 +527,92 @@
               Back-end assurance: who held what, when, and where is never a mystery.
               Custody is continuous from Memphis DC, through the towers, and out into NETTOPIA.
             </p>
+            <!-- FORM #3: BTC Traveler / Custody Register -->
             <a
-              href="https://docs.google.com/forms/d/e/CUSTODY_REGISTER_FORM_ID/viewform?usp=sf_link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSehAYzAYYriBnYPxwqfrdo-eYVmygqnvqVE630Jkg7--tsSGw/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open BTC Traveler custody register"
-              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-emerald-500 text-slate-950 text-xs font-semibold"
+              class="mt-auto inline-flex justify-center w-full px-4 py-2 rounded-full bg-emerald-500 text-slate-950 text-xs font-semibold hover:bg-emerald-400 transition"
             >
               BTC Traveler · Check-In / Out
             </a>
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!--  JT iii STEWARDSHIP      -->
+    <!-- ========================= -->
+
+    <section id="jt-iii" class="mt-4 mb-12">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold neon-title">Johnnie Taylor III · JT iii Stewardship Matrix</h2>
+        <p class="text-sm md:text-base text-slate-300 mt-1">
+          Intelligent Interactive Impact over three numbers: people, land, and water.
+        </p>
+        <p class="text-xs md:text-sm text-slate-400 max-w-3xl mx-auto mt-2">
+          This is the exclusive lounge for creators and stewards who carry responsibility for
+          ~8.2B people, ~37B acres of land, and ~3.7 × 10²⁰ gallons of water.
+          Your placement here defines how you stand in the cockpit for the world.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 items-stretch">
+        <div class="space-y-3 text-xs md:text-sm text-slate-300">
+          <p>
+            JT iii is not a job application. It is a <span class="font-semibold">covenant seat</span>
+            with FlightLine HQ, FlightLine – The Division, and NETTOPIA.
+          </p>
+          <p>
+            Your answers on the JT iii form place you inside:
+          </p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Creator Wing – positioning, design, infrastructure, and blueprints.</li>
+            <li>Producer Wing – expansion, branding, profit, and execution.</li>
+            <li>Bridge Seats – translating between creators, producers, and families.</li>
+          </ul>
+          <p>
+            From there, we align you with Gates (G1–G17) and Tiers across
+            storefronts, neighborhoods, cities, regions, and BTC Travel corridors.
+          </p>
+          <p class="text-slate-400">
+            Your JT iii placement is honored as part of the Flight Papers and can be tied
+            directly into a FlightLine P.C. Meeting for live cockpit work.
+          </p>
+        </div>
+
+        <div class="board-frame border border-fuchsia-300/70 bg-slate-950/95 rounded-2xl overflow-hidden flex flex-col">
+          <div class="relative overflow-hidden">
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-fuchsia-500/10 via-transparent to-cyan-400/10 mix-blend-soft-light"></div>
+            <img
+              src="jt-iii-neon-brain.png"
+              alt="Neon brain outline in a futuristic cockpit representing JT iii stewardship."
+              class="w-full h-56 object-cover rounded-t-2xl brightness-110 saturate-125"
+            />
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent px-4 py-3 text-[11px]">
+              <p class="text-slate-100 font-semibold">JT iii Lounge · Neon Brain Concourse</p>
+              <p class="text-slate-300">
+                One concourse for stewards who accept responsibility for people, land, and water through the FlightLine grid.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <p class="text-xs text-slate-300 mb-3">
+              Step into the JT iii matrix to declare where you stand, what you carry, and which gates and tiers fit your calling.
+            </p>
+            <!-- FORM #4: JT iii Stewardship Matrix -->
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScXQXfA2BUkA4R5rvCI1mr3GFcPiYAkESVWWWCB0kde3OO9nw/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-auto inline-flex justify-center w-full px-4 py-2.5 rounded-full bg-fuchsia-500 text-slate-950 text-xs md:text-sm font-semibold hover:bg-fuchsia-400 transition"
+            >
+              Enter JT iii Stewardship Matrix
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -899,195 +981,11 @@
         </div>
       </div>
     </section>
-
-    <!-- ========================= -->
-    <!--  FLIGHTLINE BASEMENT     -->
-    <!-- ========================= -->
-
-    <section id="flightline-basement" class="mt-10 mb-12">
-      <div class="max-w-4xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/95 p-6">
-        <h2 class="text-2xl md:text-3xl font-bold neon-title text-center">
-          FlightLine Basement · Art · News · Deep Dive
-        </h2>
-        <p class="text-sm md:text-base text-slate-300 text-center mt-2 mb-4">
-          The lower deck of Memphis DC — where we park the long-form thinking:
-          podcasts, PSAs, art, books, and the universal parking lot for the FlightLine.
-        </p>
-
-        <div class="grid gap-4 md:grid-cols-2">
-          <!-- Deep Dive · NotebookLM -->
-          <a
-            href="https://notebooklm.google.com/notebook/7c3cbbe4-4460-4d9b-ba15-4de9e9dd1407"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-cyan-400 hover:bg-slate-900 transition"
-          >
-            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-              Deep Dive · NotebookLM
-            </p>
-            <p class="text-sm font-semibold text-cyan-300">
-              FlightLine Deep Dive · Memphis DC
-            </p>
-            <p class="text-[11px] text-slate-400">
-              Long-form breakdowns of the grid, towers, DSX Packs, and NETTOPIA routes — straight from the NotebookLM cockpit.
-            </p>
-          </a>
-
-          <!-- Basic Training · Radio Tower -->
-          <a
-            href="https://notebooklm.google.com/notebook/e4f57dad-4cba-454d-85d0-5879f5ab2a30?authuser=4"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-emerald-400 hover:bg-slate-900 transition"
-          >
-            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-              Basic Training · FlightLine Radio Tower
-            </p>
-            <p class="text-sm font-semibold text-emerald-300">
-              FlightLine Air Assault · Crown 17 Stack
-            </p>
-            <p class="text-[11px] text-slate-400">
-              Onboarding realm for contractors: access, keys, and aircraft — mapping your Google stack into FlightLine roles.
-            </p>
-          </a>
-
-          <!-- FlightLine PSAs · Google Flow -->
-          <a
-            href="https://notebooklm.google.com/notebook/cbbb55f1-7cca-49e2-beec-7834ce85d3fa?authuser=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-yellow-400 hover:bg-slate-900 transition"
-          >
-            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-              FlightLine PSA · Google Flow
-            </p>
-            <p class="text-sm font-semibold text-yellow-300">
-              8-Second Clips · Mass Coverage
-            </p>
-            <p class="text-[11px] text-slate-400">
-              Short-form PSAs scripted for the grid — Google Flow videos that speak to whole towers and lanes in under 10 seconds.
-            </p>
-          </a>
-
-          <!-- Universal Parking Deck · TheUniversalFlightLine -->
-          <a
-            href="https://linktr.ee/TheUniversalFlightLine"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="board-frame border border-slate-800 bg-slate-900/80 rounded-2xl px-4 py-3 hover:border-indigo-400 hover:bg-slate-900 transition"
-          >
-            <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-              Universal Parking Deck · Waiting Room
-            </p>
-            <p class="text-sm font-semibold text-indigo-300">
-              The Universal FlightLine · 24/7 Scroll
-            </p>
-            <p class="text-[11px] text-slate-400">
-              Always-on landing page for agents and guests — park, taxi down the active, and scroll content while deliveries and lanes load.
-            </p>
-          </a>
-        </div>
-
-        <p class="mt-4 text-[11px] text-slate-400 text-center">
-          Everything above the Basement runs the live ops. Everything in the Basement keeps the culture, training, and story synced.
-        </p>
-      </div>
-    </section>
-
-    <!-- ========================= -->
-    <!--  FLIGHTLINE RADIO        -->
-    <!-- ========================= -->
-
-    <section id="flightline-radio" class="mt-10 mb-12">
-      <div class="max-w-3xl mx-auto board-frame border border-slate-800 rounded-2xl bg-slate-950/90 p-6">
-        <h2 class="text-2xl md:text-3xl font-bold neon-title text-center">
-          FlightLine Radio · Motion Proof Anthem
-        </h2>
-        <p class="text-sm md:text-base text-slate-300 text-center mt-2 mb-3">
-          Official FlightLine soundtrack for Memphis DC — songs that run with the grid, towers, and BTC travel lanes.
-        </p>
-        <p class="text-xs md:text-sm text-slate-400 text-center mb-6">
-          Tracks are hosted on Suno. Click a track to open the full experience in a new tab while you explore the grid.
-        </p>
-
-        <div class="space-y-4">
-          <!-- Track 1 -->
-          <a
-            href="https://suno.com/s/jR5dGR9Cbjyjngcn"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block board-frame border border-slate-800 bg-slate-900/70 rounded-2xl px-4 py-3 hover:border-cyan-400 hover:bg-slate-900/90 transition"
-          >
-            <div class="flex items-center justify-between gap-3">
-              <div>
-                <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                  Track FL-01 · Anthem
-                </p>
-                <p class="text-sm md:text-base font-semibold text-cyan-300">
-                  FlightLine Memphis DC · Runway Signal
-                </p>
-                <p class="text-[11px] md:text-xs text-slate-400">
-                  Opening anthem for Memphis DC — pairs with DSX Packs, Proof Stack, and B10 tower movement.
-                </p>
-              </div>
-              <span class="text-xl md:text-2xl">🎧</span>
-            </div>
-          </a>
-
-          <!-- Track 2 -->
-          <a
-            href="https://suno.com/s/GhdcYhl5JJtUobqT"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="block board-frame border border-slate-800 bg-slate-900/70 rounded-2xl px-4 py-3 hover:border-emerald-400 hover:bg-slate-900/90 transition"
-          >
-            <div class="flex items-center justify-between gap-3">
-              <div>
-                <p class="text-[10px] tracking-[0.2em] uppercase text-slate-400">
-                  Track FL-02 · Corridor
-                </p>
-                <p class="text-sm md:text-base font-semibold text-emerald-300">
-                  BTC Traveler · Motion Proof Loop
-                </p>
-                <p class="text-[11px] md:text-xs text-slate-400">
-                  Corridor track for BTC Traveler lanes — fits with Motion Ledger and Unbroken Custody routes.
-                </p>
-              </div>
-              <span class="text-xl md:text-2xl">🎼</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
     © <span id="year"></span> FlightLine Memphis DC · All Rights Reserved
   </footer>
-
-  <!-- Floating NOW PLAYING bar -->
-  <div
-    id="flightlineRadioBar"
-    class="fixed bottom-4 left-1/2 -translate-x-1/2 z-30 board-frame border border-slate-800 bg-slate-950/95 rounded-full px-4 py-2 flex items-center gap-3 shadow-lg"
-  >
-    <div class="flex flex-col">
-      <span class="text-[9px] tracking-[0.25em] uppercase text-slate-400">
-        Now Playing · FlightLine Radio
-      </span>
-      <span id="flightlineRadioTitle" class="text-xs font-semibold text-cyan-300">
-        FlightLine Memphis DC · Runway Signal
-      </span>
-    </div>
-    <a
-      id="flightlineRadioButton"
-      href="https://suno.com/s/jR5dGR9Cbjyjngcn"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="ml-2 inline-flex items-center px-3 py-1.5 rounded-full bg-cyan-500 text-slate-950 text-[11px] font-semibold hover:bg-cyan-400 transition"
-    >
-      Play FlightLine Radio
-    </a>
-  </div>
 
   <!-- Calendly badge widget script -->
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -1113,40 +1011,6 @@
 
     // Year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // FlightLine Radio: rotate "Now Playing" between Suno tracks
-    const radioTracks = [
-      {
-        title: 'FlightLine Memphis DC · Runway Signal',
-        url: 'https://suno.com/s/jR5dGR9Cbjyjngcn',
-      },
-      {
-        title: 'BTC Traveler · Motion Proof Loop',
-        url: 'https://suno.com/s/GhdcYhl5JJtUobqT',
-      },
-    ];
-
-    const radioTitleEl = document.getElementById('flightlineRadioTitle');
-    const radioButtonEl = document.getElementById('flightlineRadioButton');
-
-    if (radioTitleEl && radioButtonEl) {
-      let currentRadioIndex = 0;
-
-      function setRadioTrack(index) {
-        const track = radioTracks[index];
-        radioTitleEl.textContent = track.title;
-        radioButtonEl.href = track.url;
-      }
-
-      // Initialize
-      setRadioTrack(currentRadioIndex);
-
-      // Rotate every 20 seconds
-      setInterval(() => {
-        currentRadioIndex = (currentRadioIndex + 1) % radioTracks.length;
-        setRadioTrack(currentRadioIndex);
-      }, 20000);
-    }
   </script>
 </body>
 </html>
